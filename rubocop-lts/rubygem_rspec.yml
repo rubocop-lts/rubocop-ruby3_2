@@ -1,0 +1,4 @@
+# Customizations/Deviations from Standard/Shopify for RubyGem w/ RSpec Coding Standards
+inherit_from:
+  - rubygem.yml
+  - rspec.yml

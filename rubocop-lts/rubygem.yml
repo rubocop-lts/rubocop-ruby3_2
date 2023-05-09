@@ -1,0 +1,6 @@
+# Customizations/Deviations from Standard/Shopify for RubyGem Coding Standards
+inherit_from:
+  - ruby.yml
+
+require:
+  - rubocop-packaging

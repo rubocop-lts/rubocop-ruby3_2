@@ -1,0 +1,13 @@
+# Other project will do the following:
+#inherit_gem:
+#  # Pick one:
+#  #  rubocop-ruby3_1: rubocop-lts/rails_rspec.yml # or rubocop-lts/rails.yml w/o rspec
+#  #  rubocop-ruby3_1: rubocop-lts/ruby_rspec.yml # or rubocop-lts/ruby.yml w/o rspec
+#  # This is a RubyGem and is tested with RSpec, so obviously:
+#  rubocop-ruby3_1: rubocop-lts/rubygem_rspec.yml # or rubocop-lts/rubygem.yml w/o rspec
+#  # Also, convention over configuration, so obviously:
+#  rubocop-ruby3_1: rubocop.yml # for the ruby + rspec
+
+# But we are inside the gem, so we need a different paradigm here.
+inherit_from:
+  - rubocop-lts/rubygem_rspec.yml

@@ -1,0 +1,45 @@
+# Customizations/Deviations from Standard/Shopify for Ruby Coding Standards
+
+# We want Exclude directives from different
+# config files to get merged, not overwritten
+inherit_mode:
+  merge:
+    - Exclude
+
+require:
+  # Standard's config uses custom cops,
+  # so it must be loaded here
+  - standard
+  # RuboCop performance is handled by standard above
+  # - rubocop-performance
+  # The goal here is convention over configuration...
+  # In light of that, we are well past having convened on Markdown for READMEs and such.
+  - rubocop-md
+  # Rubygems have Rakefile as a convention, and if they don't, why not?
+  - rubocop-rake
+  # In the vast majority of cases, we will want to be warned about thread unsafe code.
+  # In those cases where we intentionally have thread unsafe code,
+  #   a rubocop:disable is the least of our concerns. :D
+  - rubocop-thread_safety
+  # RuboCop Gradual can be used in "Require mode", which is a way to replace rubocop with rubocop-gradual:
+  - rubocop/gradual/patch
+
+inherit_gem:
+  standard: config/ruby-3.1.yml
+  rubocop-shopify: rubocop.yml
+
+inherit_from:
+  - strict/ruby.yml
+
+AllCops:
+  # When the Ruby community, via RuboCop, adopts a new standard
+  #   (with additional filtering by standard.rb and rubocop-shopify) it is good enough for us!
+  NewCops: enable
+
+# Metrics cops are disabled in Standard by default
+Metrics:
+  Enabled: true
+
+# Ruby specific customizations
+Layout/LineLength:
+  Max: 120

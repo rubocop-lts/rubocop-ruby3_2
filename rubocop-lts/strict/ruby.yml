@@ -1,0 +1,14 @@
+# These Cops Must Always Be Enabled!
+# These Cops check for things that are *literally* bugs,
+#   and no code should ever be released that fails these cops.
+#
+# The Exclude: [] is crucial here:
+#   even if our .rubocop_todo.yml contained exclusions for strict cops, we nullify them here,
+#   thus, re-activating these cops for all the files.
+#
+# These settings must be loaded after any files of "TODOs" that instruct RuboCop to ignore errors.
+# Fortunately this project doesn't rely on TODOs, instead relying on a rubocop_gradual lockfile.
+#
+Lint/Debugger: # don't leave binding.pry
+  Enabled: true
+  Exclude: []

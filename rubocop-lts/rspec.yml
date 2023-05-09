@@ -1,0 +1,9 @@
+require:
+  # I setup RSpec on every project. Do you?
+  - rubocop-rspec
+
+inherit_gem:
+  rspec-block_is_expected: rubocop.yml
+
+inherit_from:
+  - strict/rspec.yml
