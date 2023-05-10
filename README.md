@@ -87,11 +87,12 @@ This gem configures many gems for you:
 - rubocop
 - rubocop-gradual
 - rubocop-md
-- rubocop-performance
 - rubocop-rake
 - rubocop-shopify
 - rubocop-thread_safety
 - standard
+- standard-performance (incl. rubocop-performance)
+- standard-custom
 
 And optionally, if you are using RSpec:
 
@@ -100,6 +101,11 @@ And optionally, if you are using RSpec:
 And optionally, if you are using building a RubyGem:
 
 - rubocop-packaging
+
+And optionally, if you are using building a Rails app:
+
+- standard-rails (incl. rubocop-rails)
+- betterlint
 
 Awareness of `rubocop`'s lack of [SemVer][semver] adherence isn't evenly dispersed in the Ruby community.
 

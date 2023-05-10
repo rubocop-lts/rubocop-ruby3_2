@@ -10,8 +10,9 @@ require:
   # Standard's config uses custom cops,
   # so it must be loaded here
   - standard
-  # RuboCop performance is handled by standard above
-  # - rubocop-performance
+  - rubocop-performance
+  - standard-performance
+  - standard-custom
   # The goal here is convention over configuration...
   # In light of that, we are well past having convened on Markdown for READMEs and such.
   - rubocop-md
@@ -27,6 +28,9 @@ require:
 inherit_gem:
   # TODO: Switch to config/ruby-3.2.yml once PR is merged - https://github.com/standardrb/standard/pull/560
   standard: config/base.yml
+  standard-performance: config/base.yml
+  standard-custom: config/base.yml
+  # shopify rules will override standard's rules.
   rubocop-shopify: rubocop.yml
 
 inherit_from:

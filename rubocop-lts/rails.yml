@@ -5,5 +5,7 @@ inherit_from:
 
 require:
   - rubocop-rails
+  - standard-rails
+  - betterlint
 
 # Rails specific customizations
