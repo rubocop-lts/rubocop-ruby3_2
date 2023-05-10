@@ -2,12 +2,12 @@
 
 # Get the GEMFILE_VERSION without *require* "my_gem/version", for code coverage accuracy
 # See: https://github.com/simplecov-ruby/simplecov/issues/557#issuecomment-825171399
-load "lib/rubocop/ruby3_1/version.rb"
-gem_version = Rubocop::Ruby31::VERSION
-Rubocop::Ruby31.send(:remove_const, :VERSION)
+load "lib/rubocop/ruby3_2/version.rb"
+gem_version = Rubocop::Ruby32::VERSION
+Rubocop::Ruby32.send(:remove_const, :VERSION)
 
 Gem::Specification.new do |spec|
-  spec.name = "rubocop-ruby3_1"
+  spec.name = "rubocop-ruby3_2"
   spec.version = gem_version
   spec.authors = ["Peter Boling"]
   spec.email = ["peter.boling@gmail.com"]
@@ -18,15 +18,15 @@ Gem::Specification.new do |spec|
 
   spec.summary = "Semantically Versioned RuboCop Dependency"
   spec.description = "Links dependency on minimum Ruby version to maximum RuboCop version"
-  spec.homepage = "https://github.com/rubocop-lts/rubocop-ruby3_1"
+  spec.homepage = "https://github.com/rubocop-lts/rubocop-ruby3_2"
   spec.license = "MIT"
-  spec.required_ruby_version = ">= 3.1.0"
+  spec.required_ruby_version = ">= 3.2.0"
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "#{spec.homepage}/tree/v#{spec.version}"
   spec.metadata["changelog_uri"] = "#{spec.homepage}/blob/v#{spec.version}/CHANGELOG.md"
   spec.metadata["bug_tracker_uri"] = "#{spec.homepage}/issues"
-  spec.metadata["documentation_uri"] = "https://www.rubydoc.info/gems/rubocop-ruby3_1/#{spec.version}"
+  spec.metadata["documentation_uri"] = "https://www.rubydoc.info/gems/rubocop-ruby3_2/#{spec.version}"
   spec.metadata["funding_uri"] = "https://liberapay.com/pboling"
   spec.metadata["wiki_uri"] = "#{spec.homepage}/wiki"
   spec.metadata["rubygems_mfa_required"] = "true"

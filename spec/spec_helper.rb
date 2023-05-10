@@ -33,4 +33,4 @@ require "config/rspec/rspec_core"
 require "config/rspec/rspec_block_is_expected"
 
 # This gem
-require "rubocop/ruby3_1"
+require "rubocop/ruby3_2"

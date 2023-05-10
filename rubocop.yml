@@ -5,11 +5,11 @@
 # As follows:
 #   inherit_gem:
 #     # Pick one:
-#     #  rubocop-ruby3_1: rubocop-lts/rails_rspec.yml # or rubocop-lts/rails.yml w/o rspec
-#     #  rubocop-ruby3_1: rubocop-lts/ruby_rspec.yml # or rubocop-lts/ruby.yml w/o rspec
-#     #  rubocop-ruby3_1: rubocop-lts/rubygem_rspec.yml # or rubocop-lts/rubygem.yml w/o rspec
+#     #  rubocop-ruby3_2: rubocop-lts/rails_rspec.yml # or rubocop-lts/rails.yml w/o rspec
+#     #  rubocop-ruby3_2: rubocop-lts/ruby_rspec.yml # or rubocop-lts/ruby.yml w/o rspec
+#     #  rubocop-ruby3_2: rubocop-lts/rubygem_rspec.yml # or rubocop-lts/rubygem.yml w/o rspec
 #     # Convention over configuration, hence loading this file just only Ruby and RSpec defaults:
-#     rubocop-ruby3_1: rubocop.yml # for the ruby + rspec
+#     rubocop-ruby3_2: rubocop.yml # for the ruby + rspec
 
 inherit_from:
   - rubocop-lts/ruby_rspec.yml

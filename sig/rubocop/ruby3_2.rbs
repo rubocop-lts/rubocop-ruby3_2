@@ -1,5 +1,5 @@
 module Rubocop
-  module Ruby31
+  module Ruby32
     VERSION: String
     # See the writing guide of rbs: https://github.com/ruby/rbs#guides
   end

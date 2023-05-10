@@ -25,7 +25,8 @@ require:
   - rubocop/gradual/patch
 
 inherit_gem:
-  standard: config/ruby-3.1.yml
+  # TODO: Switch to config/ruby-3.2.yml once PR is merged - https://github.com/standardrb/standard/pull/560
+  standard: config/base.yml
   rubocop-shopify: rubocop.yml
 
 inherit_from:
