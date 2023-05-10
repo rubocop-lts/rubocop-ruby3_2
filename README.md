@@ -227,7 +227,7 @@ Among _many_ other settings, this has the effect of declaring the following:
 ```yaml
 AllCops:
   # remove if already present in your `.rubocop-lts.yml` to gain the full benefit of this gem!
-  TargetRubyVersion: 3.0
+  TargetRubyVersion: 3.2
   NewCops: enable
 ```
 

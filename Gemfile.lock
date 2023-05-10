@@ -9,7 +9,7 @@ GIT
 PATH
   remote: .
   specs:
-    rubocop-ruby3_2 (2.0.0)
+    rubocop-ruby3_2 (1.0.0)
       rubocop-gradual (~> 0.3)
       rubocop-md (~> 1.2)
       rubocop-rake (~> 0.6)
@@ -142,4 +142,4 @@ DEPENDENCIES
   yard (~> 0.9, >= 0.9.34)
 
 BUNDLED WITH
-   2.4.12
+   2.4.13
