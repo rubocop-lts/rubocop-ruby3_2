@@ -116,7 +116,8 @@ NOTE: They think they are following SemVer,
 but their interpretation differs from mine, and seems to differ from the
 [intent of SemVer's creator][major-versions-not-sacred].
 
-If you need to run `rubocop` from command line in an older version of Ruby, you've come to the right place.
+If you need to use `rubocop` from the command line to lint against an older version of Ruby syntax, 
+you've come to the right place.
 
 <p align="left">
     <a href="https://metaredux.com/posts/2022/04/21/rubocop-turns-10.html" target="_blank" rel="noopener">
