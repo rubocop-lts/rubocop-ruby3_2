@@ -33,13 +33,14 @@ jobs:
         experimental: [false]
         gemfile:
           - vanilla
+          - rails7
         ruby:
           - "3.2"
-          - "jruby"
+          # TODO: jruby is still @ Ruby 3.1 compat
+          # - "jruby"
+          # TODO: truffleruby is still @ Ruby 3.1 compat
+          # - "truffleruby"
         exclude:
-          # Don't care if Rails can install on jruby
-          - gemfile: rails7
-            ruby: "jruby"
           # Vanilla + 3.2 is effectively run by coverage workflow
           - gemfile: vanilla
             ruby: "3.2"
