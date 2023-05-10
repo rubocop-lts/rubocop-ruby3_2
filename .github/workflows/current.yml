@@ -40,7 +40,7 @@ jobs:
           # Don't care if Rails can install on jruby
           - gemfile: rails7
             ruby: "jruby"
-          # Vanilla + 3.0 is effectively run by coverage workflow
+          # Vanilla + 3.2 is effectively run by coverage workflow
           - gemfile: vanilla
             ruby: "3.2"
 
