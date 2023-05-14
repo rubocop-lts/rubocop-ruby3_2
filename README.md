@@ -221,7 +221,7 @@ If bundler is not being used to manage dependencies, install the gem by executin
 
 The following is optional.  We'll discuss why you might want to do this after you see what it does.
 
-If you are using Rails, building a Rubygem, or not using RSpec, see ["Advanced Usage"][#advanced-usage].
+If you are using Rails, building a Rubygem, or not using RSpec, see ["Advanced Usage"](#advanced-usage).
 Otherwise, if you use plain Ruby and RSpec, you can add to the top of your project's `.rubocop.yml` configuration file:
 
 ```yaml
