@@ -116,9 +116,6 @@ NOTE: They think they are following SemVer,
 but their interpretation differs from mine, and seems to differ from the
 [intent of SemVer's creator][major-versions-not-sacred].
 
-If you need to use `rubocop` from the command line to lint against an older version of Ruby syntax, 
-you've come to the right place.
-
 <p align="left">
     <a href="https://metaredux.com/posts/2022/04/21/rubocop-turns-10.html" target="_blank" rel="noopener">
       <img width="360px" src="https://github.com/rubocop-lts/rubocop-ruby3_2/raw/main/docs/images/rubocop-not-semver.png?raw=true" alt="Explanation of non-SemVer compliance, @bbatsov">
