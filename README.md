@@ -125,7 +125,8 @@ but their interpretation differs from mine, and seems to differ from the
 The purpose of this gem is to constrain the `rubocop` dependency of a project in
 a [SemVer compliant][semver]
 (Semantic Versioning, [Major Versions are Not Sacred][major-versions-not-sacred])
-way that aligns with the the desired minimum compatible/supported Ruby version.
+way that aligns with its desired minimum compatible/supported Ruby version.
+Secondary purpose is to provide default configurations for a bevy of RuboCop-related plugins.
 
 ## 💎 Ruby Version Support
 
