@@ -98,11 +98,11 @@ And optionally, if you are using RSpec:
 
 - rubocop-rspec
 
-And optionally, if you are using building a RubyGem:
+And optionally, if you are building a RubyGem:
 
 - rubocop-packaging
 
-And optionally, if you are using building a Rails app:
+And optionally, if you are building a Rails app:
 
 - standard-rails (incl. rubocop-rails)
 - betterlint
