@@ -25,9 +25,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - standard-custom
   - And optionally, if you are using RSpec:
     - rubocop-rspec
-  - And optionally, if you are using building a RubyGem:
+  - And optionally, if you are building a RubyGem:
     - rubocop-packaging
-  - And optionally, if you are using Rails:
+  - And optionally, if you are building a Rails app:
     - betterlint
     - standard-rails
 
