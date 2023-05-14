@@ -35,7 +35,10 @@ jobs:
           - vanilla
         ruby:
           - "ruby-head"
-          - "jruby-head"
+          # TODO: jruby-head is still @ Ruby 3.1 compat
+          # - "jruby-head"
+          # TODO: truffleruby-head is still @ Ruby 3.1 compat
+          # - "truffleruby-head"
 
     runs-on: ubuntu-latest
     continue-on-error: ${{ matrix.experimental || endsWith(matrix.ruby, 'head') }}
