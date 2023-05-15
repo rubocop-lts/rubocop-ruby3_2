@@ -135,7 +135,7 @@ minimizing the risk of a rubocop minor / patch upgrade breaking the build.
 
 ### What's that you say?
 
-This gem will install a suite of tools that will **analyze code** intended to support any version of Ruby >= 3.0.
+This gem will install a suite of tools that will **analyze code** intended to support any version of Ruby >= 3.2.
 
 This gem helps insulate projects from RuboCop churn by enshrining many conventions
 that have been shown over years to reduce problems.
