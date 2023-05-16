@@ -1,4 +1,4 @@
-# Other project will do the following:
+# Other projects will do the following:
 #inherit_gem:
 #  # Pick one:
 #  #  rubocop-ruby3_2: rubocop-lts/rails_rspec.yml # or rubocop-lts/rails.yml w/o rspec
