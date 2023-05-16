@@ -6,7 +6,6 @@
   rspec/core/rake_task
 ].each { |f| require f }
 
-require "rspec/core/rake_task"
 RSpec::Core::RakeTask.new(:spec) do |spec|
   spec.pattern = FileList["spec/**/*_spec.rb"]
 end
@@ -45,6 +44,7 @@ defaults = %i[test]
 # But ...
 #   externally it won't, so in other internal projects' Rakefiles we:
 require "rubocop/ruby3_2"
+
 Rubocop::Ruby32.install_tasks
 
 begin
