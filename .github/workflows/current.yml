@@ -35,10 +35,10 @@ jobs:
           - rails7
         ruby:
           - "3.2"
-        exclude:
-          # Vanilla + 3.2 is effectively run by coverage workflow
-          # - gemfile: vanilla
-          #   ruby: "3.2"
+#        exclude:
+#          # Vanilla + 3.2 is effectively run by coverage workflow
+#          # - gemfile: vanilla
+#          #   ruby: "3.2"
 
 
     runs-on: ubuntu-latest
