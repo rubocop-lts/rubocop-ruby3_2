@@ -47,14 +47,6 @@ require "rubocop/ruby3_2"
 
 Rubocop::Ruby32.install_tasks
 
-begin
-  require "rubocop/gradual/rake_task"
-
-  defaults << :rubocop_gradual
-rescue LoadError
-  task :rubocop_gradual do
-    warn "NOTE: rubocop-gradual isn't installed, or is disabled for #{RUBY_VERSION} in the current environment"
-  end
-end
+defaults << :rubocop_gradual
 
 task default: defaults

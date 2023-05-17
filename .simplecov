@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 # To get coverage
-# On Local, default (HTML) output coverage is turned on with Ruby 2.6+:
+# On Local, default (HTML) output coverage is turned on with Ruby 3.2+:
 #   bundle exec rspec spec
-# On Local, all output formats with Ruby 3.0+:
+# On Local, all output formats with Ruby 3.2+:
 #   COVER_ALL=true bundle exec rspec spec
 #
 # On CI, all output formats, the ENV variables CI is always set,

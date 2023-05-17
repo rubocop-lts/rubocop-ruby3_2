@@ -14,7 +14,7 @@ RUBY_VER = Gem::Version.new(RUBY_VERSION)
 #noinspection RbsMissingTypeSignature
 IS_CI = !ENV["CI"].nil?
 #noinspection RbsMissingTypeSignature
-LOCAL_SUPPORTED = !IS_CI && Gem::Version.new("3.2") <= RUBY_VER && RUBY_ENGINE == "ruby"
+LOCAL_SUPPORTED = !IS_CI && Gem::Version.new("3.1") <= RUBY_VER && RUBY_ENGINE == "ruby"
 # rubocop:enable Layout/LeadingCommentSpace
 
 if LOCAL_SUPPORTED || IS_CI
@@ -29,6 +29,15 @@ if LOCAL_SUPPORTED || IS_CI
 
   # Documentation
   eval_gemfile "./gemfiles/contexts/docs.gemfile"
+
+  # Debugging
+  platform :mri do
+    eval_gemfile "./gemfiles/contexts/mri/debug.gemfile"
+  end
+
+  platform :jruby do
+    eval_gemfile "./gemfiles/contexts/jruby/debug.gemfile"
+  end
 end
 
 eval_gemfile "./gemfiles/contexts/core.gemfile"

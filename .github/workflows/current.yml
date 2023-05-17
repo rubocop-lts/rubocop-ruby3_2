@@ -32,18 +32,13 @@ jobs:
       matrix:
         experimental: [false]
         gemfile:
-          - vanilla
           - rails7
         ruby:
           - "3.2"
-          # TODO: jruby is still @ Ruby 3.1 compat
-          # - "jruby"
-          # TODO: truffleruby is still @ Ruby 3.1 compat
-          # - "truffleruby"
         exclude:
           # Vanilla + 3.2 is effectively run by coverage workflow
-          - gemfile: vanilla
-            ruby: "3.2"
+          # - gemfile: vanilla
+          #   ruby: "3.2"
 
 
     runs-on: ubuntu-latest

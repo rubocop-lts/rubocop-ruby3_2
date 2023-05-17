@@ -18,7 +18,7 @@
 
 ---
 
-NOTE: You might be interested in [`rubocop-lts`](https://github.com/rubocop-lts/rubocop-lts#-how-to-untie-gorgons-knot) which sits as a higher level than this gem, and can keep pace with whatever version of Ruby you happen to be on.
+NOTE: You might be interested in [`rubocop-lts`][rlts] which sits as a higher level than this gem, and can keep pace with whatever version of Ruby you happen to be on.
 
 | Gem Name                      | Version                             | Downloads                                                            | CI                                                                    | Activity                                                                                                                                              |
 |-------------------------------|-------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -93,6 +93,7 @@ This gem configures many gems for you:
 - standard
 - standard-performance (incl. rubocop-performance)
 - standard-custom
+- standard-rubocop-lts (ruby version-specific rules)
 
 And optionally, if you are using RSpec:
 
@@ -130,12 +131,12 @@ Secondary purpose is to provide default configurations for a bevy of RuboCop-rel
 
 ## 💎 Ruby Version Support
 
-Adding this gem will facilitate the best practice of adding a `~> ` version constrained `rubocop`(-ish) dependency, while
-minimizing the risk of a rubocop minor / patch upgrade breaking the build.
+This gem facilitates equivalent of adding a `~> ` version constrained `rubocop`(-ish +more) dependency,
+thus minimizing the risk of a rubocop minor / patch upgrade breaking the build.
 
 ### What's that you say?
 
-This gem will install a suite of tools that will **analyze code** intended to support any version of Ruby >= 3.2.
+This gem will install a suite of tools that will **analyze & lint code** intended to support any version of Ruby >= 2.0.
 
 This gem helps insulate projects from RuboCop churn by enshrining many conventions
 that have been shown over years to reduce problems.
@@ -144,9 +145,9 @@ that have been shown over years to reduce problems.
 
 Each [spring `rubocop` drops][rubocop-support-matrix] the ability to **install** and **run** `rubocop` on an EOL'd Ruby.
 Eventually `rubocop` will drop the ability to **analyze code** intended to support an EOL'd Ruby,
-as they already have for 1.9.
-This gem, via [standardrb][standardrb], enables RuboCop to continue to analyze Ruby 3.2 code,
-even if RuboCop drops implicit support for it, by turning off certain rules that only apply to later Rubies.
+as they already have for Ruby 1.9. RuboCop has never run properly on Ruby 1.8.
+This gem, via [standard (Standard Ruby)][standardrb], allows RuboCop to analyze Ruby 3.2 code,
+by turning off certain rules that only apply to later Rubies.
 
 When the `rubocop` team makes _any_ of these changes they
 [only bump the minor version][rubocop-versioning] of RuboCop,
@@ -187,7 +188,7 @@ They can be used as development dependencies for libraries or applications.
 - [`rubocop-ruby3_1`][rr31]
 - [`rubocop-ruby3_2`][rr32]
 
-[rrlts]: https://github.com/rubocop-lts/rubocop-lts#-how-to-untie-gorgons-knot
+[rlts]: https://github.com/rubocop-lts/rubocop-lts#-how-to-untie-gorgons-knot
 [stdrlts]: https://github.com/rubocop-lts/standard-rubocop-lts
 [rr18]: https://gitlab.com/rubocop-lts/standard-rubocop-lts
 [rr19]: https://gitlab.com/rubocop-lts/rubocop-ruby1_9
@@ -207,12 +208,10 @@ They can be used as development dependencies for libraries or applications.
 
 All releases of this gem are stable releases.
 We do not release new versions for every release of `rubocop`,
-as this gem is tied to [`standard`][standard].
+as this gem is tied to [standard (Standard Ruby)][standardrb].
 A typical release cycle for a gem in the `rubocop-lts` family is roughly every six months,
 though eventually analysis support for an old version of Ruby will be dropped.
 When that happens releases of the `rubocop-lts` gem for that version of Ruby will (mostly) cease.
-
-[standard]: https://github.com/standardrb/standard
 
 ## ✨ Installation
 
@@ -238,22 +237,16 @@ Among _many_ other settings, this has the effect of declaring the following:
 
 ```yaml
 AllCops:
-  # remove if already present in your `.rubocop-lts.yml` to gain the full benefit of this gem!
-  TargetRubyVersion: 3.2
   NewCops: enable
 ```
 
-Let's talk about these settings.
-
-### ⚙️ `TargetRubyVersion`
-
-Allowing this gem to manage the target ruby version means you can switch to a different gem within the family when you upgrade to the next version of Ruby, and have nothing else to change.  A single line in the `Gemfile`, and you are done.
+Let's talk about these settings. (TODO: Document some of the other settings!)
 
 ### ⚙️ `NewCops: enable`
 
 Upgrades to the latest RuboCop can include all kinds of changes, including removing support for the version of Ruby your project uses, or adding a cop that may not work with some of your syntax (e.g. [some use cases of 'module_function`](https://github.com/rubocop/rubocop/issues/5953#issuecomment-805921993)).  Accepting new cops arriving in a new version of RuboCop can feel risky, especially when it doesn't follow SemVer.
 
-But this gem shoehorns RuboCop into SemVer, under the watchful eye of [`standard`][standard]... so `NewCops` is now safe(r)!  If you use a dependency greening tool like GitHub's `dependabot`, or the excellent alternatives [depfu](https://depfu.com/), and [`renovate`](https://www.whitesourcesoftware.com/free-developer-tools/renovate/), then you can see the effect of a minor / major version bump in your CI Build!
+But this gem shoehorns RuboCop into SemVer, under the watchful eye of [standard (Standard Ruby)][standardrb]... so `NewCops` is now safe(r)!  If you use a dependency greening tool like GitHub's `dependabot`, or the excellent alternatives [depfu](https://depfu.com/), and [`renovate`](https://www.whitesourcesoftware.com/free-developer-tools/renovate/), then you can see the effect of a minor / major version bump in your CI Build!
 
 ## Advanced Usage
 
@@ -351,11 +344,13 @@ License: [Unsplash License][org-logo-license]
 
 ### © Copyright
 
-* Copyright (c) 2023 [Peter H. Boling][peterboling] of [Rails Bling][railsbling]
+* Copyright (c) 2022 - 2023 [Peter H. Boling][peterboling] of [Rails Bling][railsbling]
 
 ## 🤝 Code of Conduct
 
-Everyone interacting in this project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/rubocop-lts/rubocop-ruby3_2/blob/main/CODE_OF_CONDUCT.md).
+Everyone interacting in this project's codebases, issue trackers, [chat rooms][🏘chat] and mailing lists is expected to follow the [code of conduct][🤝conduct].
+
+[🤝conduct]: https://gitlab.com/rubocop-lts/rubocop-ruby3_2/-/blob/main/CODE_OF_CONDUCT.md
 
 ## 📌 Versioning
 
@@ -370,7 +365,7 @@ the [Pessimistic Version Constraint][pvc] with two digits of precision.
 For example:
 
 ```ruby
-spec.add_dependency "rubocop-ruby3_2", "~> 1.0"
+spec.add_dependency "rubocop-ruby3_2", "~> 2.0"
 ```
 
 [aboutme]: https://about.me/peter.boling
@@ -379,7 +374,7 @@ spec.add_dependency "rubocop-ruby3_2", "~> 1.0"
 [blogpage]: http://www.railsbling.com/tags/rubocop-ruby3_2/
 [codecov_coverage]: https://codecov.io/gh/rubocop-lts/rubocop-ruby3_2
 [code_triage]: https://www.codetriage.com/rubocop-lts/rubocop-ruby3_2
-[chat]: https://gitter.im/rubocop-lts/rubocop-ruby3_2?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
+[🏘chat]: https://gitter.im/rubocop-lts/community
 [climate_coverage]: https://codeclimate.com/github/rubocop-lts/rubocop-ruby3_2/test_coverage
 [climate_maintainability]: https://codeclimate.com/github/rubocop-lts/rubocop-ruby3_2/maintainability
 [copyright-notice-explainer]: https://opensource.stackexchange.com/questions/5778/why-do-licenses-such-as-the-mit-license-specify-a-single-year
