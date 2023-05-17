@@ -22,7 +22,7 @@ require:
   - rubocop/gradual/patch
 
 inherit_gem:
-  standard-rubocop-lts: config/ruby-3.1.yml
+  standard-rubocop-lts: config/ruby-3.2.yml
   # shopify rules will override standard's rules.
   rubocop-shopify: rubocop.yml
 

@@ -344,7 +344,7 @@ License: [Unsplash License][org-logo-license]
 
 ### © Copyright
 
-* Copyright (c) 2022 - 2023 [Peter H. Boling][peterboling] of [Rails Bling][railsbling]
+* Copyright (c) 2023 [Peter H. Boling][peterboling] of [Rails Bling][railsbling]
 
 ## 🤝 Code of Conduct
 
