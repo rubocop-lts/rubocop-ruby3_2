@@ -10,7 +10,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 ### Removed
 
-## [2.0.2] 2023-05-17
+## [2.0.3] 2023-05-19
+### Fixed
+- Ship rakelib/**/*.rake tasks
+- Fix rake_tasks hook on Railtie
+
+## [2.0.2] 2023-05-17 [YANKED]
 ### Fixed
 - Copyright year
 - CHANGELOG version numbers and release dates
@@ -18,7 +23,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - SECURITY documentation
 - CI runs on Ruby 3.2
 
-## [2.0.1] 2023-05-17
+## [2.0.1] 2023-05-17 [YANKED]
 ### Added
 - Initial release
   - Configs for:
@@ -40,6 +45,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - standard-rails
   - version_gem
 
-[Unreleased]: https://gitlab.com/rubocop-lts/rubocop-ruby3_2/-/compare/v2.0.2...HEAD
+[Unreleased]: https://gitlab.com/rubocop-lts/rubocop-ruby3_2/-/compare/v2.0.3...HEAD
+[2.0.3]: https://gitlab.com/rubocop-lts/rubocop-ruby3_2/-/compare/v2.0.2...v2.0.3
 [2.0.2]: https://gitlab.com/rubocop-lts/rubocop-ruby3_2/-/compare/v2.0.1...v2.0.2
 [2.0.1]: https://gitlab.com/rubocop-lts/rubocop-ruby3_2/-/compare/91d4f2ff323ce25ebe8476244d50bb786fbb78f9...v2.0.1

@@ -3,8 +3,11 @@ module Rubocop
     class Railtie < Rails::Railtie
       railtie_name :rubocop_ruby3_2
 
-      rake_tasks do
-        load "rubocop/ruby3_2/tasks.rake" if Rails.env.test? || Rails.env.development?
+      if Rails.env.test? || Rails.env.development?
+        rake_tasks do
+          path = File.expand_path(__dir__)
+          Dir.glob("#{path}/rakelib/**/*.rake").each { |f| load f }
+        end
       end
     end
   end
