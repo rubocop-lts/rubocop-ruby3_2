@@ -34,6 +34,7 @@ Gem::Specification.new do |spec|
   # Specify which files should be added to the gem when it is released.
   spec.files = Dir[
     # Splats (alphabetical)
+    "lib/**/*.rake",
     "lib/**/*.rb",
     "sig/**/*.rbs",
     "rubocop-lts/**/*.yml",
