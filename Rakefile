@@ -18,6 +18,7 @@ begin
   YARD::Rake::YardocTask.new do |t|
     t.files = [
       # Splats (alphabetical)
+      "lib/**/*.rake",
       "lib/**/*.rb",
       "sig/**/*.rbs",
       # Files (alphabetical)

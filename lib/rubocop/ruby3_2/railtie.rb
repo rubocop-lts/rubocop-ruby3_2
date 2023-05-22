@@ -5,8 +5,7 @@ module Rubocop
 
       if Rails.env.test? || Rails.env.development?
         rake_tasks do
-          path = File.expand_path(__dir__)
-          Dir.glob("#{path}/rakelib/**/*.rake").each { |f| load f }
+          Rubocop::Ruby32.install_tasks
         end
       end
     end

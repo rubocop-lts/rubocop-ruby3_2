@@ -10,6 +10,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 ### Removed
 
+## [2.0.5] 2023-05-22
+### Fixed
+- install_tasks and Railtie loading of rake tasks
+### Changed
+- tasks.rake => tasks.rb
+
 ## [2.0.4] 2023-05-21
 ### Fixed
 - Ship rake tasks in gem package
@@ -48,7 +54,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - standard-rails
   - version_gem
 
-[Unreleased]: https://gitlab.com/rubocop-lts/rubocop-ruby3_2/-/compare/v2.0.4...HEAD
+[Unreleased]: https://gitlab.com/rubocop-lts/rubocop-ruby3_2/-/compare/v2.0.5...HEAD
+[2.0.5]: https://gitlab.com/rubocop-lts/rubocop-ruby3_2/-/compare/v2.0.4...v2.0.5
 [2.0.4]: https://gitlab.com/rubocop-lts/rubocop-ruby3_2/-/compare/v2.0.3...v2.0.4
 [2.0.3]: https://gitlab.com/rubocop-lts/rubocop-ruby3_2/-/compare/v2.0.2...v2.0.3
 [2.0.2]: https://gitlab.com/rubocop-lts/rubocop-ruby3_2/-/compare/v2.0.1...v2.0.2
