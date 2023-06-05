@@ -13,7 +13,7 @@ module Rubocop
   # Namespace of this library
   module Ruby32
     module_function def install_tasks
-      load "rubocop/ruby3_2/tasks.rb"
+      load("rubocop/ruby3_2/tasks.rb")
     end
   end
 end
