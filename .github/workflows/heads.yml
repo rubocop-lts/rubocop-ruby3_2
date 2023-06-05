@@ -31,14 +31,18 @@ jobs:
       fail-fast: false
       matrix:
         experimental: [false]
+        rubygems:
+          - latest
+        bundler:
+          - latest
         gemfile:
           - vanilla
         ruby:
           - "ruby-head"
           # NOTE: jruby-head is still @ Ruby 3.1 compat
-          # - "jruby-head"
+          - "jruby-head"
           # NOTE: truffleruby-head is still @ Ruby 3.1 compat
-          # - "truffleruby-head"
+          - "truffleruby-head"
 
     runs-on: ubuntu-latest
     continue-on-error: ${{ matrix.experimental || endsWith(matrix.ruby, 'head') }}

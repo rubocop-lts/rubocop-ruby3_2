@@ -5,6 +5,7 @@
 inherit_mode:
   merge:
     - Exclude
+    - Include
 
 require:
   # Loads the Standard Ruby suite of gems, and configures for rubocop-lts:
@@ -21,10 +22,14 @@ require:
   # RuboCop Gradual can be used in "Require mode", which is a way to replace rubocop with rubocop-gradual:
   - rubocop/gradual/patch
 
+# Rules are overridden in a LIFO stack.
+# If rubocop-shopify is loaded first, and standard-rubocop-lts after it,
+#   then rubocop-shopify's rules will take precedence.
+# This is the opposite of what you might expect.
+# Below: rubocop-shopify rules will override standard-rubocop-lts's (i.e. standard's) rules.
 inherit_gem:
-  standard-rubocop-lts: config/ruby-3.2.yml
-  # shopify rules will override standard's rules.
   rubocop-shopify: rubocop.yml
+  standard-rubocop-lts: config/ruby-3.2.yml
 
 inherit_from:
   - strict/ruby.yml

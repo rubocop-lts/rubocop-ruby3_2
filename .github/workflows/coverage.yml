@@ -33,10 +33,14 @@ jobs:
       fail-fast: false
       matrix:
         experimental: [false]
+        rubygems:
+          - latest
+        bundler:
+          - latest
         gemfile:
           - coverage
         ruby:
-          - "3.2"
+          - "2.7"
 
     runs-on: ubuntu-latest
     steps:
@@ -96,7 +100,6 @@ jobs:
 
       - name: Coveralls
         uses: coverallsapp/github-action@master
-        if: ${{ github.event_name == 'pull_request' }}
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
         continue-on-error: ${{ matrix.experimental != 'false' }}

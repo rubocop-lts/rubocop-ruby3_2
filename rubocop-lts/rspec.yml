@@ -7,3 +7,13 @@ inherit_gem:
 
 inherit_from:
   - strict/rspec.yml
+
+Style/MethodCallWithArgsParentheses:
+  Exclude:
+    - 'spec/**/*'
+    - 'test/**/*'
+
+Style/ClassAndModuleChildren:
+  Exclude:
+    - 'spec/**/*'
+    - 'test/**/*'

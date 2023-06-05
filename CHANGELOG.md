@@ -10,6 +10,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 ### Removed
 
+## [2.0.6] 2023-06-05
+### Added
+- Dependencies
+  - yard-junk
+  - redcarpet
+  - pry, IRB alternative
+  - pry-suite
+  - debase,  for IDE debugging
+- Some rules should ignore specs/tests
+  - Style/MethodCallWithArgsParentheses
+  - Style/ClassAndModuleChildren
+### Fixed
+- `yard` documentation task
+### Changed
+- Added Include to inherit_mode: merge
+- Updated dependency on standard-rubocop-lts
+
 ## [2.0.5] 2023-05-22
 ### Fixed
 - install_tasks and Railtie loading of rake tasks
@@ -54,7 +71,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - standard-rails
   - version_gem
 
-[Unreleased]: https://gitlab.com/rubocop-lts/rubocop-ruby3_2/-/compare/v2.0.5...HEAD
+[Unreleased]: https://gitlab.com/rubocop-lts/rubocop-ruby3_2/-/compare/v2.0.6...HEAD
+[2.0.6]: https://gitlab.com/rubocop-lts/rubocop-ruby3_2/-/compare/v2.0.5...v2.0.6
 [2.0.5]: https://gitlab.com/rubocop-lts/rubocop-ruby3_2/-/compare/v2.0.4...v2.0.5
 [2.0.4]: https://gitlab.com/rubocop-lts/rubocop-ruby3_2/-/compare/v2.0.3...v2.0.4
 [2.0.3]: https://gitlab.com/rubocop-lts/rubocop-ruby3_2/-/compare/v2.0.2...v2.0.3
