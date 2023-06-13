@@ -5,7 +5,11 @@ inherit_from:
 
 require:
   - rubocop-rails
-  - standard-rails
-  - betterlint
+
+inherit_gem:
+  betterlint:
+    - config/default.yml
+  standard-rails:
+    - config/base.yml
 
 # Rails specific customizations

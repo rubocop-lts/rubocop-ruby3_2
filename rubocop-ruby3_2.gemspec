@@ -52,32 +52,18 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   # linting
-  spec.add_dependency("rubocop-gradual", "~> 0.3")                  # >= 2.6.0
-  spec.add_dependency("rubocop-md", "~> 1.2")                       # >= 2.6.0
-  spec.add_dependency("rubocop-rake", "~> 0.6")                     # >= 2.5.0
-  spec.add_dependency("rubocop-shopify", "~> 2.13")                 # >= 2.7.0
-  spec.add_dependency("rubocop-thread_safety", "~> 0.5")            # >= 2.5.0
-  spec.add_dependency("standard-rubocop-lts", [">= 1.0.6", "< 2"])  # >= 2.6.0
-  spec.add_dependency("version_gem", [">= 1.1.2", "< 3"])           # >= 2.2.0
+  spec.add_dependency("rubocop-gradual", "~> 0.3", ">= 0.3.1")        # Ruby >= 2.6.0
+  spec.add_dependency("rubocop-md", "~> 1.2")                         # Ruby >= 2.6.0
+  spec.add_dependency("rubocop-rake", "~> 0.6")                       # Ruby >= 2.5.0
+  spec.add_dependency("rubocop-shopify", "~> 2.14")                   # Ruby >= 2.7.0
+  spec.add_dependency("rubocop-thread_safety", "~> 0.5", ">= 0.5.1")  # Ruby >= 2.5.0
+  spec.add_dependency("standard-rubocop-lts", "~> 1.0", ">= 1.0.7")   # Ruby >= 2.6.0
+  spec.add_dependency("version_gem", ">= 1.1.3", "< 3")               # Ruby >= 2.2.0
 
-  # RubyGems adding this gem will need to explicitly add rubocop-packaging to their dependencies.
-  # Since it only applies to rubygems we do not add it as a runtime dependency of this gem.
-  spec.add_development_dependency("rubocop-packaging", "~> 0.5")  # >= 2.6.0
-
-  # Code tested with RSpec will need to explicitly add rubocop-rspec to their dependencies.
-  # Since it only applies to RSpec, which some people or projects don't use,
-  #   we do not add it as a runtime dependency of this gem.
-  spec.add_development_dependency("rubocop-rspec", "~> 2.22")     # >= 2.7.0
-
-  # standard-rails pulls in rubocop-rails
-  # Rails apps will need to explicitly add standard-rails to their dependencies.
-  # Since it only applies to Rails, which some people or projects don't use,
-  #   we do not add it as a runtime dependency of this gem.
-  spec.add_development_dependency("standard-rails", "~> 0.1")     # >= 2.7.0
-
-  # betterlint pulls in rubocop & rubocop-rspec
-  # Rails apps will need to explicitly add betterlint to their dependencies.
-  # Since it only applies to Rails, which some people or projects don't use,
-  #   we do not add it as a runtime dependency of this gem.
-  spec.add_development_dependency("betterlint", "~> 1.4")         # >= 2.7.0
+  # Development dependencies
+  # Specify in Gemfile *only*.
+  # See:
+  #   - https://github.com/rubygems/rubygems/discussions/5065
+  #   - https://github.com/rubygems/rubygems/discussions/6726
+  #   - https://msp-greg.github.io/rubocop/RuboCop/Cop/Gemspec/DevelopmentDependencies.html
 end
