@@ -1,6 +1,7 @@
 require:
   # I setup RSpec on every project. Do you?
   - rubocop-rspec
+  - rubocop-factory_bot
 
 inherit_gem:
   rspec-block_is_expected: rubocop.yml
