@@ -51,19 +51,42 @@ Gem::Specification.new do |spec|
   spec.executables = []
   spec.require_paths = ["lib"]
 
-  # linting
-  spec.add_dependency("rubocop-gradual", "~> 0.3", ">= 0.3.1")        # Ruby >= 2.6.0
-  spec.add_dependency("rubocop-md", "~> 1.2")                         # Ruby >= 2.6.0
+  # Utilities
+  spec.add_dependency("version_gem", ">= 1.1.3", "< 3")               # Ruby >= 2.2.0
+
+  # Linting
+  spec.add_dependency("rubocop-gradual", "~> 0.3", ">= 0.3.4")        # Ruby >= 2.6.0
+  spec.add_dependency("rubocop-md", "~> 1.2", ">= 1.2.1")             # Ruby >= 2.6.0
   spec.add_dependency("rubocop-rake", "~> 0.6")                       # Ruby >= 2.5.0
   spec.add_dependency("rubocop-shopify", "~> 2.14")                   # Ruby >= 2.7.0
   spec.add_dependency("rubocop-thread_safety", "~> 0.5", ">= 0.5.1")  # Ruby >= 2.5.0
-  spec.add_dependency("standard-rubocop-lts", "~> 1.0", ">= 1.0.7")   # Ruby >= 2.6.0
-  spec.add_dependency("version_gem", ">= 1.1.3", "< 3")               # Ruby >= 2.2.0
+  spec.add_dependency("standard-rubocop-lts", "~> 1.0", ">= 1.0.9")   # Ruby >= 2.6.0
 
-  # Development dependencies
-  # Specify in Gemfile *only*.
+  # Internal/Private/Platform-specific development dependencies are specified in Gemfile *only*.
+  # External/Public development dependencies are specified in gemspec *only*.
   # See:
-  #   - https://github.com/rubygems/rubygems/discussions/5065
-  #   - https://github.com/rubygems/rubygems/discussions/6726
+  #   - https://github.com/rubygems/rubygems/discussions/5065#discussioncomment-7031586
   #   - https://msp-greg.github.io/rubocop/RuboCop/Cop/Gemspec/DevelopmentDependencies.html
+
+  # Utilities
+  spec.add_development_dependency("rake", "~> 13.1")  # Ruby >= 2.3.0
+
+  # Code Coverage
+  # CodeCov + GitHub setup is not via gems: https://github.com/marketplace/actions/codecov
+  spec.add_development_dependency("kettle-soup-cover", "~> 1.0", ">= 1.0.2")
+
+  # Documentation
+  spec.add_development_dependency("kramdown", "~> 2.4")
+  spec.add_development_dependency("yard", "~> 0.9", ">= 0.9.34")
+  spec.add_development_dependency("yard-junk", "~> 0.0", ">= 0.0.9")
+
+  # Additional linting gems that are not packaged with rubocop-lts, but are integrated by it.
+  spec.add_development_dependency("rubocop-packaging", "~> 0.5", ">= 0.5.2")  # Ruby >= 2.6.0
+  spec.add_development_dependency("rubocop-rspec", "~> 2.25")                 # Ruby >= 2.7.0
+
+  # Testing
+  spec.add_development_dependency("rspec", "~> 3.12")
+  spec.add_development_dependency("rspec-block_is_expected", "~> 1.0", ">= 1.0.5")
+  spec.add_development_dependency("rspec_junit_formatter", "~> 0.6")
+  spec.add_development_dependency("rspec-stubbed_env", "~> 1.0", ">= 1.0.1")
 end
