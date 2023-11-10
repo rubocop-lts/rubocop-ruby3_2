@@ -1,9 +1,10 @@
-# frozen_string_literal: true
-
 source "https://rubygems.org"
 
-eval_gemfile "./contexts/core.gemfile"
-eval_gemfile "./contexts/style.gemfile"
-eval_gemfile "./contexts/testing.gemfile" # Because some RSpec plugins ship Rubocop Rules
+git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
+git_source(:gitlab) { |repo_name| "https://gitlab.com/#{repo_name}" }
+
+# Root Gemfile is only for local development.
+# On CI we only need the gemspecs' dependencies (including development dependencies).
+# Exceptions, if any, will be found in gemfiles/*.gemfile
 
 gemspec path: "../"
