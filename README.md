@@ -16,6 +16,30 @@
     </a>
 </p>
 
+# 🦾 Rubocop::Ruby32
+
+💡 See the intro [blog post](https://dev.to/pboling/rubocop-ruby-matrix-gems-nj)!
+
+---
+
+<div id="badges">
+
+[![Liberapay Patrons][⛳liberapay-img]][⛳liberapay]
+[![Sponsor Me on Github][🖇sponsor-img]][🖇sponsor]
+<span class="badge-buymeacoffee">
+<a href="https://ko-fi.com/O5O86SNP4" target='_blank' title="Donate to my FLOSS or refugee efforts at ko-fi.com"><img src="https://img.shields.io/badge/buy%20me%20coffee-donate-yellow.svg" alt="Buy me coffee donation button" /></a>
+</span>
+<span class="badge-patreon">
+<a href="https://patreon.com/galtzo" title="Donate to my FLOSS or refugee efforts using Patreon"><img src="https://img.shields.io/badge/patreon-donate-yellow.svg" alt="Patreon donate button" /></a>
+</span>
+
+</div>
+
+[⛳liberapay-img]: https://img.shields.io/liberapay/patrons/pboling.svg?logo=liberapay
+[⛳liberapay]: https://liberapay.com/pboling/donate
+[🖇sponsor-img]: https://img.shields.io/badge/Sponsor_Me!-pboling.svg?style=social&logo=github
+[🖇sponsor]: https://github.com/sponsors/pboling
+
 ---
 
 NOTE: You might be interested in [`rubocop-lts`][rlts] which sits as a higher level than this gem, and can keep pace with whatever version of Ruby you happen to be on.
@@ -78,11 +102,8 @@ NOTE: You might be interested in [`rubocop-lts`][rlts] which sits as a higher le
 [⛳️ini-g]: https://rubygems.org/gems/rubocop-ruby3_2
 [⛳️ini-gh]: https://github.com/rubocop-lts/rubocop-ruby3_2
 
-# 🦾 Rubocop::Ruby32
-
-See the intro [blog post](https://dev.to/pboling/rubocop-ruby-matrix-gems-nj)!
-
-This gem configures many gems for you:
+This gem configures many gems for you,
+and configures all of them for a specific version of Ruby:
 
 - rubocop
 - rubocop-gradual
