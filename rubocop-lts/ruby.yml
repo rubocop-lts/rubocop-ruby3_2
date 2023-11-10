@@ -1,7 +1,7 @@
 # Customizations/Deviations from Standard/Shopify for Ruby Coding Standards
 
-# We want Exclude directives from different
-# config files to get merged, not overwritten
+# We want Exclude, and Include, directives from different
+#   config files to get merged, not overwritten
 inherit_mode:
   merge:
     - Exclude
