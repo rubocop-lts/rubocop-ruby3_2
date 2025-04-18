@@ -138,7 +138,7 @@ GEM
       unicode-display_width (>= 1.1.1, < 4)
     unicode-display_width (2.6.0)
     version_gem (1.1.6)
-    yard (0.9.34)
+    yard (0.9.37)
     yard-junk (0.0.9)
       backports (>= 3.18)
       rainbow
