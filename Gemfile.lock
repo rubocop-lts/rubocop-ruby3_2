@@ -30,8 +30,8 @@ GEM
       simplecov-rcov (~> 0.3, >= 0.3.3)
       simplecov_json_formatter (~> 0.1, >= 0.1.4)
       version_gem (~> 1.1, >= 1.1.4)
-    kramdown (2.4.0)
-      rexml
+    kramdown (2.5.1)
+      rexml (>= 3.3.9)
     language_server-protocol (3.17.0.3)
     lint_roller (1.1.0)
     parallel (1.23.0)
