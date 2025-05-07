@@ -6,6 +6,11 @@ inherit_from:
 require:
   - rubocop-rails
 
+# Rules are overridden in a LIFO stack.
+# If betterlint is listed first, and standard-rails after it,
+#   then betterlint's rules will take precedence.
+# This is the opposite of what you might expect.
+# Below: betterlint's rules override standard-rails rules
 inherit_gem:
   betterlint:
     - config/default.yml

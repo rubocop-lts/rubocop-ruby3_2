@@ -1,6 +1,6 @@
 # Customizations/Deviations from Standard/Shopify for Ruby Coding Standards
 
-# We want Exclude, and Include, directives from different
+# We want "Exclude" and "Include" directives from different
 #   config files to get merged, not overwritten
 inherit_mode:
   merge:
@@ -13,12 +13,10 @@ require:
   # The goal here is convention over configuration...
   # In light of that, we are well past having convened on Markdown for README docs and such.
   - rubocop-md
-  # Rubygems have Rakefile as a convention, and if they don't, why not?
+  # Rubygems, and Rails apps have Rakefile as a convention, and if they don't, why not?
+  # Other Ruby projects don't have a Rakefile by default, so if needed we could add a ruby_vanilla.yml.
+  # With Rakefile seems more common than without for projects that bother to install a linter.
   - rubocop-rake
-  # In the vast majority of cases, we will want to be warned about thread unsafe code.
-  # In those cases where we intentionally have thread unsafe code,
-  #   a rubocop:disable is the least of our concerns. :D
-  - rubocop-thread_safety
   # RuboCop Gradual can be used in "Require mode", which is a way to replace rubocop with rubocop-gradual:
   - rubocop/gradual/patch
 
