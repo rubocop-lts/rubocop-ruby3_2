@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
   spec.cert_chain = ["certs/pboling.pem"]
   spec.signing_key = File.expand_path("~/.ssh/gem-private_key.pem") if $PROGRAM_NAME.end_with?("gem")
 
-  spec.summary = "Rules for Rubies: Rubocop + Standard + Betterlint + Shopify + Gradual"
+  spec.summary = "Rules for Rubies: Rubocop + Standard + Betterlint + Gradual"
   spec.description = "Configure RuboCop + a bevy of friends to gradually lint Ruby 3.2 code"
   spec.homepage = "https://github.com/rubocop-lts/#{spec.name}"
   spec.license = "MIT"
@@ -58,7 +58,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency("rubocop-gradual", "~> 0.3", ">= 0.3.4")        # Ruby >= 2.6.0
   spec.add_dependency("rubocop-md", "~> 1.2", ">= 1.2.1")             # Ruby >= 2.6.0
   spec.add_dependency("rubocop-rake", "~> 0.6")                       # Ruby >= 2.5.0
-  spec.add_dependency("rubocop-shopify", "~> 2.14")                   # Ruby >= 2.7.0
   spec.add_dependency("rubocop-thread_safety", "~> 0.5", ">= 0.5.1")  # Ruby >= 2.5.0
   spec.add_dependency("standard-rubocop-lts", "~> 1.0", ">= 1.0.9")   # Ruby >= 2.6.0
 

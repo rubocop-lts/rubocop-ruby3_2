@@ -130,7 +130,6 @@ and configures all of them for a specific version of Ruby:
 - rubocop-gradual
 - rubocop-md
 - rubocop-rake
-- rubocop-shopify
 - rubocop-thread_safety
 - standard
 - standard-performance (incl. rubocop-performance)

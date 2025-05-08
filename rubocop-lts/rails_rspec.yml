@@ -1,4 +1,4 @@
-# Customizations/Deviations from Standard/Shopify for RuboCop-LTS Rails w/ RSpec Coding Standards
+# Customizations/Deviations from Standard for RuboCop-LTS Rails w/ RSpec Coding Standards
 inherit_from:
   - rails.yml
   - rspec.yml

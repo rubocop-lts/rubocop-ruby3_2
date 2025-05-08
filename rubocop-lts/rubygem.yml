@@ -1,4 +1,4 @@
-# Customizations/Deviations from Standard/Shopify for RubyGem Coding Standards
+# Customizations/Deviations from Standard for RubyGem Coding Standards
 inherit_from:
   - ruby.yml
 

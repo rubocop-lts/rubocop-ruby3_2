@@ -1,4 +1,4 @@
-# Customizations/Deviations from Standard/Shopify for RuboCop-LTS Rails Coding Standards
+# Customizations/Deviations from Standard for RuboCop-LTS Rails Coding Standards
 inherit_from:
   - ruby.yml
   - strict/rails.yml

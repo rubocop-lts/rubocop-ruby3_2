@@ -7,8 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Added
 ### Changed
+- Tidelift for Reporting Security vulnerabilities
 ### Fixed
 ### Removed
+- rubocop-shopify because they boiled the ocean
+  - turning cops off isn't copacetic with the goal of strict compatibility
 
 ## [2.0.7] 2023-06-13
 ### Changed

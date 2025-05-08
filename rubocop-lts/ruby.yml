@@ -1,4 +1,4 @@
-# Customizations/Deviations from Standard/Shopify for Ruby Coding Standards
+# Customizations/Deviations from Standard for Ruby Coding Standards
 
 # We want "Exclude" and "Include" directives from different
 #   config files to get merged, not overwritten
@@ -21,12 +21,8 @@ require:
   - rubocop/gradual/patch
 
 # Rules are overridden in a LIFO stack.
-# If rubocop-shopify is loaded first, and standard-rubocop-lts after it,
-#   then rubocop-shopify's rules will take precedence.
 # This is the opposite of what you might expect.
-# Below: rubocop-shopify rules will override standard-rubocop-lts's (i.e. standard's) rules.
 inherit_gem:
-  rubocop-shopify: rubocop.yml
   standard-rubocop-lts: config/ruby-3.2.yml
 
 inherit_from:
@@ -34,7 +30,7 @@ inherit_from:
 
 AllCops:
   # When the Ruby community, via RuboCop, adopts a new standard
-  #   (with additional filtering by standard.rb and rubocop-shopify) it is good enough for us!
+  #   (with additional filtering by standard.rb) it is good enough for us!
   NewCops: enable
 
 # Metrics cops are disabled in Standard by default
