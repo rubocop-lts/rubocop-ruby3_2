@@ -7,16 +7,18 @@ inherit_mode:
     - Exclude
     - Include
 
+plugins:
+  # Rubygems, and Rails apps have Rakefile as a convention, and if they don't, why not?
+  # Other Ruby projects don't have a Rakefile by default, so if needed we could add a ruby_vanilla.yml.
+  # With Rakefile seems more common than without for projects that bother to install a linter.
+  - rubocop-rake
+
 require:
   # Loads the Standard Ruby suite of gems, and configures for rubocop-lts:
   - standard-rubocop-lts
   # The goal here is convention over configuration...
   # In light of that, we are well past having convened on Markdown for README docs and such.
   - rubocop-md
-  # Rubygems, and Rails apps have Rakefile as a convention, and if they don't, why not?
-  # Other Ruby projects don't have a Rakefile by default, so if needed we could add a ruby_vanilla.yml.
-  # With Rakefile seems more common than without for projects that bother to install a linter.
-  - rubocop-rake
   # RuboCop Gradual can be used in "Require mode", which is a way to replace rubocop with rubocop-gradual:
   - rubocop/gradual/patch
 

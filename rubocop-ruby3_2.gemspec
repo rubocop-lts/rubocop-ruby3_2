@@ -77,7 +77,6 @@ Gem::Specification.new do |spec|
   # Documentation
   spec.add_development_dependency("kramdown", "~> 2.4")
   spec.add_development_dependency("yard", "~> 0.9", ">= 0.9.34")
-  spec.add_development_dependency("yard-junk", "~> 0.0", ">= 0.0.9")
 
   # Additional linting gems that are not packaged with rubocop-lts, but are integrated by it.
   spec.add_development_dependency("rubocop-packaging", "~> 0.5", ">= 0.5.2")  # Ruby >= 2.6.0

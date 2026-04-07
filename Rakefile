@@ -24,7 +24,7 @@ begin
     t.files = [
       # Splats (alphabetical)
       "lib/**/*.rake",
-      "lib/**/*.rb",
+      "lib/**/*.rb"
     ]
   end
   defaults << :yard

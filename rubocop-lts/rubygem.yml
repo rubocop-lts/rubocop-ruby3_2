@@ -2,5 +2,5 @@
 inherit_from:
   - ruby.yml
 
-require:
+plugins:
   - rubocop-packaging

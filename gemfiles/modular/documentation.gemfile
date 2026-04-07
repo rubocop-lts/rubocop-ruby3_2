@@ -1,0 +1,5 @@
+# frozen_string_literal: true
+
+# Documentation
+# yard-junk >= 0.1.0 is Ruby >= 3.1, so keep it out of the gemspec and load it only here.
+gem "yard-junk", "~> 0.1", ">= 0.1.0"
