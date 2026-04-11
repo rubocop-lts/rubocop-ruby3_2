@@ -79,9 +79,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency("yard", "~> 0.9", ">= 0.9.34")
 
   # Additional linting gems that are not packaged with rubocop-lts, but are integrated by it.
+  spec.add_development_dependency("rubocop-lts-rspec", "~> 1.0")              # Ruby >= 3.2.0
   spec.add_development_dependency("rubocop-packaging", "~> 0.5", ">= 0.5.2")  # Ruby >= 2.6.0
-  spec.add_development_dependency("rubocop-rspec", "~> 2.25")                 # Ruby >= 2.7.0
-
   # Testing
   spec.add_development_dependency("rspec", "~> 3.12")
   spec.add_development_dependency("rspec-block_is_expected", "~> 1.0", ">= 1.0.5")

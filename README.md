@@ -138,7 +138,7 @@ and configures all of them for a specific version of Ruby:
 
 And optionally, if you are using RSpec:
 
-- rubocop-rspec
+- rubocop-lts-rspec (which loads `rubocop-rspec`, `rubocop-rspec-extra`, `rubocop-env`, and `rubocop-factory_bot`)
 
 And optionally, if you are building a RubyGem:
 
@@ -265,6 +265,8 @@ If bundler is not being used to manage dependencies, install the gem by executin
     $ gem install rubocop-ruby3_2
 
 ## 🔧 Basic Usage
+
+If you use any of the `*_rspec.yml` entrypoints below, add `rubocop-lts-rspec` to your Gemfile or gemspec alongside this gem.
 
 If you are using Rails, building a Rubygem, or not using RSpec, see ["Advanced Usage"](#advanced-usage).
 Otherwise, if you using this in plain Ruby _and_ RSpec, you can add to the top of your project's `.rubocop.yml` configuration file:
