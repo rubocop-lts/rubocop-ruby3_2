@@ -59,7 +59,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency("rubocop-md", "~> 1.2", ">= 1.2.1")             # Ruby >= 2.6.0
   spec.add_dependency("rubocop-rake", "~> 0.6")                       # Ruby >= 2.5.0
   spec.add_dependency("rubocop-thread_safety", "~> 0.5", ">= 0.5.1")  # Ruby >= 2.5.0
-  spec.add_dependency("standard-rubocop-lts", "~> 1.0", ">= 1.0.9")   # Ruby >= 2.6.0
+  spec.add_dependency("standard-rubocop-lts", "~> 2.0", ">= 2.0.0")   # Ruby >= 3.2.0
 
   # Internal/Private/Platform-specific development dependencies are specified in Gemfile *only*.
   # External/Public development dependencies are specified in gemspec *only*.

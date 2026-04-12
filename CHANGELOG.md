@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 ### Changed
 - Tidelift for Reporting Security vulnerabilities
+- Updated `standard-rubocop-lts` dependency to the `2.x` series.
 ### Fixed
 ### Removed
 - rubocop-shopify because they boiled the ocean
