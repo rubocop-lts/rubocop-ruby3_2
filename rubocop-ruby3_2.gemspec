@@ -52,7 +52,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   # Utilities
-  spec.add_dependency("version_gem", ">= 1.1.3", "< 3")               # Ruby >= 2.2.0
+  spec.add_dependency("version_gem", ">= 1.1.9", "< 3")               # Ruby >= 2.2.0
 
   # Linting
   spec.add_dependency("rubocop-gradual", "~> 0.3", ">= 0.3.4")        # Ruby >= 2.6.0
@@ -85,5 +85,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency("rspec", "~> 3.12")
   spec.add_development_dependency("rspec-block_is_expected", "~> 1.0", ">= 1.0.5")
   spec.add_development_dependency("rspec_junit_formatter", "~> 0.6")
-  spec.add_development_dependency("rspec-stubbed_env", "~> 1.0", ">= 1.0.1")
+  spec.add_development_dependency("rspec-stubbed_env", "~> 1.1", ">= 1.1.1")
 end
