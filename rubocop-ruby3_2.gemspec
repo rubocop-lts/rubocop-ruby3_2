@@ -72,7 +72,7 @@ Gem::Specification.new do |spec|
 
   # Code Coverage
   # CodeCov + GitHub setup is not via gems: https://github.com/marketplace/actions/codecov
-  spec.add_development_dependency("kettle-soup-cover", "~> 1.0", ">= 1.0.4")
+  spec.add_development_dependency("kettle-soup-cover", "~> 1.1", ">= 1.1.3")
 
   # Documentation
   spec.add_development_dependency("kramdown", "~> 2.4")
