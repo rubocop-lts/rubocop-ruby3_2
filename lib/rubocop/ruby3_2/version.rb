@@ -3,7 +3,7 @@
 module Rubocop
   module Ruby32
     module Version
-      VERSION = "3.0.0"
+      VERSION = "3.0.1"
     end
   end
 end
