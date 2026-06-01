@@ -12,6 +12,8 @@ plugins:
   # Other Ruby projects don't have a Rakefile by default, so if needed we could add a ruby_vanilla.yml.
   # With Rakefile seems more common than without for projects that bother to install a linter.
   - rubocop-rake
+  # Warn about thread unsafe code in the broad LTS Ruby profile.
+  - rubocop-thread_safety
 
 require:
   # Loads the Standard Ruby suite of gems, and configures for rubocop-lts:
