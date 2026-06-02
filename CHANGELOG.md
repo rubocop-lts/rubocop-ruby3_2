@@ -13,7 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [3.0.2] 2026-06-01
 ### Added
 ### Changed
-- Raised the minimum supported Ruby version to 3.2.
+- Corrected gem metadata to declare the Ruby 3.2 runtime floor that has been implicit since the last major release.
 - Updated dependency floors:
   - `version_gem` to `~> 1.1`, `>= 1.1.9`.
   - `rubocop-gradual` to `~> 0.3`, `>= 0.3.6`.
@@ -25,7 +25,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Updated direct dependency floors and moved `rubocop-md` to plugin loading.
 ### Fixed
 ### Removed
-- Removed support for running this gem on Ruby < 3.2.
 
 ## [3.0.1] 2026-06-01
 ### Added
