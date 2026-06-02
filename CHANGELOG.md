@@ -14,7 +14,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 ### Changed
 - Raised the minimum supported Ruby version to 3.2.
-- Updated dependency floors to the latest compatible releases.
+- Updated dependency floors:
+  - `version_gem` to `~> 1.1`, `>= 1.1.9`.
+  - `rubocop-gradual` to `~> 0.3`, `>= 0.3.6`.
+  - `rubocop-md` to `~> 2.0`, `>= 2.0.4`.
+  - `rubocop-rake` to `~> 0.7`, `>= 0.7.1`.
+  - `rubocop-thread_safety` to `~> 0.7`, `>= 0.7.3`.
+  - `standard-rubocop-lts` to `~> 2.0`, `>= 2.0.3`.
+  - Release, lint, documentation, and test dependencies to their latest compatible floors.
 - Updated direct dependency floors and moved `rubocop-md` to plugin loading.
 ### Fixed
 ### Removed
