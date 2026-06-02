@@ -1,13 +1,13 @@
 PATH
   remote: .
   specs:
-    rubocop-ruby3_2 (3.0.1)
+    rubocop-ruby3_2 (3.0.2)
       rubocop-gradual (~> 0.3, >= 0.3.6)
       rubocop-md (~> 2.0, >= 2.0.4)
       rubocop-rake (~> 0.7, >= 0.7.1)
       rubocop-thread_safety (~> 0.7, >= 0.7.3)
       standard-rubocop-lts (~> 2.0, >= 2.0.3)
-      version_gem (>= 1.1.9, < 3)
+      version_gem (~> 1.1, >= 1.1.9)
 
 GEM
   remote: https://rubygems.org/
@@ -198,7 +198,7 @@ DEPENDENCIES
   rspec (~> 3.13, >= 3.13.2)
   rspec-block_is_expected (~> 1.0, >= 1.0.6)
   rspec-stubbed_env (~> 1.0, >= 1.0.4)
-  rspec_junit_formatter (~> 0.6)
+  rspec_junit_formatter (~> 0.6, >= 0.6.0)
   rubocop-lts-rspec (~> 1.0, >= 1.0.2)
   rubocop-packaging (~> 0.6, >= 0.6.0)
   rubocop-ruby3_2!

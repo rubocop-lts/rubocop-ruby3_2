@@ -20,7 +20,7 @@ Gem::Specification.new do |spec|
   spec.description = "Configure RuboCop + a bevy of friends to gradually lint Ruby 3.2 code"
   spec.homepage = "https://github.com/rubocop-lts/#{spec.name}"
   spec.license = "MIT"
-  spec.required_ruby_version = ">= 3.2"
+  spec.required_ruby_version = ">= 3.2.0"
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "#{spec.homepage}/tree/v#{spec.version}"
@@ -52,14 +52,14 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   # Utilities
-  spec.add_dependency("version_gem", ">= 1.1.9", "< 3")               # Ruby >= 2.2.0
+  spec.add_dependency("version_gem", "~> 1.1", ">= 1.1.9") # Ruby >= 2.2
 
   # Linting
-  spec.add_dependency("rubocop-gradual", "~> 0.3", ">= 0.3.6")        # Ruby >= 2.6.0
-  spec.add_dependency("rubocop-md", "~> 2.0", ">= 2.0.4")             # Ruby >= 2.7.0
-  spec.add_dependency("rubocop-rake", "~> 0.7", ">= 0.7.1")           # Ruby >= 2.7.0
-  spec.add_dependency("rubocop-thread_safety", "~> 0.7", ">= 0.7.3")  # Ruby >= 2.7.0
-  spec.add_dependency("standard-rubocop-lts", "~> 2.0", ">= 2.0.3")   # Ruby >= 3.2.0
+  spec.add_dependency("rubocop-gradual", "~> 0.3", ">= 0.3.6") # Ruby >= 2.6.0
+  spec.add_dependency("rubocop-md", "~> 2.0", ">= 2.0.4") # Ruby >= 2.7.0
+  spec.add_dependency("rubocop-rake", "~> 0.7", ">= 0.7.1") # Ruby >= 2.7.0
+  spec.add_dependency("rubocop-thread_safety", "~> 0.7", ">= 0.7.3") # Ruby >= 2.7.0
+  spec.add_dependency("standard-rubocop-lts", "~> 2.0", ">= 2.0.3") # Ruby >= 3.2.0
 
   # Internal/Private/Platform-specific development dependencies are specified in Gemfile *only*.
   # External/Public development dependencies are specified in gemspec *only*.
@@ -68,22 +68,22 @@ Gem::Specification.new do |spec|
   #   - https://msp-greg.github.io/rubocop/RuboCop/Cop/Gemspec/DevelopmentDependencies.html
 
   # Utilities
-  spec.add_development_dependency("rake", "~> 13.4", ">= 13.4.2")  # Ruby >= 2.3.0
+  spec.add_development_dependency("rake", "~> 13.4", ">= 13.4.2") # Ruby >= 2.3
 
   # Code Coverage
   # CodeCov + GitHub setup is not via gems: https://github.com/marketplace/actions/codecov
-  spec.add_development_dependency("kettle-soup-cover", "~> 1.1", ">= 1.1.3")
+  spec.add_development_dependency("kettle-soup-cover", "~> 1.1", ">= 1.1.3") # Ruby >= 2.7.0
 
   # Documentation
-  spec.add_development_dependency("kramdown", "~> 2.5", ">= 2.5.2")
-  spec.add_development_dependency("yard", "~> 0.9", ">= 0.9.44")
+  spec.add_development_dependency("kramdown", "~> 2.5", ">= 2.5.2") # Ruby >= 2.5
+  spec.add_development_dependency("yard", "~> 0.9", ">= 0.9.44") # Ruby >= 1.8.7
 
   # Additional linting gems that are not packaged with rubocop-lts, but are integrated by it.
-  spec.add_development_dependency("rubocop-lts-rspec", "~> 1.0", ">= 1.0.2")  # Ruby >= 3.2.0
-  spec.add_development_dependency("rubocop-packaging", "~> 0.6", ">= 0.6.0")   # Ruby >= 2.7.0
+  spec.add_development_dependency("rubocop-lts-rspec", "~> 1.0", ">= 1.0.2") # Ruby >= 3.2.0
+  spec.add_development_dependency("rubocop-packaging", "~> 0.6", ">= 0.6.0") # Ruby >= 2.7.0
   # Testing
-  spec.add_development_dependency("rspec", "~> 3.13", ">= 3.13.2")
-  spec.add_development_dependency("rspec-block_is_expected", "~> 1.0", ">= 1.0.6")
-  spec.add_development_dependency("rspec_junit_formatter", "~> 0.6")
-  spec.add_development_dependency("rspec-stubbed_env", "~> 1.0", ">= 1.0.4")
+  spec.add_development_dependency("rspec", "~> 3.13", ">= 3.13.2") # Ruby >= 0
+  spec.add_development_dependency("rspec-block_is_expected", "~> 1.0", ">= 1.0.6") # Ruby >= 1.8.7
+  spec.add_development_dependency("rspec_junit_formatter", "~> 0.6", ">= 0.6.0") # Ruby >= 2.3.0
+  spec.add_development_dependency("rspec-stubbed_env", "~> 1.0", ">= 1.0.4") # Ruby >= 1.8.7
 end
