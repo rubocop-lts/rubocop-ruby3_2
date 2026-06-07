@@ -1,99 +1,163 @@
 # frozen_string_literal: true
 
-# Get the GEMFILE_VERSION without *require* "my_gem/version", for code coverage accuracy
-# See: https://github.com/simplecov-ruby/simplecov/issues/557#issuecomment-825171399
-load "lib/rubocop/ruby3_2/version.rb"
-gem_version = Rubocop::Ruby32::Version::VERSION
-Rubocop::Ruby32::Version.send(:remove_const, :VERSION)
+# kettle-jem:freeze
+# To retain chunks of comments & code during kettle-jem templating:
+# Wrap custom sections with freeze markers (e.g., as above and below this comment chunk).
+# kettle-jem will then preserve content between those markers across template runs.
+# kettle-jem:unfreeze
 
 Gem::Specification.new do |spec|
   spec.name = "rubocop-ruby3_2"
-  spec.version = gem_version
+  spec.version = Module.new.tap { |mod| Kernel.load("#{__dir__}/lib/rubocop/ruby3_2/version.rb", mod) }::Rubocop::Ruby32::Version::VERSION
   spec.authors = ["Peter Boling"]
   spec.email = ["peter.boling@gmail.com"]
 
-  # Linux distros may package ruby gems differently,
-  #   and securely certify them independently via alternate package management systems.
-  # Ref: https://gitlab.com/oauth-xx/version_gem/-/issues/3
-  # Hence, only enable signing if the cert_file is present.
+  spec.summary = "🦾 Rules for Rubies: Rubocop + Standard + Betterlint + Gradual"
+  spec.description = "🦾 Configure RuboCop + a bevy of friends to gradually lint Ruby 3.2 code"
+  spec.homepage = "https://github.com/rubocop-lts/rubocop-ruby3_2"
+  spec.licenses = ["MIT"]
+  spec.required_ruby_version = ">= 3.2.0"
+
+  # Linux distros often package gems and securely certify them independent
+  #   of the official RubyGem certification process. Allowed via ENV["SKIP_GEM_SIGNING"]
+  # Ref: https://gitlab.com/ruby-oauth/version_gem/-/issues/3
+  # Hence, only enable signing if `SKIP_GEM_SIGNING` is not set in ENV.
   # See CONTRIBUTING.md
-  default_user_cert = "certs/#{ENV.fetch("GEM_CERT_USER", ENV["USER"])}.pem"
-  default_user_cert_path = File.join(__dir__, default_user_cert)
-  cert_file_path = ENV.fetch("GEM_CERT_PATH", default_user_cert_path)
-  cert_chain = cert_file_path.split(",")
-  if cert_file_path && cert_chain.map { |fp| File.exist?(fp) }
-    spec.cert_chain = cert_chain
-    if $PROGRAM_NAME.end_with?("gem", "rake") && ARGV[0] == "build"
-      spec.signing_key = File.expand_path("~/.ssh/gem-private_key.pem")
+  unless ENV.include?("SKIP_GEM_SIGNING")
+    user_cert = "certs/#{ENV.fetch("GEM_CERT_USER", ENV["USER"])}.pem"
+    cert_file_path = File.join(__dir__, user_cert)
+    cert_chain = cert_file_path.split(",")
+    cert_chain.select! { |fp| File.exist?(fp) }
+    if cert_file_path && cert_chain.any?
+      spec.cert_chain = cert_chain
+      if $PROGRAM_NAME.end_with?("gem") && ARGV[0] == "build"
+        spec.signing_key = File.join(Gem.user_home, ".ssh", "gem-private_key.pem")
+      end
     end
   end
 
-  spec.summary = "Rules for Rubies: Rubocop + Standard + Betterlint + Gradual"
-  spec.description = "Configure RuboCop + a bevy of friends to gradually lint Ruby 3.2 code"
-  spec.homepage = "https://github.com/rubocop-lts/#{spec.name}"
-  spec.license = "MIT"
-  spec.required_ruby_version = ">= 3.2.0"
-
-  spec.metadata["homepage_uri"] = spec.homepage
+  spec.metadata["homepage_uri"] = "https://rubocop-ruby3-2.galtzo.com"
   spec.metadata["source_code_uri"] = "#{spec.homepage}/tree/v#{spec.version}"
   spec.metadata["changelog_uri"] = "#{spec.homepage}/blob/v#{spec.version}/CHANGELOG.md"
   spec.metadata["bug_tracker_uri"] = "#{spec.homepage}/issues"
   spec.metadata["documentation_uri"] = "https://www.rubydoc.info/gems/#{spec.name}/#{spec.version}"
-  spec.metadata["funding_uri"] = "https://liberapay.com/pboling"
+  spec.metadata["funding_uri"] = "https://github.com/sponsors/rubocop-lts"
   spec.metadata["wiki_uri"] = "#{spec.homepage}/wiki"
+  spec.metadata["news_uri"] = "https://www.railsbling.com/tags/#{spec.name}"
+  spec.metadata["discord_uri"] = "https://discord.gg/3qme4XHNKN"
   spec.metadata["rubygems_mfa_required"] = "true"
 
-  # Specify which files should be added to the gem when it is released.
-  spec.files = Dir[
-    # Splats (alphabetical)
-    "lib/**/*.rake",
-    "lib/**/*.rb",
-    "sig/**/*.rbs",
-    "rubocop-lts/**/*.yml",
+  enumerate_package_files = lambda do |root|
+    Dir.glob(File.join(root, "**", "*"), File::FNM_DOTMATCH).select do |path|
+      File.file?(path) && ![".", ".."].include?(File.basename(path))
+    end
+  end
+
+  # Specify which files are part of the released package.
+  spec.files = [
+    # Code / tasks / data (NOTE: exe/ is specified via spec.bindir and spec.executables below)
+    *enumerate_package_files.call("lib"),
+    # Executables and executable support scripts
+    *enumerate_package_files.call("exe"),
+    # Public certs for gem signing
+    *enumerate_package_files.call("certs"),
+    # Signatures
+    *enumerate_package_files.call("sig")
+  ]
+
+  # Automatically included with gem package, no need to list again in files.
+  spec.extra_rdoc_files = Dir[
     # Files (alphabetical)
     "CHANGELOG.md",
+    "CITATION.cff",
     "CODE_OF_CONDUCT.md",
     "CONTRIBUTING.md",
-    "LICENSE.txt",
+    "FUNDING.md",
+    "LICENSE.md",
     "README.md",
-    "rubocop.yml",
+    "RUBOCOP.md",
     "SECURITY.md"
   ]
+  spec.rdoc_options += [
+    "--title",
+    "#{spec.name} - #{spec.summary}",
+    "--main",
+    "README.md",
+    "--exclude",
+    "^sig/",
+    "--line-numbers",
+    "--inline-source",
+    "--quiet"
+  ]
   spec.bindir = "exe"
+  # Listed files are the relative paths from bindir above.
   spec.executables = []
   spec.require_paths = ["lib"]
 
   # Utilities
-  spec.add_dependency("version_gem", "~> 1.1", ">= 1.1.9") # Ruby >= 2.2
-
-  # Linting
   spec.add_dependency("rubocop-gradual", "~> 0.3", ">= 0.3.6") # Ruby >= 2.6.0
   spec.add_dependency("rubocop-md", "~> 2.0", ">= 2.0.4") # Ruby >= 2.7.0
   spec.add_dependency("rubocop-rake", "~> 0.7", ">= 0.7.1") # Ruby >= 2.7.0
   spec.add_dependency("rubocop-thread_safety", "~> 0.7", ">= 0.7.3") # Ruby >= 2.7.0
   spec.add_dependency("standard-rubocop-lts", "~> 2.0", ">= 2.0.3") # Ruby >= 3.2.0
+  spec.add_dependency("version_gem", "~> 1.1", ">= 1.1.11")              # ruby >= 2.2.0
 
-  # Internal/Private/Platform-specific development dependencies are specified in Gemfile *only*.
-  # External/Public development dependencies are specified in gemspec *only*.
-  # See:
-  #   - https://github.com/rubygems/rubygems/discussions/5065#discussioncomment-7031586
-  #   - https://msp-greg.github.io/rubocop/RuboCop/Cop/Gemspec/DevelopmentDependencies.html
+  # NOTE: It is preferable to list development dependencies in the gemspec due to increased
+  #       visibility and discoverability.
+  #       However, development dependencies in gemspec will install on
+  #       all versions of Ruby that will run in CI.
+  #       This gem, and its gemspec runtime dependencies, will install on Ruby down to 3.2.0.
+  #       This gem, and its gemspec development dependencies, will install on Ruby down to 3.2.0.
+  #       Thus, dev dependencies in gemspec must have
+  #
+  #       required_ruby_version ">= 3.2.0" (or lower)
+  #
+  #       Development dependencies that require strictly newer Ruby versions should be in a "gemfile",
+  #       and preferably a modular one (see gemfiles/modular/*.gemfile).
 
-  # Utilities
+  # Dev, Test, & Release Tasks
+  spec.add_development_dependency("kettle-dev", "~> 2.1", ">= 2.1.1")      # ruby >= 3.2.0
+
+  # Security
+  spec.add_development_dependency("bundler-audit", "~> 0.9.3")                      # ruby >= 2.0.0
+
+  # Tasks
   spec.add_development_dependency("rake", "~> 13.4", ">= 13.4.2") # Ruby >= 2.3
 
-  # Code Coverage
-  # CodeCov + GitHub setup is not via gems: https://github.com/marketplace/actions/codecov
-  spec.add_development_dependency("kettle-soup-cover", "~> 1.1", ">= 1.1.3") # Ruby >= 2.7.0
+  # Debugging
+  spec.add_development_dependency("require_bench", "~> 1.0", ">= 1.0.4")            # ruby >= 2.2.0
 
-  # Documentation
+  # Testing
+  spec.add_development_dependency("appraisal2", "~> 3.1", ">= 3.1.1")               # ruby >= 1.8.7, for testing against multiple versions of dependencies
+  spec.add_development_dependency("kettle-test", "~> 2.0", ">= 2.0.3")             # ruby >= 3.2.0
+  spec.add_development_dependency("turbo_tests2", "~> 3.1", ">= 3.1.1")            # ruby >= 2.4.0, default kettle-test runner
+
+  # Releasing
+  spec.add_development_dependency("ruby-progressbar", "~> 1.13")                    # ruby >= 0
+  spec.add_development_dependency("stone_checksums", "~> 1.0", ">= 1.0.3")          # ruby >= 2.2.0
+
+  # Git integration (optional)
+  # The 'git' gem is optional; rubocop-ruby3_2 falls back to shelling out to `git` if it is not present.
+  # The current release of the git gem depends on activesupport, which makes it too heavy to depend on directly
+  # spec.add_dependency("git", ">= 1.19.1")                               # ruby >= 2.3
+
+  # Development tasks
+  # The cake is a lie. erb v2.2, the oldest release, was never compatible with Ruby 2.3.
+  # This means we have no choice but to use the erb that shipped with Ruby 2.3
+  # /opt/hostedtoolcache/Ruby/2.3.8/x64/lib/ruby/gems/2.3.0/gems/erb-2.2.2/lib/erb.rb:670:in `prepare_trim_mode': undefined method `match?' for "-":String (NoMethodError)
+  # spec.add_development_dependency("erb", ">= 2.2")                                  # ruby >= 2.3.0, not SemVer, old rubies get dropped in a patch.
+  spec.add_development_dependency("gitmoji-regex", "~> 2.0", ">= 2.0.1")            # ruby >= 2.4
+
+  # HTTP recording for deterministic specs
+  # In Ruby 3.5 (HEAD) the CGI library has been pared down, so we also need to depend on gem "cgi" for ruby@head
+  # This is done in the "head" appraisal.
+  # See: https://github.com/vcr/vcr/issues/1057
+  # spec.add_development_dependency("vcr", ">= 4")                        # 6.0 claims to support ruby >= 2.3, but fails on ruby 2.4
+  # spec.add_development_dependency("webmock", ">= 3")                    # Last version to support ruby >= 2.3
   spec.add_development_dependency("kramdown", "~> 2.5", ">= 2.5.2") # Ruby >= 2.5
   spec.add_development_dependency("yard", "~> 0.9", ">= 0.9.44") # Ruby >= 1.8.7
-
-  # Additional linting gems that are not packaged with rubocop-lts, but are integrated by it.
   spec.add_development_dependency("rubocop-lts-rspec", "~> 1.0", ">= 1.0.2") # Ruby >= 3.2.0
   spec.add_development_dependency("rubocop-packaging", "~> 0.6", ">= 0.6.0") # Ruby >= 2.7.0
-  # Testing
   spec.add_development_dependency("rspec", "~> 3.13", ">= 3.13.2") # Ruby >= 0
   spec.add_development_dependency("rspec-block_is_expected", "~> 1.0", ">= 1.0.6") # Ruby >= 1.8.7
   spec.add_development_dependency("rspec_junit_formatter", "~> 0.6", ">= 0.6.0") # Ruby >= 2.3.0
