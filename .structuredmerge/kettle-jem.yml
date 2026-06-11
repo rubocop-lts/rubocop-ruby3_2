@@ -370,9 +370,9 @@ defaults:
 #   from the gemspec via safe derivation. After that, destination values win.
 tokens:
   forge:
-    gh_user: "rubocop-lts"        # GitHub username only, no @, no URL. Used for GitHub Sponsors and profile links. ENV: KJ_GH_USER
-    gl_user: "rubocop-lts"        # GitLab username only, no @, no URL. Used for profile links. ENV: KJ_GL_USER
-    cb_user: "rubocop-lts"        # Codeberg username only, no @, no URL. Used for profile links. ENV: KJ_CB_USER
+    gh_user: "pboling"        # GitHub username only, no @, no URL. Used for GitHub Sponsors and profile links. ENV: KJ_GH_USER
+    gl_user: "pboling"        # GitLab username only, no @, no URL. Used for profile links. ENV: KJ_GL_USER
+    cb_user: "pboling"        # Codeberg username only, no @, no URL. Used for profile links. ENV: KJ_CB_USER
     sh_user: "galtzo"        # SourceHut username only, no leading ~, no URL. Used as https://sr.ht/~<value>/. ENV: KJ_SH_USER
 
   author:

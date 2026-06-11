@@ -3,7 +3,7 @@
 module Rubocop
   module Ruby32
     module Version
-      VERSION = "3.0.2"
+      VERSION = "3.0.3"
     end
     VERSION = Version::VERSION # Traditional Constant Location
   end
