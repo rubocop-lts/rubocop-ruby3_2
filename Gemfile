@@ -21,6 +21,35 @@ gemspec
 # Local workspace dependency wiring for *_local.gemfile overrides
 gem "nomono", "~> 1.0", ">= 1.0.4", require: false # ruby >= 2.2
 
+# Direct sibling dependencies (env-switched via RUBOCOP_LTS_DEV)
+direct_sibling_gems = %w[
+  standard-rubocop-lts
+]
+direct_sibling_dev = ENV.fetch("RUBOCOP_LTS_DEV", "")
+direct_sibling_local =
+  !direct_sibling_dev.empty? && !%w[false 0 no off].include?(direct_sibling_dev.downcase)
+direct_sibling_templating = ENV.fetch("K_JEM_TEMPLATING", "false").casecmp("true").zero?
+
+if direct_sibling_gems.any? &&
+    (direct_sibling_local ||
+      ENV.fetch("K_JEM_TEMPLATING", "false").casecmp("true").zero?)
+  begin
+    require "nomono/bundler"
+    if direct_sibling_templating && !direct_sibling_local
+      ENV["RUBOCOP_LTS_DEV"] = File.expand_path("..", __dir__)
+    end
+
+    eval_nomono_gems(
+      gems: direct_sibling_gems,
+      prefix: "RUBOCOP_LTS",
+      path_env: "RUBOCOP_LTS_DEV",
+      root: ["src", "my", "rubocop-lts"]
+    )
+  rescue LoadError
+    warn "Install nomono to enable RUBOCOP_LTS_DEV local sibling-gem dependencies."
+  end
+end
+
 # Templating (env-switched: SMORG_RB_DEV=/path/to/structuredmerge/ruby/gems for local paths)
 eval_gemfile "gemfiles/modular/templating.gemfile" if ENV.fetch("K_JEM_TEMPLATING", "false").casecmp("true").zero?
 
