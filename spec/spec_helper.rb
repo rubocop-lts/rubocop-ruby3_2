@@ -10,9 +10,9 @@ begin
   require "kettle-soup-cover"
   if Kettle::Soup::Cover::DO_COV
     require "simplecov"
+    require "kettle/soup/cover/config"
     SimpleCov.start
   end
-  require "simplecov" if Kettle::Soup::Cover::DO_COV # `.simplecov` is run here!
 rescue LoadError => error
   # check the error message and re-raise when unexpected
   raise error unless error.message.include?("kettle")
@@ -52,7 +52,6 @@ end
 
 # Load Code Coverage as the last thing before this gem
 if RUN_COVERAGE
-  require "simplecov" # Config file `.simplecov` is run immediately when simplecov loads
 end
 
 # This gem
