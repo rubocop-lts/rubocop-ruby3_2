@@ -16,7 +16,7 @@ PATH
       standard (~> 1.54, >= 1.54.0)
       standard-custom (~> 1.0, >= 1.0.2)
       standard-performance (~> 1.9, >= 1.9.0)
-      version_gem (~> 1.1, >= 1.1.12)
+      version_gem (~> 1.1, >= 1.1.13)
 
 GEM
   remote: https://gem.coop/
@@ -136,8 +136,7 @@ GEM
       racc (~> 1.4)
     nokogiri (1.19.4-x86_64-linux-gnu)
       racc (~> 1.4)
-    nomono (1.0.4)
-      version_gem (~> 1.1, >= 1.1.11)
+    nomono (1.0.6)
     openssl (4.0.2)
     ostruct (0.6.3)
     parallel (1.28.0)
@@ -335,7 +334,7 @@ GEM
     unicode-display_width (3.2.0)
       unicode-emoji (~> 4.1)
     unicode-emoji (4.2.0)
-    version_gem (1.1.12)
+    version_gem (1.1.13)
     webrick (1.9.2)
     yaml-converter (0.2.1)
       hexapdf (>= 1.8, < 2)
@@ -386,7 +385,7 @@ DEPENDENCIES
   kramdown (~> 2.5, >= 2.5.2, >= 2.5.1)
   kramdown-parser-gfm (~> 1.1)
   mutex_m (~> 0.2)
-  nomono (~> 1.0, >= 1.0.4)
+  nomono (~> 1.0, >= 1.0.6)
   rake (~> 13.4, >= 13.4.2)
   rbs (>= 3.0)
   rdoc (~> 6.11)
