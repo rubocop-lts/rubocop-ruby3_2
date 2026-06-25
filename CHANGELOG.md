@@ -28,6 +28,9 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Fixed
 
+- Restored the destination `spec.files` package declaration so the built gem
+  includes its `rubocop-lts/*.yml` RuboCop configuration files.
+
 ### Security
 
 ## [3.0.4] - 2026-06-25
