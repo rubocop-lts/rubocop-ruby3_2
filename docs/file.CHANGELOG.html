@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  File: CHANGELOG
+  
+    &mdash; Documentation by YARD 0.9.44
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+
+  <link rel="stylesheet" href="css/common.css" type="text/css">
+
+<script type="text/javascript">
+  pathId = "CHANGELOG";
+  relpath = '';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="main_progress" aria-hidden="true"></div>
+
+    <div class="nav_wrap">
+      <iframe id="nav" src="file_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="_index.html">Index</a> &raquo; 
+    <span class="title">File: CHANGELOG</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><div id='filecontents'><h1 id="changelog">Changelog</h1>
+
+<p><a href="https://semver.org/spec/v2.0.0.html"><img src="https://img.shields.io/badge/semver-2.0.0-FFDD67.svg?style=flat" alt="SemVer 2.0.0"></a> <a href="https://keepachangelog.com/en/1.0.0/"><img src="https://img.shields.io/badge/keep--a--changelog-1.0.0-FFDD67.svg?style=flat" alt="Keep-A-Changelog 1.0.0"></a></p>
+
+<p>All notable changes to this project will be documented in this file.</p>
+
+<p>The format is based on <a href="https://keepachangelog.com/en/1.0.0/">Keep a Changelog</a>,<br>
+and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semantic Versioning</a>,<br>
+and <a href="https://tom.preston-werner.com/2022/05/23/major-version-numbers-are-not-sacred.html">yes</a>, platform and engine support are part of the <a href="https://github.com/semver/semver/issues/716#issuecomment-869336139">public API</a>.<br>
+Please file a bug if you notice a violation of semantic versioning.</p>
+
+<h2 id="unreleased"><a href="https://github.com/rubocop-lts/rubocop-ruby3_2/compare/v3.0.4...HEAD">Unreleased</a></h2>
+
+<h3 id="added">Added</h3>
+
+<h3 id="changed">Changed</h3>
+
+<h3 id="deprecated">Deprecated</h3>
+
+<h3 id="removed">Removed</h3>
+
+<h3 id="fixed">Fixed</h3>
+
+<h3 id="security">Security</h3>
+
+<h2 id="304---2026-06-25">
+<a href="https://github.com/rubocop-lts/rubocop-ruby3_2/compare/v3.0.2...v3.0.4">3.0.4</a> - 2026-06-25</h2>
+
+<ul>
+  <li>TAG: <a href="https://github.com/rubocop-lts/rubocop-ruby3_2/releases/tag/v3.0.4">v3.0.4</a>
+</li>
+  <li>COVERAGE: 55.17% – 16/29 lines in 5 files</li>
+  <li>BRANCH COVERAGE: 0.00% – 0/2 branches in 5 files</li>
+  <li>42.86% documented</li>
+</ul>
+
+<h3 id="added-1">Added</h3>
+
+<ul>
+  <li>Added support for JRuby 10.1 and TruffleRuby 34.0.</li>
+</ul>
+
+<h3 id="changed-1">Changed</h3>
+
+<ul>
+  <li>Retemplated project metadata and CI/development automation with <code>kettle-jem</code> v7.0.0.</li>
+</ul>
+
+<h3 id="fixed-1">Fixed</h3>
+
+<ul>
+  <li>Restored <code>docs/CNAME</code> so the generated documentation site keeps its custom domain.</li>
+  <li>Corrected misspelled contact metadata to use <code>galtzo.com</code>.</li>
+</ul>
+
+<h2 id="302-2026-06-01">
+<a href="https://gitlab.com/rubocop-lts/rubocop-ruby3_2/-/compare/v3.0.1...v3.0.2">3.0.2</a> 2026-06-01</h2>
+
+<h3 id="added-2">Added</h3>
+
+<h3 id="changed-2">Changed</h3>
+
+<ul>
+  <li>Corrected gem metadata to declare the Ruby 3.2 runtime floor that has been implicit since the last major release.</li>
+  <li>Updated dependency floors:
+    <ul>
+      <li>
+<code>version_gem</code> to <code>~&gt; 1.1</code>, <code>&gt;= 1.1.9</code>.</li>
+      <li>
+<code>rubocop-gradual</code> to <code>~&gt; 0.3</code>, <code>&gt;= 0.3.6</code>.</li>
+      <li>
+<code>rubocop-md</code> to <code>~&gt; 2.0</code>, <code>&gt;= 2.0.4</code>.</li>
+      <li>
+<code>rubocop-rake</code> to <code>~&gt; 0.7</code>, <code>&gt;= 0.7.1</code>.</li>
+      <li>
+<code>rubocop-thread_safety</code> to <code>~&gt; 0.7</code>, <code>&gt;= 0.7.3</code>.</li>
+      <li>
+<code>standard-rubocop-lts</code> to <code>~&gt; 2.0</code>, <code>&gt;= 2.0.3</code>.</li>
+      <li>Release, lint, documentation, and test dependencies to their latest compatible floors.</li>
+    </ul>
+  </li>
+  <li>Updated direct dependency floors and moved <code>rubocop-md</code> to plugin loading.</li>
+</ul>
+
+<h3 id="fixed-2">Fixed</h3>
+
+<h3 id="removed-1">Removed</h3>
+
+<h2 id="301-2026-06-01">
+<a href="https://gitlab.com/rubocop-lts/rubocop-ruby3_2/-/compare/v3.0.0...v3.0.1">3.0.1</a> 2026-06-01</h2>
+
+<h3 id="added-3">Added</h3>
+
+<h3 id="changed-3">Changed</h3>
+
+<ul>
+  <li>Load <code>rubocop-thread_safety</code> through RuboCop’s plugin API.</li>
+</ul>
+
+<h3 id="fixed-3">Fixed</h3>
+
+<h3 id="removed-2">Removed</h3>
+
+<h2 id="300-2026-05-30">
+<a href="https://gitlab.com/rubocop-lts/rubocop-ruby3_2/-/compare/v2.0.7...v3.0.0">3.0.0</a> 2026-05-30</h2>
+
+<h3 id="added-4">Added</h3>
+
+<h3 id="changed-4">Changed</h3>
+
+<ul>
+  <li>Tidelift for Reporting Security vulnerabilities</li>
+  <li>Updated <code>standard-rubocop-lts</code> dependency to the <code>2.x</code> series.</li>
+</ul>
+
+<h3 id="fixed-4">Fixed</h3>
+
+<h3 id="removed-3">Removed</h3>
+
+<ul>
+  <li>rubocop-shopify because they boiled the ocean
+    <ul>
+      <li>turning cops off isn’t copacetic with the goal of strict compatibility</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="207-2023-06-13">
+<a href="https://gitlab.com/rubocop-lts/rubocop-ruby3_2/-/compare/v2.0.6...v2.0.7">2.0.7</a> 2023-06-13</h2>
+
+<h3 id="changed-5">Changed</h3>
+
+<ul>
+  <li>Moved development dependencies out of gemspec</li>
+  <li>rubocop to 1.52.1</li>
+  <li>rubocop-shopify to 2.14</li>
+  <li>standard-custom to 1.0.1</li>
+  <li>standard-rubocop-lts to 1.0.7</li>
+  <li>version_gem to 1.1.3</li>
+</ul>
+
+<h3 id="fixed-5">Fixed</h3>
+
+<ul>
+  <li>rubocop/rails.yml config
+    <ul>
+      <li>betterlint integration</li>
+      <li>standard-rails integration</li>
+    </ul>
+  </li>
+  <li>bin/pry now pre-loads this library</li>
+</ul>
+
+<h2 id="206-2023-06-05">
+<a href="https://gitlab.com/rubocop-lts/rubocop-ruby3_2/-/compare/v2.0.5...v2.0.6">2.0.6</a> 2023-06-05</h2>
+
+<h3 id="added-5">Added</h3>
+
+<ul>
+  <li>Dependencies
+    <ul>
+      <li>yard-junk</li>
+      <li>redcarpet</li>
+      <li>pry, IRB alternative</li>
+      <li>pry-suite</li>
+      <li>debase,  for IDE debugging</li>
+    </ul>
+  </li>
+  <li>Some rules should ignore specs/tests
+    <ul>
+      <li>Style/MethodCallWithArgsParentheses</li>
+      <li>Style/ClassAndModuleChildren</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="fixed-6">Fixed</h3>
+
+<ul>
+  <li>
+<code>yard</code> documentation task</li>
+</ul>
+
+<h3 id="changed-6">Changed</h3>
+
+<ul>
+  <li>Added Include to inherit_mode: merge</li>
+  <li>Updated dependency on standard-rubocop-lts</li>
+</ul>
+
+<h2 id="205-2023-05-22">
+<a href="https://gitlab.com/rubocop-lts/rubocop-ruby3_2/-/compare/v2.0.4...v2.0.5">2.0.5</a> 2023-05-22</h2>
+
+<h3 id="fixed-7">Fixed</h3>
+
+<ul>
+  <li>install_tasks and Railtie loading of rake tasks</li>
+</ul>
+
+<h3 id="changed-7">Changed</h3>
+
+<ul>
+  <li>tasks.rake =&gt; tasks.rb</li>
+</ul>
+
+<h2 id="204-2023-05-21">
+<a href="https://gitlab.com/rubocop-lts/rubocop-ruby3_2/-/compare/v2.0.3...v2.0.4">2.0.4</a> 2023-05-21</h2>
+
+<h3 id="fixed-8">Fixed</h3>
+
+<ul>
+  <li>Ship rake tasks in gem package</li>
+</ul>
+
+<h2 id="203-2023-05-19">
+<a href="https://gitlab.com/rubocop-lts/rubocop-ruby3_2/-/compare/v2.0.2...v2.0.3">2.0.3</a> 2023-05-19</h2>
+
+<h3 id="fixed-9">Fixed</h3>
+
+<ul>
+  <li>Fix rake_tasks hook on Railtie</li>
+</ul>
+
+<h2 id="202-2023-05-17-yanked">
+<a href="https://gitlab.com/rubocop-lts/rubocop-ruby3_2/-/compare/v2.0.1...v2.0.2">2.0.2</a> 2023-05-17 [YANKED]</h2>
+
+<h3 id="fixed-10">Fixed</h3>
+
+<ul>
+  <li>Copyright year</li>
+  <li>CHANGELOG version numbers and release dates</li>
+  <li>Ruby version rules target - <code>standard-rubocop-lts: config/ruby-3.2.yml</code>
+</li>
+  <li>SECURITY documentation</li>
+  <li>CI runs on Ruby 3.2</li>
+</ul>
+
+<h2 id="201-2023-05-17-yanked">
+<a href="https://github.com/rubocop-lts/rubocop-ruby3_2/compare/91d4f2ff323ce25ebe8476244d50bb786fbb78f9...v2.0.1">2.0.1</a> 2023-05-17 [YANKED]</h2>
+
+<h3 id="added-6">Added</h3>
+
+<ul>
+  <li>Initial release
+    <ul>
+      <li>Configs for:
+        <ul>
+          <li>rubocop</li>
+          <li>rubocop-gradual</li>
+          <li>rubocop-md</li>
+          <li>rubocop-rake</li>
+          <li>rubocop-shopify</li>
+          <li>rubocop-thread_safety</li>
+          <li>standard</li>
+          <li>standard-performance</li>
+          <li>standard-custom</li>
+        </ul>
+      </li>
+      <li>And optionally, if you are using RSpec:
+        <ul>
+          <li>rubocop-rspec</li>
+        </ul>
+      </li>
+      <li>And optionally, if you are building a RubyGem:
+        <ul>
+          <li>rubocop-packaging</li>
+        </ul>
+      </li>
+      <li>And optionally, if you are building a Rails app:
+        <ul>
+          <li>betterlint</li>
+          <li>standard-rails</li>
+        </ul>
+      </li>
+      <li>version_gem</li>
+    </ul>
+  </li>
+</ul>
+
+</div></div>
+
+      <div id="footer">
+  Generated on Thu Jun 25 09:17:56 2026 by
+  <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.44 (ruby-4.0.5).
+</div>
+
+    </div>
+  </body>
+</html>
