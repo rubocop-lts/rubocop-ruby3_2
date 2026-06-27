@@ -54,12 +54,13 @@ Gem::Specification.new do |spec|
   end
 
   # Specify which files are part of the released package.
-  spec.files = [
+  spec.files = Dir[
     # Splats (alphabetical)
     "lib/**/*.rake",
     "lib/**/*.rb",
     "rubocop-lts/**/*.yml",
-    "sig/**/*.rbs",
+    "sig/**/*.rbs"
+  ] + [
     # Files (alphabetical)
     "CHANGELOG.md",
     "CODE_OF_CONDUCT.md",
