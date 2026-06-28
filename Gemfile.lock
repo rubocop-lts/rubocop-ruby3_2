@@ -19,13 +19,13 @@ PATH
 PATH
   remote: /home/pboling/src/my/rubocop-lts/rubocop-lts
   specs:
-    rubocop-lts (4.3.2)
+    rubocop-lts (24.2.1)
       rubocop-ruby3_2 (~> 3.0, >= 3.0.1)
       standard-rubocop-lts (~> 2.0, >= 2.0.3)
       version_gem (~> 1.1, >= 1.1.13)
 
 PATH
-  remote: /var/home/pboling/src/my/rubocop-lts/standard-rubocop-lts
+  remote: /home/pboling/src/my/rubocop-lts/standard-rubocop-lts
   specs:
     standard-rubocop-lts (2.0.8)
       standard (~> 1.54, >= 1.54.0)
