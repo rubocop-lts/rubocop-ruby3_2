@@ -25,7 +25,7 @@ PATH
       version_gem (~> 1.1, >= 1.1.13)
 
 PATH
-  remote: /var/home/pboling/src/my/rubocop-lts/standard-rubocop-lts
+  remote: /home/pboling/src/my/rubocop-lts/standard-rubocop-lts
   specs:
     standard-rubocop-lts (2.0.8)
       standard (~> 1.54, >= 1.54.0)
