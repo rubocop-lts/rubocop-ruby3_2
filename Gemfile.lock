@@ -399,7 +399,7 @@ DEPENDENCIES
   require_bench (~> 1.0, >= 1.0.4)
   rspec (~> 3.13, >= 3.13.2)
   rspec-block_is_expected (~> 1.0, >= 1.0.6)
-  rspec-stubbed_env (~> 1.0, >= 1.0.4)
+  rspec-stubbed_env (~> 1.0, >= 1.0.6)
   rspec_junit_formatter (~> 0.6, >= 0.6.0)
   rubocop-lts (~> 24.2, >= 24.2.1)
   rubocop-lts-rspec (= 1.0.3)
