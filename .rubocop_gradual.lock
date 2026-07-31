@@ -1,0 +1,6 @@
+{
+  "spec/rubocop/ruby3_2/version_spec.rb:1357020072": [
+    [4, 1, 39, "RSpec/SpecFilePathFormat: Spec path should end with `rubocop/ruby32/version*_spec.rb`.", 966159776],
+    [7, 3, 452, "RSpec/ExampleLength: Example has too many lines. [6/5]", 3137715645]
+  ]
+}

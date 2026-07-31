@@ -1,8 +1,0 @@
-module Rubocop
-  module Ruby32
-    module Version
-      VERSION: String
-    end
-    VERSION: String
-  end
-end

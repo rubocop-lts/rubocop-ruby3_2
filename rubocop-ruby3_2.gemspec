@@ -36,7 +36,7 @@ Gem::Specification.new do |spec|
     end
   end
 
-  spec.metadata["homepage_uri"] = "https://rubocop-ruby3-2.galtzo.com"
+  spec.metadata["homepage_uri"] = "https://rubocop-ruby3_2.galtzo.com"
   spec.metadata["source_code_uri"] = "#{spec.homepage}/tree/v#{spec.version}"
   spec.metadata["changelog_uri"] = "#{spec.homepage}/blob/v#{spec.version}/CHANGELOG.md"
   spec.metadata["bug_tracker_uri"] = "#{spec.homepage}/issues"
@@ -45,53 +45,40 @@ Gem::Specification.new do |spec|
   spec.metadata["wiki_uri"] = "#{spec.homepage}/wiki"
   spec.metadata["news_uri"] = "https://www.railsbling.com/tags/#{spec.name}"
   spec.metadata["discord_uri"] = "https://discord.gg/3qme4XHNKN"
+  spec.metadata["mailing_list_uri"] = "https://www.rubyforum.org/tag/rubocop-lts"
   spec.metadata["rubygems_mfa_required"] = "true"
 
-  enumerate_package_files = lambda do |root|
-    Dir.glob(File.join(root, "**", "*"), File::FNM_DOTMATCH).select do |path|
-      File.file?(path) && ![".", ".."].include?(File.basename(path))
+  gemspec_root = __dir__
+  relative_package_path = lambda do |path|
+    path.delete_prefix("#{gemspec_root}/")
+  end
+  enumerate_package_glob = lambda do |glob|
+    Dir.glob(glob, File::FNM_DOTMATCH).filter_map do |path|
+      next unless File.file?(path) && ![".", ".."].include?(File.basename(path))
+
+      relative_package_path.call(path)
     end
   end
+  enumerate_package_files = lambda do |root|
+    enumerate_package_glob.call(File.join(gemspec_root, root, "**", "*"))
+  end
+  package_metadata_files = %w[
+    CHANGELOG.md
+    LICENSE.md
+    README.md
+    sig/rubocop/ruby3_2.rbs
+  ].select { |path| File.exist?(File.join(gemspec_root, path)) }
 
   # Specify which files are part of the released package.
-  spec.files = Dir[
-    # Splats (alphabetical)
-    "lib/**/*.rake",
-    "lib/**/*.rb",
-    "rubocop-lts/**/*.yml",
-    "sig/**/*.rbs"
-] + [
-  "LICENSE.md",
-  "MIT.md",
-  # Code / tasks / data (NOTE: exe/ is specified via spec.bindir and spec.executables below)
-  *enumerate_package_files.call("lib"),
-  # Executables and executable support scripts
-  *enumerate_package_files.call("exe"),
-  # Public certs for gem signing
-  *enumerate_package_files.call("certs"),
-  # Signatures
-  *enumerate_package_files.call("sig"),
-  # Files (alphabetical)
-  "CHANGELOG.md",
-  "CODE_OF_CONDUCT.md",
-  "CONTRIBUTING.md",
-  "README.md",
-  "rubocop.yml",
-  "SECURITY.md"
-]
-
-  # Automatically included with gem package, no need to list again in files.
-  spec.extra_rdoc_files = Dir[
-    # Files (alphabetical)
-    "CHANGELOG.md",
-    "CITATION.cff",
-    "CODE_OF_CONDUCT.md",
-    "CONTRIBUTING.md",
-    "FUNDING.md",
-    "LICENSE.md",
-    "README.md",
-    "RUBOCOP.md",
-    "SECURITY.md"
+  spec.files = [
+    # Root package metadata
+    *package_metadata_files,
+    # Code / tasks / data (NOTE: exe/ is specified via spec.bindir and spec.executables below)
+    *enumerate_package_files.call("lib"),
+    # Executables and executable support scripts
+    *enumerate_package_files.call("exe"),
+    *enumerate_package_glob.call(File.join(gemspec_root, "rubocop-lts/**/*.yml")),
+    "rubocop.yml"
   ]
   spec.rdoc_options += [
     "--title",
@@ -115,7 +102,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency("rubocop-rake", "~> 0.7", ">= 0.7.1") # Ruby >= 2.7.0
   spec.add_dependency("rubocop-thread_safety", "~> 0.7", ">= 0.7.3") # Ruby >= 2.7.0
   spec.add_dependency("standard-rubocop-lts", "~> 2.0", ">= 2.0.9") # Ruby >= 3.2.0
-  spec.add_dependency("version_gem", "~> 1.1", ">= 1.1.13")              # ruby >= 2.2.0
+  spec.add_dependency("version_gem", "~> 1.1", ">= 1.1.14")              # ruby >= 2.2.0
 
   # NOTE: It is preferable to list development dependencies in the gemspec due to increased
   #       visibility and discoverability.
@@ -131,7 +118,7 @@ Gem::Specification.new do |spec|
   #       and preferably a modular one (see gemfiles/modular/*.gemfile).
 
   # Dev, Test, & Release Tasks
-  spec.add_development_dependency("kettle-dev", "~> 2.3", ">= 2.3.0")     # ruby >= 3.2.0
+  spec.add_development_dependency("kettle-dev", "~> 2.5", ">= 2.5.13")             # ruby >= 3.2.0
 
   # Security
   spec.add_development_dependency("bundler-audit", "~> 0.9.3")                      # ruby >= 2.0.0
@@ -143,17 +130,28 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency("require_bench", "~> 1.0", ">= 1.0.4")            # ruby >= 2.2.0
 
   # Testing
-  spec.add_development_dependency("appraisal2", "~> 3.1", ">= 3.1.4")               # ruby >= 1.8.7, for testing against multiple versions of dependencies
-  spec.add_development_dependency("kettle-test", "~> 2.0", ">= 2.0.9")             # ruby >= 3.2.0
-  spec.add_development_dependency("turbo_tests2", "~> 3.1", ">= 3.1.6")            # ruby >= 2.4.0, default kettle-test runner
+  # Loads version files in anonymous namespaces for coverage without constant redefinition warnings.
+  spec.add_development_dependency("anonymous_loader", "~> 0.1", ">= 0.1.3")         # ruby >= 2.2.0
+  spec.add_development_dependency("appraisal2", "~> 3.2", ">= 3.2.0")               # ruby >= 1.8.7, for testing against multiple versions of dependencies
+  spec.add_development_dependency("kettle-test", "~> 2.0", ">= 2.0.17")            # ruby >= 3.2.0
+  spec.add_development_dependency("turbo_tests2", "~> 3.2", ">= 3.2.3")           # ruby >= 2.4.0, default kettle-test runner
 
   # Releasing
   spec.add_development_dependency("ruby-progressbar", "~> 1.13")                    # ruby >= 0
-  spec.add_development_dependency("stone_checksums", "~> 1.0", ">= 1.0.5")          # ruby >= 2.2.0
+  spec.add_development_dependency("stone_checksums", "~> 1.0", ">= 1.0.7")          # ruby >= 2.2.0
 
+  # Development tasks
+  # The cake is a lie. erb v2.2, the oldest release, was never compatible with Ruby 2.3.
+  # This means we have no choice but to use the erb that shipped with Ruby 2.3
+  # /opt/hostedtoolcache/Ruby/2.3.8/x64/lib/ruby/gems/2.3.0/gems/erb-2.2.2/lib/erb.rb:670:in `prepare_trim_mode': undefined method `match?' for "-":String (NoMethodError)
   # spec.add_development_dependency("erb", ">= 2.2")                                  # ruby >= 2.3.0, not SemVer, old rubies get dropped in a patch.
-  spec.add_development_dependency("gitmoji-regex", "~> 2.0", ">= 2.0.4")            # ruby >= 2.4
+  spec.add_development_dependency("gitmoji-regex", "~> 2.0", ">= 2.0.10")            # ruby >= 2.4
 
+  # HTTP recording for deterministic specs
+  # In Ruby 3.5 (HEAD) the CGI library has been pared down, so we also need to depend on gem "cgi" for ruby@head
+  # This is done in the "head" appraisal.
+  # See: https://github.com/vcr/vcr/issues/1057
+  # spec.add_development_dependency("vcr", ">= 4")                        # 6.0 claims to support ruby >= 2.3, but fails on ruby 2.4
   # spec.add_development_dependency("webmock", ">= 3")                    # Last version to support ruby >= 2.3
   spec.add_development_dependency("kramdown", "~> 2.5", ">= 2.5.2") # Ruby >= 2.5
   spec.add_development_dependency("rspec", "~> 3.13", ">= 3.13.2") # Ruby >= 0
