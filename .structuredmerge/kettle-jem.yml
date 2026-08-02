@@ -312,12 +312,12 @@ min_divergence_threshold:
 # Hostname used for generated YARD documentation links.
 # Defaults to <gem-name>.<author-email-domain>.
 # ENV override: KJ_YARD_HOST
-yard_host: "rubocop-ruby3_2.galtzo.com"
+yard_host: "rubocop-ruby3-2.galtzo.com"
 
 # Full URL used for gemspec metadata["homepage_uri"].
 # Defaults to https://rubocop-ruby3_2.galtzo.com.
 # ENV override: KJ_HOMEPAGE_URI
-homepage_uri: "https://rubocop-ruby3_2.galtzo.com"
+homepage_uri: "https://rubocop-ruby3-2.galtzo.com"
 
 # Template source inventory.
 # The packaged inventory is the canonical kettle-jem project template. It
