@@ -71,6 +71,17 @@
 # Everything else should be set explicitly here or via ENV.
 
 # Direct dependency ownership decisions.
+# The gemspec owns the visible development dependency while the style modular
+# Gemfile retains its compatible matrix declaration.
+dependency_conflicts:
+  resolve:
+    - gem: rubocop-lts-rspec
+      direct: rubocop-ruby3_2.gemspec
+      modular: gemfiles/modular/style.gemfile
+      action: keep_both
+      reason: "The gemspec owns the development dependency and the style Gemfile conditionally retains the compatible declaration for the matrix."
+
+# Direct dependency ownership decisions.
 # On first templating, kettle-jem discovers dependencies declared directly by
 # Gemfile/gemspec and also by modular Gemfiles, and writes them here for review.
 # Resolve each entry by choosing one supported action, then add a reason.
