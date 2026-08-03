@@ -2,10 +2,10 @@
 version: 1
 template_state:
   version: 7.1.0
-  applied_at: '2026-08-02'
+  applied_at: '2026-08-03'
   changelog_replay:
-    last_entry_key: kettle-jem-template-20260801-004
-    last_entry_date: '2026-08-01'
+    last_entry_key: kettle-jem-template-20260802-001
+    last_entry_date: '2026-08-02'
   checksums:
     ".aiignore.example": 48a5dfdd93afd1a15fdce39cc28ca9920263f00018b0968ab031fa744521e5ce
     ".config/mise/env.sh": aeea5a2ab489ba6e5467ae8de6e386ec8c8fe4ff31a044e69d0cd6a092dd6654
@@ -27,43 +27,43 @@ template_state:
     ".github/copilot_instructions.md.example": f5c5791df013e89e170fd436379b14e251d0ff4cb6b330a6d961e80c9071f2d3
     ".github/dependabot.yml.example": db84d1c13f64100d2f48212c022f0d985e9061ca76c36d82e7057fd845ecd528
     ".github/workflows/auto-assign.yml.example": 57b8159a15bf49946506e1b624934feed6a1cc8f71ad68968323c87acac56c67
-    ".github/workflows/coverage.yml.example": 63d31a234f90d51a3b6d68fc202eaebae3b6c8ba263246c688d50fa32d057bf3
-    ".github/workflows/current.yml.example": c8ed45a72f5248c73f7ed12bb8c468ed0d664acb2058bf3ad812a6ed880c6c14
-    ".github/workflows/dep-heads.yml.example": 4c4bfb278fbabe3393678387243cdea5cffdd28088abf560513820d73e057075
+    ".github/workflows/coverage.yml.example": 0c0c33b30ea319edf1afade6c49acdb00b230c431338407524f0c7d695875b80
+    ".github/workflows/current.yml.example": a770c211c972fad52313f7ae565f82627e49b0b630491ff53757c6e715a53165
+    ".github/workflows/dep-heads.yml.example": 3ef34205832e7378ef6ce0aec2e57edaf46931805227bd710ff6fb7ea28844e6
     ".github/workflows/dependency-review.yml.example": a895d52257a7112d796fabf349ced1079bed93e81e3aa9cb088f9af3f44d1e5f
     ".github/workflows/discord-notifier.yml.example": f9cc83a87058bd420426444510a1dd1520fd7cc15af50832ad52c25c5766be94
-    ".github/workflows/framework-ci.yml.example": 4644a28621fdba9694e76bb0f00f05582204250ce734aeb5f6f9b8aa19d0ea02
-    ".github/workflows/heads.yml.example": b8b5d171f5c522a4770483fceddf8fe8b7ba0734b9c8ec6ca451a83ea3d3ebaf
-    ".github/workflows/jruby-10.0.yml.example": 49bafc8c161ca74947a5d51a2cfdd5582e629e64be661abdcbc6ce75a95cd5df
-    ".github/workflows/jruby-9.1.yml.example": 8676b2e8658ec1483381be687eb687bc3ca02aec458b4645faff24f8e0bd4745
-    ".github/workflows/jruby-9.2.yml.example": 4024a09ed436bc453d19a4fc881d3fb7e101d9ca56dcb3b5bc077626bac61bba
-    ".github/workflows/jruby-9.3.yml.example": 3d9c7e560ff4e1231b9c72dda3133ac6bbb4e288c06bf82f101b6506b5a83227
-    ".github/workflows/jruby-9.4.yml.example": 3cc87b5c83e08d49576cdeaf5ff387b207c557f5f724680f56407c09f6395bc0
-    ".github/workflows/jruby.yml.example": b043de8cb910ac117184c6a2f489da64276a441f3258f809abe10813c847d43a
+    ".github/workflows/framework-ci.yml.example": ecad510ddaf0c2283fda6cd858f3a99edd53ae0e620f602d8b16e4a9a1f4b14a
+    ".github/workflows/heads.yml.example": ba4771336de4620238649d0e7399ba6f1021ca54e3154c4b72b2d3a4a57c2565
+    ".github/workflows/jruby-10.0.yml.example": 3a88c7a591000978e77750aa13b9f0b118687ce4e4480fb23560e21b50dbee08
+    ".github/workflows/jruby-9.1.yml.example": bd87762bf7295ccbd0b5628a954e6cb29477874ffc06e8f02695073f18286a03
+    ".github/workflows/jruby-9.2.yml.example": 4d2a27af4ef88c7eaa61bb491244e78c2d284c2092ffc50b9912e20a079295b6
+    ".github/workflows/jruby-9.3.yml.example": 6f9b3365b62478594263095504fc16e45d500b7f08576f180876439a4394cc1a
+    ".github/workflows/jruby-9.4.yml.example": 1a3cf3b840c3694ff0e7d1dd7a85920050e496af729fc2d3d3e3eab81b70726e
+    ".github/workflows/jruby.yml.example": e47c7496e419524219494382e194a7ae719125adc844b35ce83b0aba621ef2a4
     ".github/workflows/license-eye.yml.example": 23db5d6ee9b5382de1f2042642219d65214e09c3f975c418d4dec4d46375036c
-    ".github/workflows/locked_deps.yml.example": 0cb2466973399de5a2b5f1ac986c412451cb09582e1c5a7c6ed7d928de645aec
-    ".github/workflows/opencollective.yml.example": 24ed1bfc25d21af93199335fd25d1296155903269746e35539e6581df15bac94
-    ".github/workflows/ruby-2.3.yml.example": 10af10381da8677358bbdaf0652bb801271df7db9cc4c9f09152e065095f6503
-    ".github/workflows/ruby-2.4.yml.example": ba4c214863edddf1aae949854ffa6b6eb972a9412d4702f9e3ea86dec1c2d826
-    ".github/workflows/ruby-2.5.yml.example": 95f09ce398bd9e08bb5d6861205f984bc183c87012ab86e39a2fdbd5728fdd39
-    ".github/workflows/ruby-2.6.yml.example": 8df26c0e108c50f1b52a9df86624add73296c529b32b91ef820f407305d771b6
-    ".github/workflows/ruby-2.7.yml.example": 0017d2b3a5f345a16e0015d40300238a248698e4aaa5167445f8bc435e683f0e
-    ".github/workflows/ruby-3.0.yml.example": c7fd61fab58edd61f34e93421055899672ffef0984c4f139603fd857a4b1309c
-    ".github/workflows/ruby-3.1.yml.example": d0ba560472ae6b199aa71700fb83e1529504824e29d2ec37b4e507b0d485d7af
-    ".github/workflows/ruby-3.2.yml.example": 927800d87405216649875e9b8f735f3d9791b7ef83dd07b29a6a56ffcae3e1cd
-    ".github/workflows/ruby-3.3.yml.example": 070a38ff48209356cbde3621fbd3fe0dfd7c5c8896a9c69314b58ba9be49a1fc
-    ".github/workflows/ruby-3.4.yml.example": 674cd465e0cd5fba97ca186c7d6410f486cc60cd5ce1eb504d91a9ee9191550d
-    ".github/workflows/style.yml.example": 4597db6ddbf809e5cdaef8ba70a6046baa462adce077c662d77627043c792278
-    ".github/workflows/templating.yml.example": f7922bb72cae2f2b75ee48de6f3e7c3a19dac722b38f1d797725d5b03cd61f79
-    ".github/workflows/truffle.yml.example": 406250d991eb0e7a2ad6885375e7e06a050c301eb5781aab8e6664591ed115ca
-    ".github/workflows/truffleruby-22.3.yml.example": 132905b13c67f4e92d90ec4405710187c163a5eab817f3cccfeebc5a2d5c7227
-    ".github/workflows/truffleruby-23.0.yml.example": 0f2bb80d4ed35fd365d323d81718ad5f6c13e5036e76d2e5825b5b3d09b03a08
-    ".github/workflows/truffleruby-23.1.yml.example": e3f08e67a38021198c53a38fcde9d09d0601793544e5f70abe4aa8809679cf77
-    ".github/workflows/truffleruby-24.2.yml.example": 83e0cf9e0a9e96053c37806e959a7825e1c20413261066de63ff0cfa0d1577b3
-    ".github/workflows/truffleruby-25.0.yml.example": 124d58d15393c47d17b8401094c7d065385135f7fe53227e91ff7c2acd6d4986
-    ".github/workflows/truffleruby-33.0.yml.example": 2eee503623855ec632fcd65c1767ada70c07dec535fee1419837748aca481aa3
-    ".github/workflows/unlocked_deps.yml.example": 90b5e14e983fe7fe89a6c2792ffb4cf59c726f1139fb40857211d4733fc28f00
-    ".gitignore.example": 14864a0c88be3f8c122ab3032efeb782ba5e035013231038acf746a400437a3e
+    ".github/workflows/locked_deps.yml.example": 3145d845aac8b06c2d846ae8edadf5bd59457f427ed21aed19499e52b6653eaa
+    ".github/workflows/opencollective.yml.example": 47c2ba73032438cc519924e4a5c3875c9b9c95fb5d258bf9050c3e13f34ad7d8
+    ".github/workflows/ruby-2.3.yml.example": 53428800d7add77e25be558713a7e913b1b9cb2d2480aa7bc43df39fd0d988f1
+    ".github/workflows/ruby-2.4.yml.example": 7f265998fd54f9f0d7e99628046db041100790681e3a28276505114b460cc6b4
+    ".github/workflows/ruby-2.5.yml.example": d4eab50ba01b59e52b5d5d0cfa6a92a197ace528b50c7fcf518a81655f57c600
+    ".github/workflows/ruby-2.6.yml.example": d371839468aafd0bcfbb35716308075b7e57501d043fdb4902697e0ec46a5303
+    ".github/workflows/ruby-2.7.yml.example": 31feb88ade332f71a8f5a79702b9a0f8619eba53f72a2f0a9277b5f0b8d16930
+    ".github/workflows/ruby-3.0.yml.example": 061f7fa8d163c5eeda8af7d49f76ba6c3de3c079446263eb0ae05cc50f8f43c6
+    ".github/workflows/ruby-3.1.yml.example": 1ab31597415465c082d8970ce8d406bb12896becc04c23d7061562ac2ff7fe02
+    ".github/workflows/ruby-3.2.yml.example": 042c275fbf8b30b98aee0f669d103fc4d3654158e33f6875f4ca25b3fb4a1293
+    ".github/workflows/ruby-3.3.yml.example": 54339d448aab2a0fd128118e7a1a3a54acf96e8dee97935f3f29402e60729b65
+    ".github/workflows/ruby-3.4.yml.example": 54dcc3cf9487398d97eb54be5bac05e0bd2f390c0bb83bdc057ab067da9ebdaf
+    ".github/workflows/style.yml.example": 8507e69cb0e2a2f508bc541831af454058beccb3704607aad2f123a97f00beb2
+    ".github/workflows/templating.yml.example": 560c2f5ab95416751ef179190c6fb055cb9c1e8609acad1bba0d4365da87b67d
+    ".github/workflows/truffle.yml.example": d5354effaf6c1d615954e3edbc6f9937e09cde12e7dd1cfc832e19830c7bbff1
+    ".github/workflows/truffleruby-22.3.yml.example": c42c40faab43b60c11a5c9821397cd59630e1f8967315c4c22470263889d0a66
+    ".github/workflows/truffleruby-23.0.yml.example": 1c3f3e8130048236d5a4b1c4eefa9bdc323c1f94da0e2c67000221766baf9f1d
+    ".github/workflows/truffleruby-23.1.yml.example": 379fd91c53acd21764e1472ff6cc1401784fa24ff40aebd6e19c3e950e06dc5c
+    ".github/workflows/truffleruby-24.2.yml.example": 0a8f564b9e100fd1e55c77caad7fca80fbf95c255561527f9592e47bb63e5001
+    ".github/workflows/truffleruby-25.0.yml.example": 1a6170a39e9d2ba4469743800b21412a89783ab8504bd9497341922a756b70f3
+    ".github/workflows/truffleruby-33.0.yml.example": c2d4d85fe5b9e952fff28d2f263a9d141e02a0467076a1fd9daddfa806ee44e4
+    ".github/workflows/unlocked_deps.yml.example": 39e31c137b64f0be7ebf17a55f8764ae922841034d09e1290b2d0b8c912059bc
+    ".gitignore.example": 306fb86c9a8ce4f450e798fa0965a0b2dd6f828ec2b48926f3e6961fbaf7302a
     ".gitlab-ci.yml.example": ef64afa9855ebb59bbc87446fa9533238d3ce180966ceb19649a7f165715b92b
     ".idea/.gitignore.example": b44a5aa16bf9fe5635558af347454b05a76d600084308a9f43d4d0b54789ecab
     ".licenserc.yaml.example": 8787fa7bddce911f8ba47bda3eb6ad9786b6650d5d94786723e88773098ed37d
@@ -71,11 +71,11 @@ template_state:
     ".qlty/qlty.toml.example": cf3d750d2328f6c057b08b7ce3d7ec00a4056c7f0eedda59af321d6caca03553
     ".rspec.example": 87c2b075fb76dcaeb07357fa307dded4e98924ce56aa39dc769736e15d0b6ef8
     ".rubocop.example": 591e4b45430e85b0dd460cc11c70650912fa2734988420b934109d06a749344f
-    ".rubocop.yml.example": f00c6fa105065a1844d372b30fdd913153bcd05c391a21a4f99a145ea903b355
+    ".rubocop.yml.example": c66f3a03fbdba089d7624de1174cc197e0eb25c3e67b8f1f19e32da3bde8db91
     ".rubocop_rspec.yml.example": 288ad75e7eb14d87d80fafe6f7272217be5c57547536ee56c780a7d10ac7ec74
-    ".simplecov.example": ffc76492effe905cc65797389fc8050fda136652ac078a80303cd084b349ef28
+    ".simplecov.example": 222f2e6ce8cf089c70a21f0f5e5423d4bd59a96fdb2ce7754b0fb3d6f430c229
     ".structuredmerge/git-drivers.toml.example": 9d241a44c9edffcdbd3da018fa188a238089c3d1635040924df594a6929a4f97
-    ".structuredmerge/kettle-jem.yml.example": a151295bcea80c3051f51ba7b432008c2116ac45b079f939b63b15aab9193514
+    ".structuredmerge/kettle-jem.yml.example": d431accf9ae516d28bb234614ef4596229b559d1e7c41ed4ad3a18085224a0f4
     ".yard-lint.yml.example": 90def46867c9436b4e177c47d91fc8165f4602e335715aecc39f5587ae20b55b
     ".yardignore.example": 821f453c609df7d46145d675424b39dfbe6dfdca8edac5f367b85fff48502455
     ".yardopts.example": 6fd6f2701713096a8a9ea095c213bbc68eeef37797c4754d97837e3229a3a5f6
@@ -85,7 +85,7 @@ template_state:
     Appraisals.example: 9cb1abcfb1a0bd6d859ca0705efb874dbe546754c8c71f9f95025ff6817f1471
     Big-Time-Public-License.md.example: b0c02a112c9eee0ed69f05fd8f22277a2f8bc62d447b6cb75d6df560e05bf431
     CHANGELOG.md.example: 73459e50dad34d84db88844c993d975097557bdf5229e101b0d1339de6f98ffc
-    CHANGELOG.transfer.md: 2704de5475427104da3705945fc0b0b28c970f44e66581834c460fcc69e84341
+    CHANGELOG.transfer.md: 21331d8a9e58b4ff6e088b88eb408bcccb0f2f64e78f8f4d42ac3f11a24baad8
     CITATION.cff.example: e404ea0a7919d78a83d53d80e211d17b9663576aa606583b709795dc023fd75c
     CODE_OF_CONDUCT.md.example: f1ad532f1860f73ef774c6b27a26d41f4bc1cb8813034f5957487766ebb0986b
     CONTRIBUTING.md.example: b8702655a5f66200bcb92dd7b68d8d3bab742e4ac359c54c25c83eae88f22513
@@ -97,22 +97,22 @@ template_state:
     MIT.md.example: 365fce2a82f9d258ada9a527accfd5754b406ee9cdd8f8ed86bbec64b8c42ab2
     PolyForm-Noncommercial-1.0.0.md.example: ffcca38841adb694b6f380647e15f17c446a4d1656fed51a1e2041d064c94cc8
     PolyForm-Small-Business-1.0.0.md.example: 2f81e317d36f83a199c9fa10bcb250775fd90510303eaeb15aac2d8f0c1fc2d6
-    README.md.example: 5b90bf07b1dff79a82d2aed969f65386d5ade1627b172f82e091016a35107678
+    README.md.example: ff2b5aad4c56c2a9976469027779580896386256edfb57fba52ba4eb4523a3ca
     REEK: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     RUBOCOP.md.example: c09e5533ccc59b70a2efa05c99f66e521137c1053d3c12eb43509cebd5b68b0e
     Rakefile.example: 569803e726b07ea26267fec6891367a3096a0dff3c266269a7081d36afe496af
     SECURITY.md.example: ee9411aa85f36d88363fdaea7a1baea4362b6ec112cf2688e711b05de1d3144c
     bin/setup.example: 0ac35089c95a91d8973fe7a318bf9fd98b9f8e00db92c5d9ca6cd858abb8d41b
     certs/pboling.pem.example: 18956f60643666cc181e2743b3b3691bec08c5326f514f60af54d0cdb9ebc554
-    gem.gemspec.example: 86413d69a805374ebafe30966cc28a6aeddaa1f6d3527952281ae95299279ef6
+    gem.gemspec.example: c6d59d4ed3d38f6c2dd8a233755f4ecc508f70f457ebcd63ccbff0f5dd34a14a
     gemfiles/modular/benchmark/r4/v0.5.gemfile.example: 5bc3190090ae456df1a8cce28dd47a7fb293495f6d845ec7e53a7a8b50f14ae1
     gemfiles/modular/benchmark/vHEAD.gemfile.example: ca6cd52c55c3082759c6ddc97638970f12d953aec1822470823d316086aa6e25
     gemfiles/modular/cgi/r4/v0.5.gemfile.example: c2d14a39377a2435419ceaca22a3421ebd899e9cba943df8a90b576a33624870
     gemfiles/modular/cgi/vHEAD.gemfile.example: 9ff3dc789b3279642876c0aad4b0094c1139bb8fbbf36daab804d3b2b3a60b43
-    gemfiles/modular/coverage.gemfile.example: d5a207cccc2c63f95d4745139a4cce64aa7aef049d782d7b4e48531964fd1365
+    gemfiles/modular/coverage.gemfile.example: faab65b82ebf648b436f701d41916a23cc3b2cf2bf7280559baf4e18486c5421
     gemfiles/modular/coverage_local.gemfile.example: 928d5f260d7b119c038baa56da9fb78dd524dee613aea33ab72894bbce5c506e
     gemfiles/modular/debug.gemfile.example: 0a508bfb02e51b75394b43f4f09d98174dac36ead41cba09c1f730671a1f5905
-    gemfiles/modular/documentation.gemfile.example: 35ed2f45e90fa1d94b6540e93567f8279427429b1e3ab3cdd8b898b7c73ae451
+    gemfiles/modular/documentation.gemfile.example: c1b3693d5bd6e1fa7f07acf80cf543dfd7ee0600bcf77aef63965d2a5229f6c7
     gemfiles/modular/documentation_local.gemfile.example: 84a20f5d4b0feb94c2cf2f7a8dce8f682f1483498e41484c2b447a5661fd1870
     gemfiles/modular/erb/r2.3/default.gemfile.example: 9da0d08fb6a299b965c37fe85efcaebd9eb0a82b2ea35fdc157c41bd75431396
     gemfiles/modular/erb/r2.6/v2.2.gemfile.example: '01787cbdf7136c0d75cc7b734c6bb3d2ef6c70d6c1c50e7d0ad2112c0f8ef8e7'
@@ -146,7 +146,7 @@ template_state:
     gemfiles/modular/stringio/vHEAD.gemfile.example: e0497ab6dad9667b22725485b781e9d99349a079250eb29cb125d58f01f4a5be
     gemfiles/modular/style.gemfile.example: a15db732f566d958c2459ef549ae3877d984df3d205116e714284d1fe4f9b068
     gemfiles/modular/style_local.gemfile.example: '0083605323d23879dc7223f0198e9f1db24a25fa38730c4dbcc71c7a8a4c307f'
-    gemfiles/modular/templating.gemfile.example: 53af85ca648e80c9841748349450657ec0c1f6b1aa7f77c87cc359357fce4073
+    gemfiles/modular/templating.gemfile.example: f63e9254dcd76f02406fff515090570d2394dae220faac4f9b3cad6c1a78346a
     gemfiles/modular/templating_local.gemfile.example: 84b328af40ee4f9b0355cd5b466f7c7903c49f86e9eb0d1bc3a1f34c8f0f1668
     gemfiles/modular/webrick/r4/v1.9.gemfile.example: 1ee940ff54d5ca3ce7fcff0d82ee9553386979656b9e220d5be5404d0991d5ea
     gemfiles/modular/webrick/vHEAD.gemfile.example: da545f591af987648ffbaba181707480a38dfb375db7d289617986ec2c2ca23b
@@ -171,10 +171,10 @@ template_state:
     shim/.rspec.example: a52036d5e192e99e33f450cef13ecc5b58d987725339289a7030c32e6794a5bc
     shim/.structuredmerge/kettle-jem.yml.example: 03faae6cfda3947ef8489008b4836aad3ca280e94ddf9d08ef733071d7daa167
     shim/CHANGELOG.md.example: 2c098802b9971c51796e34067d061adbc31fa443df96be8a1fc71fc84c262d0e
-    shim/Gemfile.example: 860ab5b9f35daf6dc261523f115703ac683b3ea1dd3835d21bfc7697cab5f534
+    shim/Gemfile.example: 4fc6993842feb4d0a3f28185ece6e81b3fb8668e9cd977f0e4be521e13413769
     shim/README.md.example: 3a2f7211b7f92a1dfae5e523b8e34b051a3d8af942144b05286eca0b3c8f6fbe
     shim/Rakefile.example: 572c94da7052083b39b62a6600785419e314a109efd7a3d8c3a96eb77ad34fd1
-    shim/gem.gemspec.example: 57cd9db0d80eb298ca331978e41832ea8785647c140a4864a2bb0a5289e71e85
+    shim/gem.gemspec.example: 1be6617833c333b7430f4bc1914a0c03b047a1fd7dacfb25eb5d16b75a7b5dd0
     shim/lib/compat_require.rb.example: 94ee85e353a3ca08c8a35c9063d4ff789214ea594c7f803f6cf09d7142f48379
     shim/lib/entrypoint.rb.example: dd57613520daca01d6f6bcaa9b83b00ff74505240dc04b84ceb686df3c0539d7
     shim/lib/version.rb.example: 15e219ac3a928b5580035f891e415551213175020f1131f6e7ca0ccd55a1b2d6
@@ -188,350 +188,350 @@ files:
     recipe: template_source_application_aiignore
     action: write
     dest_sha256: 48a5dfdd93afd1a15fdce39cc28ca9920263f00018b0968ab031fa744521e5ce
-    input_fingerprint: de39aab8a09c61dcb21f88c53b5a02df247182825d5dff7d13901f737a1c5aa1
+    input_fingerprint: 41d9369f8e072b54efcdecb4abe2affda97bace0c9f3169a94bc1adff374ff26
     template_sources:
     - ".aiignore.example"
   ".config/mise/env.sh":
     recipe: template_source_application_config_mise_env_sh
     action: write
     dest_sha256: aeea5a2ab489ba6e5467ae8de6e386ec8c8fe4ff31a044e69d0cd6a092dd6654
-    input_fingerprint: 1e4b23d8623163edb12eab2c87e92161692543f37b6d32f570f6700f146947af
+    input_fingerprint: b06c6387de733b13e6af3b802cf8a9bba7ceec05876c9a9e850a1380fad869b1
     template_sources:
     - ".config/mise/env.sh"
   ".devcontainer/apt-install/devcontainer-feature.json":
     recipe: template_source_application_devcontainer_apt_install_devcontainer_feature_json
     action: write
     dest_sha256: 92331ce7255f1a35af99eaa616b180ef2672d9ccc2803f8d65ff69c238d72acd
-    input_fingerprint: 045d282e3227162221fc609442e90bbc1495c61fa189aba481c97c542fe53d62
+    input_fingerprint: 4b96b51c8f1f27ec52f661ac5210adbcd1359a64dff9cb17a88215ddcdf944e5
     template_sources:
     - ".devcontainer/apt-install/devcontainer-feature.json.example"
   ".devcontainer/apt-install/install.sh":
     recipe: template_source_application_devcontainer_apt_install_install_sh
     action: write
     dest_sha256: b61e020b60ca172bb7b658e63c9cd4342e49bda0531a6b19b36475e515ad20b0
-    input_fingerprint: d94b3c2c661699f2655b26c7851a43e4bfb01fbd7797d017895a00c93b47fd13
+    input_fingerprint: 6100c5aa3030cd7d8fe31f35b5a8ad3151228589be59cb2b6b39e2357af433bb
     template_sources:
     - ".devcontainer/apt-install/install.sh.example"
   ".devcontainer/devcontainer.json":
     recipe: template_source_application_devcontainer_devcontainer_json
     action: write
     dest_sha256: 4a80d471379b9720cc65cc89543cbbc0a7be87b188a818160296577c4e87606f
-    input_fingerprint: 2e77a0359a68dfc346fd41b50a5223525a842462ef24c1a918b3c9b07b138abc
+    input_fingerprint: 8d03d87c7a7e0fbe99b553917d1eda1db96662ab3f4b2c9698789c5ea2bad34a
     template_sources:
     - ".devcontainer/devcontainer.json.example"
   ".devcontainer/scripts/setup-tree-sitter.sh":
     recipe: template_source_application_devcontainer_scripts_setup_tree_sitter_sh
     action: write
     dest_sha256: c34f48d7bac8561fb780c4c7a81cec5004c3ac0edc11f229799ec9a4e3eccd54
-    input_fingerprint: fa8a255a646c94561914dc5047320bdef6f4daac3606250d8ee7269fa46e6989
+    input_fingerprint: 76a6546695d9669007f22b20d284b8c7cd3c8ebf21bb729161808acb7c41683c
     template_sources:
     - ".devcontainer/scripts/setup-tree-sitter.sh.example"
   ".env.local.example":
     recipe: template_source_application_env_local_example
     action: write
     dest_sha256: 14106f301299d62f61045e4869dbd91fb6c2a96803eb5b57e56bf3bd6ea30f3c
-    input_fingerprint: 5fab927efc31905cfa485a69c993cbb30e9c0a1b45fcf8b303fe5fcf334b500a
+    input_fingerprint: 4ac1dc1f4fdce985efdc867f0c2ea0881c41f15c50dac20ef3116ef48731305f
     template_sources:
     - ".env.local.example"
   ".envrc":
     recipe: template_source_application_envrc
     action: write
     dest_sha256: b7232f4bae0fb399cc9c9cdc4a5eb694bd69623aeeadcbab18c9990e443040a1
-    input_fingerprint: 41a1c6b8de70a7c9e778708b5f583c21c7790753d3bc240ca5558682dcf6a01a
+    input_fingerprint: 2b504fcadab2fdf390593a6d3d0d5153fdc5e3cfb771849be73fa2e75b7f59f3
     template_sources:
     - ".envrc.example"
   ".gemrc":
     recipe: template_source_application_gemrc
     action: write
     dest_sha256: 77b1c36ae6f91bedf08b99e662a971b02f7e66e0d65267805d068d30ff118aba
-    input_fingerprint: 2cb6f02a28ff280108c3dd95ec289979c0207b3228c9ac1cd89779a2ed539f71
+    input_fingerprint: 940f4a61439a39d5f5cb6efed684aa6d5f36723c6670497d33917d9f61ed995c
     template_sources:
     - ".gemrc.example"
   ".git-hooks/commit-msg":
     recipe: template_source_application_git_hooks_commit_msg
     action: write
     dest_sha256: d858575bf70d6175fdd7656e9ba0b41672de3fb49163181efe3fbc9e40306024
-    input_fingerprint: '0497059e8c4c5919dbd67fbe24ddb551c10006ba205af8717c898d3919d5b0e6'
+    input_fingerprint: 7fe7e64f9d87e0244ef02be6e65ac49a00b2bc6e78fb6fe5afc372a09501bbe7
     template_sources:
     - ".git-hooks/commit-msg.example"
   ".git-hooks/commit-subjects-goalie.txt":
     recipe: template_source_application_git_hooks_commit_subjects_goalie_txt
     action: write
     dest_sha256: bb1179c8911af8afeb1f9a604b3de789d4a4b33d9d4a7743b3145998c15b0a94
-    input_fingerprint: 4e118b2ec2a020e7397b27deb3fa23353ba344fe6cbbcb5988605cb9fc517d98
+    input_fingerprint: 670ca694d6d9c10f203c4257423841037ae9841889f8123266fb4c90e5bef562
     template_sources:
     - ".git-hooks/commit-subjects-goalie.txt.example"
   ".git-hooks/footer-template.erb.txt":
     recipe: template_source_application_git_hooks_footer_template_erb_txt
     action: write
     dest_sha256: 427813ed49436ec75c0ddd0a83f59199ce12006968071718b11b8b6473152c58
-    input_fingerprint: cef9492a5911c572145d3349e9e3461ec920b0ef3cd382eaf37e38b5d4704086
+    input_fingerprint: 143a22639fc64d08434e2eed1b22063e2b492332b07982c247dc2204dee3dc25
     template_sources:
     - ".git-hooks/footer-template.erb.txt.example"
   ".git-hooks/prepare-commit-msg":
     recipe: template_source_application_git_hooks_prepare_commit_msg
     action: write
     dest_sha256: 35266ead46a6385d20eeff7ec64afedef33a2db18d1238b8662a1bc758f05335
-    input_fingerprint: 7074fc7888b8cd8695a06883d83c10b78273d99266098baef397fa90d404c73a
+    input_fingerprint: 3cf0e18309a39434cdb10a828652e516246efd4b7de68b1fec9e66786013b637
     template_sources:
     - ".git-hooks/prepare-commit-msg.example"
   ".github/.codecov.yml":
     recipe: template_source_application_github_codecov_yml
     action: write
     dest_sha256: d6ef3208a90eca74f79d8ff4e5ae21a915562b075cb17978b1eaadc231dd4e85
-    input_fingerprint: 416e227923881227ce6fa0d7e6fc28e3b4294411b137063715825ce3a532a1c5
+    input_fingerprint: 3e3e79c4b07d58016f70928d845f8b30bd336b8843370fad807970a29ba756ba
     template_sources:
     - ".github/.codecov.yml.example"
   ".github/FUNDING.yml":
     recipe: template_source_application_github_FUNDING_yml
     action: write
     dest_sha256: dc63f9970e21ef3123340ad8b0d99aad8a06feba658ef727a242d7c903499c4a
-    input_fingerprint: 128fa7455e72be33cc2cde20d6a30cc256401bb22f452c50b3eee5ec0f2d3aca
+    input_fingerprint: 3395c17d10197f2ca4af8f83bc50db24a74bb7fcade3a442302d227662a17c3d
     template_sources:
     - ".github/FUNDING.yml.example"
   ".github/copilot_instructions.md":
     recipe: template_source_application_github_copilot_instructions_md
     action: write
     dest_sha256: f5c5791df013e89e170fd436379b14e251d0ff4cb6b330a6d961e80c9071f2d3
-    input_fingerprint: 4cb870ec23f467ef8b4e6f279d80c8462e3f835a2ab7504ab44a95e0dd69a9af
+    input_fingerprint: e56ebb153617afd609690f548b12bc6dec9730004a7fa570def1c5e8f40fb78d
     template_sources:
     - ".github/copilot_instructions.md.example"
   ".github/dependabot.yml":
     recipe: template_source_application_github_dependabot_yml
     action: write
     dest_sha256: 6a87529fb682c80bfc4044dd1d1ce30e1b6954822ea53e7f8d2d528a92adb5a7
-    input_fingerprint: faa9ae9793390b0fea188441b5af21a65c2c2d6be6ec6ee6ee2f47fd9751ed41
+    input_fingerprint: e3fb2cda66c1c05b4e8b384fb58fcab94bd6b4c3c0723dcbc9feadca9609b45f
     template_sources:
     - ".github/dependabot.yml.example"
   ".github/workflows/auto-assign.yml":
     recipe: template_source_application_github_workflows_auto_assign_yml
     action: write
     dest_sha256: 871096493e4c4973f96868102fae961a683900917c28a58142ccdc2e09025582
-    input_fingerprint: 1cf15af6e1a257f7dee8331ba86a59eec177bb04eb51fb21bb9a43d699757f98
+    input_fingerprint: b92bc77b4d10fb7f8102705fea80e43c44c45a6498f0dec21488ca2fe84714c7
     template_sources:
     - ".github/workflows/auto-assign.yml.example"
   ".github/workflows/coverage.yml":
     recipe: template_source_application_github_workflows_coverage_yml
     action: write
     dest_sha256: 25f3f0649f7369d9ba672735b9bca3f928c0775e0eb25a11c37df82a675ac12f
-    input_fingerprint: ef30bd3495f774e0f418995db5aa29b2f4ebf3389a61524358d9e14bacb1a92b
+    input_fingerprint: cc382da18ac22148f8be8f7d511d24bd515b4c0d5ed4f334e7c31dd903bbd461
     template_sources:
     - ".github/workflows/coverage.yml.example"
   ".github/workflows/current.yml":
     recipe: template_source_application_github_workflows_current_yml
     action: write
     dest_sha256: bf102d81b0bea01a3c200710bd313ff2b376665edafb2da0bc2599bc4e9cd4d7
-    input_fingerprint: 6931fb91c78e2dcba8ccb8bcf70de822fb94c74f1df54fca0968649ee3699209
+    input_fingerprint: 436109ab403f6e89beea353de685019e652fbc905f8233644d34cbac57a3d0ab
     template_sources:
     - ".github/workflows/current.yml.example"
   ".github/workflows/dep-heads.yml":
     recipe: template_source_application_github_workflows_dep_heads_yml
     action: write
-    dest_sha256: fbd41eb9dd83c58054657e168a785762d9191c4cb9dd3cc043a9c5af3a000901
-    input_fingerprint: de42e6aba223ddb9359e348fa69342f23ed33a4ca257a6cfaa9ae681773afebb
+    dest_sha256: a6d526d10e15d2690ccc2872eafcd3189a3e5af3de3edb7fb1e53ad2157c9e28
+    input_fingerprint: 3c29b74c71e23585c3d0a5715892d459d518bcb7ed82cce0d4faae87aa6c77aa
     template_sources:
     - ".github/workflows/dep-heads.yml.example"
   ".github/workflows/dependency-review.yml":
     recipe: template_source_application_github_workflows_dependency_review_yml
     action: write
     dest_sha256: a895d52257a7112d796fabf349ced1079bed93e81e3aa9cb088f9af3f44d1e5f
-    input_fingerprint: 69b85a9271ced68faf19511e04bd9a3671daf86f73d40eadf6a076e66becea60
+    input_fingerprint: 58674ba503c4ec4a8ca0db0ef2ed09cd2c78853c85a1e586dd8842eaafc23d74
     template_sources:
     - ".github/workflows/dependency-review.yml.example"
   ".github/workflows/heads.yml":
     recipe: template_source_application_github_workflows_heads_yml
     action: write
     dest_sha256: 63be5bd870c61e8e24160610fcec287bd67543c3072c4fb2411adaad39ae4731
-    input_fingerprint: 43f469231034e8a6c0db385a8e70da93a94f43ce949df760334c8f980a9d3714
+    input_fingerprint: 7caced712d8b7190175876f8110f8b0402cfa8c15d5f091cae0247d613bbd6c5
     template_sources:
     - ".github/workflows/heads.yml.example"
   ".github/workflows/jruby-10.0.yml":
     recipe: template_source_application_github_workflows_jruby_10_0_yml
     action: write
     dest_sha256: 2ff61a0713c7d660b85190098839312807f34ab805f5696df90d7e0957447bfa
-    input_fingerprint: '00009e7b7f3dd597a5c5792660bf92084fd395a68c0655dd5ccb02e72f0e6505'
+    input_fingerprint: 5561f789897d2595b1ba9f51f4b17a642a7c5a19e0ff7a99313c7e7ee39b18aa
     template_sources:
     - ".github/workflows/jruby-10.0.yml.example"
   ".github/workflows/jruby.yml":
     recipe: template_source_application_github_workflows_jruby_yml
     action: write
     dest_sha256: 7270b074b66778c3f52bd2418f7ca4aab43907a96e78249183d7397685537aa7
-    input_fingerprint: b133356d860494e2951c0ad6c57d1e11415b3535455492ae76dce5cf205a30ad
+    input_fingerprint: af6cd9babcab96c588e65e669821e0b6e53d54a182654c5147a5851d0e1dee60
     template_sources:
     - ".github/workflows/jruby.yml.example"
   ".github/workflows/license-eye.yml":
     recipe: template_source_application_github_workflows_license_eye_yml
     action: write
     dest_sha256: cfee5ec9744ca627f137a8c0454fc7b08decbe075494e30e510ca0a9905c6ed4
-    input_fingerprint: 17b9ebe23c3e435e41eb61b60743105f0f6b40389734f00ac71b5eda378d12cb
+    input_fingerprint: 106a36bda2cacb68793276c00e531b54e801e9611fcdd73d4df81b6f7362f5e3
     template_sources:
     - ".github/workflows/license-eye.yml.example"
   ".github/workflows/locked_deps.yml":
     recipe: template_source_application_github_workflows_locked_deps_yml
     action: write
     dest_sha256: d834ab75f5afe1eb4a19cd0355158ae45d8a9babf019f32bb7b3db507b806cc6
-    input_fingerprint: 0ff127e00fcd508914e2c9905e81429b62f7a038438c36ecfd32321ef3d82989
+    input_fingerprint: 5b8e24d53fa51a4cb0c62f32494df1aed7559249d967b16797e869ff05af477b
     template_sources:
     - ".github/workflows/locked_deps.yml.example"
   ".github/workflows/opencollective.yml":
     recipe: template_source_application_github_workflows_opencollective_yml
     action: write
     dest_sha256: 83fdccef5ee46480621484b30857964f80eafb4778ae5d3ac3290e6a7b6ae906
-    input_fingerprint: a78110896fba624f118ccab19b170e352a671b80adf457b119ce442f6b14ef2a
+    input_fingerprint: 27ccd590352b01c4e38000e5dc0c3dcc5c86bdb7c5cd69918caa39876fbe41d9
     template_sources:
     - ".github/workflows/opencollective.yml.example"
   ".github/workflows/ruby-3.2.yml":
     recipe: template_source_application_github_workflows_ruby_3_2_yml
     action: write
     dest_sha256: 47e2d0f6383caafcca0d890276953e4aacc9c164be8b374bcc653e8bc6adbbbd
-    input_fingerprint: 4758c27ba1d37e947ce164f937bc9fecf825f4ed06273f3ae996e073e3d81ec0
+    input_fingerprint: e16ee6ee4d8e03cc0bd612e291c8ca6c18966f93db8d53679548c2162da7dfa8
     template_sources:
     - ".github/workflows/ruby-3.2.yml.example"
   ".github/workflows/ruby-3.3.yml":
     recipe: template_source_application_github_workflows_ruby_3_3_yml
     action: write
     dest_sha256: ccd9427012fba9345780dcf337ca4c1356bb5f870021e4201cf36313a38475d3
-    input_fingerprint: bf41418c6c63e7d1c37bc2452b5e7a8abd50a50c2abd5aa90e89089d3c3f828b
+    input_fingerprint: 947cfb314c0932c847d3c9a094d9338a2f558cda1c94ff04dd1a41a4fe30a980
     template_sources:
     - ".github/workflows/ruby-3.3.yml.example"
   ".github/workflows/ruby-3.4.yml":
     recipe: template_source_application_github_workflows_ruby_3_4_yml
     action: write
     dest_sha256: 5e20da4fbbcf6b7b5fecb7c2e903a3ca90c56d494c449c3e94eda94a81c926fe
-    input_fingerprint: 8e4bfde57038f9dc1f23f43d12a8ba0d69e6323042ee4a65c9352b0d241f7523
+    input_fingerprint: 5b9ba6d43a088b90c0af6e143bb67941bd2be996592ffa410e62718c60f56c33
     template_sources:
     - ".github/workflows/ruby-3.4.yml.example"
   ".github/workflows/style.yml":
     recipe: template_source_application_github_workflows_style_yml
     action: write
     dest_sha256: 3dbce7e0f50fc1c14b9cc9544d38d29bc164f65d15e28368efdde8ccfa502262
-    input_fingerprint: 7bd3d9c32556600b4d10284f0362e3a904c3fa4b19fafc23c90e743bcb3ccdfc
+    input_fingerprint: 62a763e260cbf279b367e4778158e17dd3f3d87e68afde58f0d5f01ffdfd3a90
     template_sources:
     - ".github/workflows/style.yml.example"
   ".github/workflows/templating.yml":
     recipe: template_source_application_github_workflows_templating_yml
     action: write
-    dest_sha256: 9192a81f252b2b56d98ce9fc114e3e13d5e1ade439bbe4cdda703b0215d3a0c5
-    input_fingerprint: fa5d945990fa41e62630abe001e5eb1718a3f2f4e7b95cc694ce46caa186375f
+    dest_sha256: 496d692077fe43a655617ac094c9b6e23bcedb70a815ad59b7308f2db5d8ad5c
+    input_fingerprint: 145843c0cc22de8c98202f6111a7c2ba6f188e1ec286716dd6e23a2282c6e369
     template_sources:
     - ".github/workflows/templating.yml.example"
   ".github/workflows/truffle.yml":
     recipe: template_source_application_github_workflows_truffle_yml
     action: write
     dest_sha256: 7669931ccab700d8c6dfb23bd759556fe7aa920104bc9291c756fd1aa1da1662
-    input_fingerprint: 940cb7fe4e4ad516861a78070034c425cdc6ba0c66ea491e6619ad06d04fcc3d
+    input_fingerprint: a0f5bcaeb6256ec56256262280363882647f0072e81aa5e6c3d4276929e0e8a0
     template_sources:
     - ".github/workflows/truffle.yml.example"
   ".github/workflows/truffleruby-24.2.yml":
     recipe: template_source_application_github_workflows_truffleruby_24_2_yml
     action: write
     dest_sha256: 0ecade6c269c9a099b3cde866f2ffdf45d66d245eb99738a0a17525d980d43a9
-    input_fingerprint: d7d9a598516946f3e9937a512bfbc01f795d5cd0460197c90c6e7699a403e59e
+    input_fingerprint: 9847ca7b5187a927d677a51d7ecb0fdff1fe9cc8edc526b4ff7ed148a72bdca6
     template_sources:
     - ".github/workflows/truffleruby-24.2.yml.example"
   ".github/workflows/truffleruby-25.0.yml":
     recipe: template_source_application_github_workflows_truffleruby_25_0_yml
     action: write
     dest_sha256: 6f1f21aa874c79b00144976e7e29d7fc39a74f40e106e63a3d1d1c295e859907
-    input_fingerprint: 5a421a90cb145c4e8e4a9c44a1429e145b1a49b72497172e07212f34d2522576
+    input_fingerprint: c919a032b3c09cb900a9424bd284aaf55634c0728110e3a58684cc27c54c977d
     template_sources:
     - ".github/workflows/truffleruby-25.0.yml.example"
   ".github/workflows/truffleruby-33.0.yml":
     recipe: template_source_application_github_workflows_truffleruby_33_0_yml
     action: write
     dest_sha256: 35974827fed5c423ed101c6ef120445533aaefdcac63c16b26ff298dcd2b36e5
-    input_fingerprint: 7937bcff545f3bcce75a341ca2b506f8d094ef7965f65124006caf5def2b852a
+    input_fingerprint: '01865c23f4a336d06ffedb4699e3b836f5ca394cb539651c0779668bce0f0299'
     template_sources:
     - ".github/workflows/truffleruby-33.0.yml.example"
   ".github/workflows/unlocked_deps.yml":
     recipe: template_source_application_github_workflows_unlocked_deps_yml
     action: write
     dest_sha256: 2e5820a353ce46df7263e54ffb5f6c2cc043a6bbef817a4afc8eedfe5393963e
-    input_fingerprint: 9abf9387a742fc8f0d0ba5ca7a027dceb3a199cb20ede6d7066929b2fde0a3c4
+    input_fingerprint: a132b9340493d42a7b21a60708244f58547ee523260f5c072e204818e78162ee
     template_sources:
     - ".github/workflows/unlocked_deps.yml.example"
   ".gitignore":
     recipe: template_source_application_gitignore
     action: write
-    dest_sha256: 14864a0c88be3f8c122ab3032efeb782ba5e035013231038acf746a400437a3e
-    input_fingerprint: d5bc1b2907f5d6853a4fc94310e64c18815e89d8d4882695e6d068fd6c823fbc
+    dest_sha256: 306fb86c9a8ce4f450e798fa0965a0b2dd6f828ec2b48926f3e6961fbaf7302a
+    input_fingerprint: 5bdb7b742140c705f2fe9cd5d5b48a11b540b19b1d8ef08b13a3194c2c0ebd79
     template_sources:
     - ".gitignore.example"
   ".gitlab-ci.yml":
     recipe: template_source_application_gitlab_ci_yml
     action: write
     dest_sha256: e60a5341013b6aceec58f6addccb9945835fa13beb1270566ff1882719371e61
-    input_fingerprint: 4570d0f8a15a92353469bab37480328bd64971eacde2d8e06b616410343fb791
+    input_fingerprint: 425c3a10679cf067872679b49a29729e26eb231a521e3b4f6f1e86a12ef4c9a0
     template_sources:
     - ".gitlab-ci.yml.example"
   ".idea/.gitignore":
     recipe: template_source_application_idea_gitignore
     action: write
     dest_sha256: b44a5aa16bf9fe5635558af347454b05a76d600084308a9f43d4d0b54789ecab
-    input_fingerprint: 22fdd2b5b6123c0bf9fd4070e5f3899d0b9fa3ff7cd2f8e034f6dc820185bdcd
+    input_fingerprint: 3910b8bbbf54277c4ca35dbac56e660f8103c45a91f34aa0fbd1ee94a839f94a
     template_sources:
     - ".idea/.gitignore.example"
   ".licenserc.yaml":
     recipe: template_source_application_licenserc_yaml
     action: write
     dest_sha256: ae7f20cbf2ca8a07c073ed6bfb2b58a8f20f14d7f7e5da0544bf29a3f8009b37
-    input_fingerprint: a61876e82d8ae1917c4e2fed156488cd6cb633e7cc3f49215b595bcd0bdc0a08
+    input_fingerprint: 6f0ce0020e6716d0ece20aa1ef9b1d12be8cbd6506c30c6def0683ea43276052
     template_sources:
     - ".licenserc.yaml.example"
   ".opencollective.yml":
     recipe: template_source_application_opencollective_yml
     action: write
     dest_sha256: bdb343e6d09616aabcdcf2f3a5e54234f6251e365d1bb450f5983398234b9d93
-    input_fingerprint: 69ee2ce9a70a1dc241238b2e9b1dca01d08b7d4d619a916ee795e01fdeafb2d3
+    input_fingerprint: f532bc3b9a64136e531a65a69812a24bddd335274bbddaf516683041935a02b0
     template_sources:
     - ".opencollective.yml.example"
   ".qlty/qlty.toml":
     recipe: template_source_application_qlty_qlty_toml
     action: write
     dest_sha256: 38abdf6ffce9c76d69ba0085813abc48536dd2031fd15c25a9f1fd3b86716b32
-    input_fingerprint: 61c79fe2a93c5c585f786b6182868a32faaec65940c2c6c7f15c6401df52c4ce
+    input_fingerprint: 4005c2f1895ff91f8de338189128d8ca22165d390debfef113d37755c2358df0
     template_sources:
     - ".qlty/qlty.toml.example"
   ".rspec":
     recipe: template_source_application_rspec
     action: write
     dest_sha256: 87c2b075fb76dcaeb07357fa307dded4e98924ce56aa39dc769736e15d0b6ef8
-    input_fingerprint: 0472eda6efa71af72b15ef68bdc8f42ea5aef2fc15df1169c68790956bd32b32
+    input_fingerprint: 85f13392a42255440702345462c5896d410386349234d5f105a15d6f28de0447
     template_sources:
     - ".rspec.example"
   ".rubocop":
     recipe: template_source_application_rubocop
     action: write
     dest_sha256: 591e4b45430e85b0dd460cc11c70650912fa2734988420b934109d06a749344f
-    input_fingerprint: ec67255df64453e70fdc8ad457ce913fc26728c5a804eb3d163e04192a1a06b5
+    input_fingerprint: 2d4cab51ce64686aa843a1e5a42ab69543833b6f3b2425ca51d19c59f5421687
     template_sources:
     - ".rubocop.example"
   ".rubocop.yml":
     recipe: template_source_application_rubocop_yml
     action: write
     dest_sha256: 85051394a9d3b6cfc9d65fd39061f5b56e985a7fb5633fe23f2c6dcf74880e03
-    input_fingerprint: 51d1095b2e69dcbf2360e6e38a19c16d688449a310f5436f4500c92b62875c4c
+    input_fingerprint: 5aa3c450bfb29e7ad5a014e11286041b2bc901089c3e75a04796c1c0b07a6f04
     template_sources:
     - ".rubocop.yml.example"
   ".rubocop_rspec.yml":
     recipe: template_source_application_rubocop_rspec_yml
     action: write
     dest_sha256: 288ad75e7eb14d87d80fafe6f7272217be5c57547536ee56c780a7d10ac7ec74
-    input_fingerprint: caedfdea3e027c0f5e69687e4929a41179a823bcfa9605cbbe8c2ed88cfb83a1
+    input_fingerprint: e04452da2c1c92eda5f3d3b061517f848dcc91f00a2e237df938a49e65fc6bce
     template_sources:
     - ".rubocop_rspec.yml.example"
   ".simplecov":
     recipe: template_source_application_simplecov
     action: write
-    dest_sha256: 4e49009418c8abec0d4d3c738a833c8b5c9e5720c7bafddcc63164fdd5af0849
-    input_fingerprint: 71da6d387c525fcde33dd93baf289a0990f867b0119be313192947d0afe33856
+    dest_sha256: 282c460fd98ffe06158f20780b42a014d4badc2000975a22aef735f430c78bf9
+    input_fingerprint: f09347c3111a8e971016a902f44a5c1b3a98868d05b28d3d51dee203d7d044be
     template_sources:
     - ".simplecov.example"
   ".structuredmerge/git-drivers.toml":
     recipe: template_source_application_structuredmerge_git_drivers_toml
     action: write
     dest_sha256: 9d241a44c9edffcdbd3da018fa188a238089c3d1635040924df594a6929a4f97
-    input_fingerprint: 93bddf559367918e2f9aa55a0d039ac16bc5fc52c72540c732aa6722c5ac01b0
+    input_fingerprint: a0be1a57330943b133c5bec739a81259560db6b8b0826eb6f5f462f129f9145d
     template_sources:
     - ".structuredmerge/git-drivers.toml.example"
   ".structuredmerge/kettle-jem.yml":
@@ -545,468 +545,468 @@ files:
     recipe: template_source_application_yard_lint_yml
     action: write
     dest_sha256: 90def46867c9436b4e177c47d91fc8165f4602e335715aecc39f5587ae20b55b
-    input_fingerprint: 7dd6582d5c02444223e7c5f7e3d837ba217af569f0dd6cf52ba2682f187c7f17
+    input_fingerprint: a070542368113f1f85476094b9bbf61bcfc52b22bfa5607fa6a19b720eb8642d
     template_sources:
     - ".yard-lint.yml.example"
   ".yardignore":
     recipe: template_source_application_yardignore
     action: write
     dest_sha256: 821f453c609df7d46145d675424b39dfbe6dfdca8edac5f367b85fff48502455
-    input_fingerprint: eadf79e0f4b17b7ac3095cb01f43979b2861857cda00b5b1c928aaa8d7fecc87
+    input_fingerprint: 1de2a5cbfdec463ae96bd3bd894095657322edd20fc3a1744145a77ae94ce9f8
     template_sources:
     - ".yardignore.example"
   ".yardopts":
     recipe: template_source_application_yardopts
     action: write
     dest_sha256: 6fd6f2701713096a8a9ea095c213bbc68eeef37797c4754d97837e3229a3a5f6
-    input_fingerprint: f1cf2f3d6afd9b4245b84a42f35236177c5bd2acbc2b0a6fa48c3e995a3ae72f
+    input_fingerprint: c4b42b453a504007e593be0d9dc57449dc22231ed204ec94caeb5b93878b5b2f
     template_sources:
     - ".yardopts.example"
   AGENTS.md:
     recipe: template_source_application_AGENTS_md
     action: write
     dest_sha256: aec69512cbe17004660ac0abfabb9ec91a5c51c2cd82c10f30f08886f9bf64a7
-    input_fingerprint: 7c117ef6975c27d623309b57a8af4b22ff85d28d68eefaa0066f77df96b0e264
+    input_fingerprint: 750bc1b3220cdcffe62e7a49bc0495d4d586ecdf0635c8b857770255168de439
     template_sources:
     - AGENTS.md.example
   Appraisal.root.gemfile:
     recipe: template_source_application_Appraisal_root_gemfile
     action: write
     dest_sha256: 8724e3f6faea995be655ac49369bec64a70710112b1f65707fa38f1fd2fd3254
-    input_fingerprint: f8459c333d747c4d9a33da5c4e946f3c75d907e136b44692f53a92dc59a4f1f5
+    input_fingerprint: 41e1c623f89a07ba67c7dc18ba8ec7a67a3ab9eef3624f1c08e858a0790aeb22
     template_sources:
     - Appraisal.root.gemfile.example
   Appraisals:
     recipe: template_source_application_Appraisals
     action: write
-    dest_sha256: 484cae3b35875bb60c736e209b09652e2b3dbbddaa7751dada457d634638ccca
-    input_fingerprint: a3eb61d1b75c881440a1ff77251e1c6c69fe6595509ff30fc17ac4475cc8241b
+    dest_sha256: 6ac1edeba6165c3d486f3b7123e470c6ea6bcfb9a8d05821c9c747a1f4d895c3
+    input_fingerprint: cb2e6ff2ae065911768c703bba2ee2a04a40ad4e5bd368d026de2f5ad99d4aa4
     template_sources:
     - Appraisals.example
   CHANGELOG.md:
     recipe: template_source_application_CHANGELOG_md
     action: write
-    dest_sha256: c4cfb5d88f90f2df383f2812c99c35125973dc1e1d88693b78a615ef56002dc2
-    input_fingerprint: e237ce13410e1ffa34400700c552e2efa028616f7cb4b22563da44bb8916c7be
+    dest_sha256: 3d251744aa895d2b07a252259ee9f2d16cb1c12998c8691d566bd4cb175d61b8
+    input_fingerprint: 5de08bc5a08b6f81eefefc08c63e3e30c9f4aa7de1f83e57f81e9985b18b3b24
     template_sources:
     - CHANGELOG.md.example
   CITATION.cff:
     recipe: template_source_application_CITATION_cff
     action: write
     dest_sha256: 578ad05417d30110942d0329c95e020231e47d23503a0f11b1a819f0a93a1441
-    input_fingerprint: dd483452468e5421d4d642fa2e0728a08740c2353c15e9d1bb1b5f9cf300cca2
+    input_fingerprint: 4cc2163d0581591ce45aea5b30d3bc332c2ceec526a10b6bd7fdec49ddcc8ed7
     template_sources:
     - CITATION.cff.example
   CODE_OF_CONDUCT.md:
     recipe: template_source_application_CODE_OF_CONDUCT_md
     action: write
     dest_sha256: f1ad532f1860f73ef774c6b27a26d41f4bc1cb8813034f5957487766ebb0986b
-    input_fingerprint: 944bf20fa86ffd5859860479da95223d25097b395374e8a3e2cbbbe677e83d3d
+    input_fingerprint: dfafe92cc84319809fd838c2351f38020db055796b06524fc690412427c885a4
     template_sources:
     - CODE_OF_CONDUCT.md.example
   CONTRIBUTING.md:
     recipe: template_source_application_CONTRIBUTING_md
     action: write
     dest_sha256: 94ebd7e6f6740a271e36b7581135deec794c397c9dad64affa60ef277ecc1180
-    input_fingerprint: ac25e522f264f25de52d5bae4f83100f349b37d6d6ac37f7a9e0bec235342558
+    input_fingerprint: 86878529fa17e858f8f92bcdab25e053252875d96fba1e4b709c5e7ac791d4d9
     template_sources:
     - CONTRIBUTING.md.example
   FUNDING.md:
     recipe: template_source_application_FUNDING_md
     action: write
     dest_sha256: 4d14668cfef5e2ac2bbe994342815d45a85f3726716e94a7d4a60ae3ba90894d
-    input_fingerprint: c6865024c916bc158c975307c5beaa0d88edd860853f9e24c206b1076a740814
+    input_fingerprint: 1cbfa9556c428a0b85a73de793d14e18f37e9de7a9e07ed53980cfb31be31b47
     template_sources:
     - FUNDING.md.example
   Gemfile:
     recipe: template_source_application_Gemfile
     action: write
-    dest_sha256: ff9e4cff2745fd1c009a1b060739ccd242316772e54ea964cf67a71173f76b7e
-    input_fingerprint: e3ed88a9f0c190335fb20ba991d4f54853a1f2e82252d35c499b83de08668818
+    dest_sha256: 49a6301d0d2ae72706f37bb025ae444cbbd5dea29cde21db5b766e4a3314803d
+    input_fingerprint: 436f08648fc9c93bdc5e0d6c9f66093b934f37171ad9f66c72d31c8254f8de42
     template_sources:
     - Gemfile.example
   IRP.md:
     recipe: template_source_application_IRP_md
     action: write
     dest_sha256: 85d8887d9b0e77f7fa9835ca5b9be31f586fdc94764ed1819af2a9a7fec98e96
-    input_fingerprint: f2ea1a5872054770e7cd78bf849f1e3110a6ea7d2f7c01cca7082751e135d7de
+    input_fingerprint: 10521f710fa9ee820a909cd0e988b983d398ba4804221410aba2e19159ca1f33
     template_sources:
     - IRP.md.example
   LICENSE.md:
     recipe: template_source_application_LICENSE_md
     action: write
     dest_sha256: 94a63628a80649499c21556046fd4ee2134f96e1260caad18dd81ad17a1575e0
-    input_fingerprint: 8058e12e94ada06c9e00b58d0b61a4ac4d4c99c831710c40faffdbc92da07ca7
+    input_fingerprint: cee71417cffb999716fa13534304be98bbf8e77463c5f60031695bdf4ffccff2
     template_sources:
     - LICENSE.md.example
   MIT.md:
     recipe: template_source_application_MIT_md
     action: write
     dest_sha256: 365fce2a82f9d258ada9a527accfd5754b406ee9cdd8f8ed86bbec64b8c42ab2
-    input_fingerprint: 9997319009a54aa7bb6cc22fc0bc151a43c769dda69fb413f925cffda3489178
+    input_fingerprint: 251eb708a03e0e6dade7061d37ad60f417ac64346e6ab58b2ef3f37adf632e98
     template_sources:
     - MIT.md.example
   README.md:
     recipe: template_source_application_README_md
     action: write
     dest_sha256: 59a96b3f3f242e2e87ecb379730d06a94bc8683cf2a39b9e458ebb5116778a10
-    input_fingerprint: 899ead12bffd5df3f61b2ced165c654ebfa92782ac0312d680e593b1526cf2e9
+    input_fingerprint: 3f80e6166f9c8bf62069a76fa450f3c8a083a37d804ceab7f1fe07d493b80701
     template_sources:
     - README.md.example
   REEK:
     recipe: template_source_application_REEK
     action: write
     dest_sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    input_fingerprint: 7b356442bb1f4d78e689f8c6b31be08cb6b38d228dd6a1471786d970268ace1e
+    input_fingerprint: 5a30bfa27cf390fc767eca6e88c7663981f34039ec7fdfedaf484c6ec461bc7b
     template_sources:
     - REEK
   RUBOCOP.md:
     recipe: template_source_application_RUBOCOP_md
     action: write
     dest_sha256: c09e5533ccc59b70a2efa05c99f66e521137c1053d3c12eb43509cebd5b68b0e
-    input_fingerprint: 5c3f6d2ff03b6d653e3455f2677298647859d90ceb58350946e98ddca1721ad4
+    input_fingerprint: 746b4125a154114499623bd2861f342dbce130db9f9dbeb695d09f843d8de838
     template_sources:
     - RUBOCOP.md.example
   Rakefile:
     recipe: template_source_application_Rakefile
     action: write
-    dest_sha256: a1898c39053f6234f8facefb0878f122120fb393836094573aca4dddd1583e2f
-    input_fingerprint: 68c9497afd9fb2092f791a64579d585fd6f0fa930e62311cb7dd4fb43cad32a4
+    dest_sha256: 703ead6488465ac5426a12e93fee58483d3e6f717768ab8cdaf68be01747c731
+    input_fingerprint: 718bbb6088435c17faf3c7219a0aa3d479d7c064385ddfba074aa73c39ab420b
     template_sources:
     - Rakefile.example
   SECURITY.md:
     recipe: template_source_application_SECURITY_md
     action: write
     dest_sha256: a4adba2073ca82711eb184520e4dccfc25cee7dbee633c4057e878dd54f5ea3c
-    input_fingerprint: 2ca4a413d5851b88021cc827347fd3c27af6397753f2c4c6f06bd69694c03874
+    input_fingerprint: cbfa7c94eb46ed126a80c8a5376200881738a6b8291f39a74386f435503b19bf
     template_sources:
     - SECURITY.md.example
   bin/setup:
     recipe: template_source_application_bin_setup
     action: write
     dest_sha256: e201190bc24e9f00849b3efa5fbaece2cbf069703232e50c7fa15d41c47f2ead
-    input_fingerprint: d5cc7d85152b13346fcb108f860333a7195dc0264c86f96f6b291bbaa49e3ea2
+    input_fingerprint: 259be10103cf68f94e9f896da4e8e8927a3572b6af77627b84f2ef8980f63046
     template_sources:
     - bin/setup.example
   certs/pboling.pem:
     recipe: template_source_application_certs_pboling_pem
     action: write
     dest_sha256: 18956f60643666cc181e2743b3b3691bec08c5326f514f60af54d0cdb9ebc554
-    input_fingerprint: 21bedeb59e32d5b8bb4dc0c548137a468dd023c0b74930a06400fd6bfba75f87
+    input_fingerprint: dbd74eb9e432c1133d7e184e580462a8192cdbed5d6d3fa736480e9a8e55b17e
     template_sources:
     - certs/pboling.pem.example
   gemfiles/modular/benchmark/r4/v0.5.gemfile:
     recipe: template_source_application_gemfiles_modular_benchmark_r4_v0_5_gemfile
     action: write
     dest_sha256: 5bc3190090ae456df1a8cce28dd47a7fb293495f6d845ec7e53a7a8b50f14ae1
-    input_fingerprint: 1755bd6f5134148f140a8f7cb4f0dad1ad8b60a9e8417f11113dcc8836979e9f
+    input_fingerprint: 34bb5b2f9b6e3965290de6e8dc2a37cf9b53129e70d48bd397b1fbe7b03eaab2
     template_sources:
     - gemfiles/modular/benchmark/r4/v0.5.gemfile.example
   gemfiles/modular/benchmark/vHEAD.gemfile:
     recipe: template_source_application_gemfiles_modular_benchmark_vHEAD_gemfile
     action: write
     dest_sha256: ca6cd52c55c3082759c6ddc97638970f12d953aec1822470823d316086aa6e25
-    input_fingerprint: 643adf074a6d90d0d9640cdf83fc42cf999373ed3dd2f4f08f87d30f61397c4d
+    input_fingerprint: 4acebebd86d3b6a1231c03a29d38bab935a2d424020f47c8131eb46afbf8d2d7
     template_sources:
     - gemfiles/modular/benchmark/vHEAD.gemfile.example
   gemfiles/modular/cgi/r4/v0.5.gemfile:
     recipe: template_source_application_gemfiles_modular_cgi_r4_v0_5_gemfile
     action: write
     dest_sha256: c2d14a39377a2435419ceaca22a3421ebd899e9cba943df8a90b576a33624870
-    input_fingerprint: d4f6a0c90b4d3317624955031728fb4bb08029c73dfee00e46b0e48bc2f388e8
+    input_fingerprint: 4efea51efba1272f1feac4de43767335e3364b2a179d858792aebe0c7bb46ac4
     template_sources:
     - gemfiles/modular/cgi/r4/v0.5.gemfile.example
   gemfiles/modular/cgi/vHEAD.gemfile:
     recipe: template_source_application_gemfiles_modular_cgi_vHEAD_gemfile
     action: write
     dest_sha256: 9ff3dc789b3279642876c0aad4b0094c1139bb8fbbf36daab804d3b2b3a60b43
-    input_fingerprint: d31c1c3c9e8bacf89775fbed8b11346e2d49a3fe3732bfca804660bf5da641ad
+    input_fingerprint: 59c64098f12ac277408f0f18389962ce80acfa64e5ba99de87381c93af3ffcdf
     template_sources:
     - gemfiles/modular/cgi/vHEAD.gemfile.example
   gemfiles/modular/coverage.gemfile:
     recipe: template_source_application_gemfiles_modular_coverage_gemfile
     action: write
-    dest_sha256: d5a207cccc2c63f95d4745139a4cce64aa7aef049d782d7b4e48531964fd1365
-    input_fingerprint: 8032b5e02d98cd143917ffd1774486ff93dacc7d3c0972024d729db505300c7b
+    dest_sha256: faab65b82ebf648b436f701d41916a23cc3b2cf2bf7280559baf4e18486c5421
+    input_fingerprint: 495b6d402c7793e325e99a669215f767dbad562c54b748f062b64354392c47d4
     template_sources:
     - gemfiles/modular/coverage.gemfile.example
   gemfiles/modular/coverage_local.gemfile:
     recipe: template_source_application_gemfiles_modular_coverage_local_gemfile
     action: write
-    dest_sha256: fdba34caa19c62ed22d541fc387898f4d32e3cd0c72f2e7f8196a0c5ae6277e3
-    input_fingerprint: 06e18c7e26ca03c3486f1f418f6fbdf47b88d1c692496fc7edd894c45ad4beff
+    dest_sha256: 05250cec85bffe701ff42025076ddca7ea9d3164012526e1e7854a3b5cc5af00
+    input_fingerprint: c60f7b14dc34e1ed0f4f3b67541d66896d09799d880a026500c05c7db1d796ac
     template_sources:
     - gemfiles/modular/coverage_local.gemfile.example
   gemfiles/modular/debug.gemfile:
     recipe: template_source_application_gemfiles_modular_debug_gemfile
     action: write
     dest_sha256: 0a508bfb02e51b75394b43f4f09d98174dac36ead41cba09c1f730671a1f5905
-    input_fingerprint: 68d0404a692236e6e77a066422f79a45c5feff3fcfd2b85cff485d1c2d24a422
+    input_fingerprint: cf1e5d46dde03c31499823ee876f84350400b5a088f1599d886324fee99829ca
     template_sources:
     - gemfiles/modular/debug.gemfile.example
   gemfiles/modular/documentation.gemfile:
     recipe: template_source_application_gemfiles_modular_documentation_gemfile
     action: write
-    dest_sha256: 35ed2f45e90fa1d94b6540e93567f8279427429b1e3ab3cdd8b898b7c73ae451
-    input_fingerprint: 1c01d164c6cae956a8e09c025e688e10f979a4fb15eda522c8a71b4be060c698
+    dest_sha256: e01f16c12a8301ff2c0e725f4083ce6fd05da78f3e7ca20242a7bd0ef7a2b9d9
+    input_fingerprint: 178ccaddbb0a02882a3e9b37da5d2cd0081ab53d20230acf4a1cb59e76739b4b
     template_sources:
     - gemfiles/modular/documentation.gemfile.example
   gemfiles/modular/documentation_local.gemfile:
     recipe: template_source_application_gemfiles_modular_documentation_local_gemfile
     action: write
-    dest_sha256: 45aa3655785c3abba9622c7384d0a6416740003874721e836ad0173204741801
-    input_fingerprint: d9835a783b9d80034fb944ff5e1baa0b363a0524ea2db166480cca3aac100d3a
+    dest_sha256: 789b114fedcef8d9b6f303f34daaf521b6aa55fefb95198e9ef52ac0d2010fa1
+    input_fingerprint: 64e11f9913cd24dce5cd1691876dcb58525b614ab00c57eb0115f7dda019ec3b
     template_sources:
     - gemfiles/modular/documentation_local.gemfile.example
   gemfiles/modular/erb/r2/v3.0.gemfile:
     recipe: template_source_application_gemfiles_modular_erb_r2_v3_0_gemfile
     action: write
     dest_sha256: 3793e7dc9ef23a7ccd893d48cbba092fd27594c63e65cca011cc658218425670
-    input_fingerprint: 1536dbcc2836be2f68993cc5c7cc30c1ad36822cf5991c8bacbc46eaf150bd94
+    input_fingerprint: dd462d6f33d653903b756eac3187cce07941c79788bb411a9b1d64d991a80433
     template_sources:
     - gemfiles/modular/erb/r2/v3.0.gemfile.example
   gemfiles/modular/erb/r3/v5.0.gemfile:
     recipe: template_source_application_gemfiles_modular_erb_r3_v5_0_gemfile
     action: write
     dest_sha256: 5cab50a56db5a2c1bfe6023bc5490e662649deaa7cee278553d63dc9186adb2b
-    input_fingerprint: a01c83b72d984b2df624517fe4a35e6ee10658989a2b2b21f42804f363a8794c
+    input_fingerprint: 6eadcfd1c82b66c129a12457a0fc14ae22a220e0ab4ac34822de4abc800575e1
     template_sources:
     - gemfiles/modular/erb/r3/v5.0.gemfile.example
   gemfiles/modular/erb/r4/v5.0.gemfile:
     recipe: template_source_application_gemfiles_modular_erb_r4_v5_0_gemfile
     action: write
     dest_sha256: 5cab50a56db5a2c1bfe6023bc5490e662649deaa7cee278553d63dc9186adb2b
-    input_fingerprint: a1bad495caab7fa16647364c69f5bb19a7208e2f58e0a91f0edd2c58a36be5b7
+    input_fingerprint: 4d31d7dbe007654ec26c3c2d4a42145bf134365d09ba0a934deac02dd12d1bed
     template_sources:
     - gemfiles/modular/erb/r4/v5.0.gemfile.example
   gemfiles/modular/erb/vHEAD.gemfile:
     recipe: template_source_application_gemfiles_modular_erb_vHEAD_gemfile
     action: write
     dest_sha256: ad6f104a49e80e0cf625440e3dc816343fe7e2f037fc4971df75e7bb4305c683
-    input_fingerprint: 1855127ab57bfdd638b7fe948b3293a8b2db0490468fed5885891142d0304226
+    input_fingerprint: 63357a61a78f47486d2cd2f9c596a1b6d6ec630e50218c39a5756361258a76b1
     template_sources:
     - gemfiles/modular/erb/vHEAD.gemfile.example
   gemfiles/modular/json/truffleruby_22_3.gemfile:
     recipe: template_source_application_gemfiles_modular_json_truffleruby_22_3_gemfile
     action: write
     dest_sha256: 249c12eacbe90f9d0d2e81e7a62c4c7e9102e504ededcda4ecf660cb3bb68be4
-    input_fingerprint: dbafc21de290b3809e8030e026aa45cb1ae7d9ab51fda4fe39c4d1b691efc1e1
+    input_fingerprint: 0b9ed48297aa190efd473ad767e37e9e613bc5dbd914230bb686b67cc286480f
     template_sources:
     - gemfiles/modular/json/truffleruby_22_3.gemfile.example
   gemfiles/modular/json/truffleruby_23_0.gemfile:
     recipe: template_source_application_gemfiles_modular_json_truffleruby_23_0_gemfile
     action: write
     dest_sha256: 66aa010567f7afa1af8244a74c3c88ecaaf84dc87b6a25180691bb480d02ed28
-    input_fingerprint: a60e5da7d763b128d2bfb8eb965d31fd67c17a1d817d461d809a4ee32510da80
+    input_fingerprint: 2a78e6adefdcefa34060bc818cf22f0b0a54d241437d99d6a9bcfc5500a07f95
     template_sources:
     - gemfiles/modular/json/truffleruby_23_0.gemfile.example
   gemfiles/modular/json/truffleruby_23_1.gemfile:
     recipe: template_source_application_gemfiles_modular_json_truffleruby_23_1_gemfile
     action: write
     dest_sha256: '080fcbdaf2bec73cad40832a3d51eebb380af789917b96f493d1460b0dd6361d'
-    input_fingerprint: bd28d86e66715716da2be76f4e57f279d1d9cedd323e1c7edb739d57d88543b3
+    input_fingerprint: 4988df618ae407500c9c0ab52d50646059ef73fbb2fc1d503a3d04882e7b646b
     template_sources:
     - gemfiles/modular/json/truffleruby_23_1.gemfile.example
   gemfiles/modular/mutex_m/r2/v0.3.gemfile:
     recipe: template_source_application_gemfiles_modular_mutex_m_r2_v0_3_gemfile
     action: write
     dest_sha256: 887eaaff14e1f1d24087a82ec117450559eab9552260a132caf56f21e4c681e1
-    input_fingerprint: 61125d9bad9b0c6ff856bd59ef306313d3632ca1754cb74c7bc569c37a42524a
+    input_fingerprint: d13a4f91dd29c46869df49bcc251fb06b64c708da40e373a89c34c71f394408d
     template_sources:
     - gemfiles/modular/mutex_m/r2/v0.3.gemfile.example
   gemfiles/modular/mutex_m/r3/v0.3.gemfile:
     recipe: template_source_application_gemfiles_modular_mutex_m_r3_v0_3_gemfile
     action: write
     dest_sha256: 887eaaff14e1f1d24087a82ec117450559eab9552260a132caf56f21e4c681e1
-    input_fingerprint: 61262120f600061a43d0bee33c327b78e69491367f8cb5dc7f7ceadb80df93cc
+    input_fingerprint: d54b9990d37dd4e9a66c495c5b0ea90a9f0f5f9b0988ab66bdf0ee16e8519e9d
     template_sources:
     - gemfiles/modular/mutex_m/r3/v0.3.gemfile.example
   gemfiles/modular/mutex_m/r4/v0.3.gemfile:
     recipe: template_source_application_gemfiles_modular_mutex_m_r4_v0_3_gemfile
     action: write
     dest_sha256: 887eaaff14e1f1d24087a82ec117450559eab9552260a132caf56f21e4c681e1
-    input_fingerprint: 2933ce1b3c00247bf5411ab00051fdf970124c5611c931acff60ddce6486fb61
+    input_fingerprint: 39563d672f7813bca0641e3a9a40d162e551f46250c90b2c2314ec68be4455c3
     template_sources:
     - gemfiles/modular/mutex_m/r4/v0.3.gemfile.example
   gemfiles/modular/mutex_m/vHEAD.gemfile:
     recipe: template_source_application_gemfiles_modular_mutex_m_vHEAD_gemfile
     action: write
     dest_sha256: '08018641c97f894788fa91b462da504ab2237213d18d95404136c393274ae3cb'
-    input_fingerprint: 857f57a52eabd6467e31e3c22f9666f990e41777c647835d425463c6efd192df
+    input_fingerprint: cbf7fb4e6d3cfb1da4161ca7021fa809e3db3cd81fe0c016adc928ab17bd2c32
     template_sources:
     - gemfiles/modular/mutex_m/vHEAD.gemfile.example
   gemfiles/modular/optional.gemfile:
     recipe: template_source_application_gemfiles_modular_optional_gemfile
     action: write
     dest_sha256: f770e6e9a9dd2bd0f1f132e882d88038b2e21127dce3afe270908c7338c28bfd
-    input_fingerprint: 3d7eb521fb1445f9e9380d9a0ee1c9f13455adc652fa887dbbccb7daefdc57e9
+    input_fingerprint: 8d9a8d691bea389cb220bb670f6b6eec36d986d89d150c4e5cff6fe581604956
     template_sources:
     - gemfiles/modular/optional.gemfile.example
   gemfiles/modular/rspec.gemfile:
     recipe: template_source_application_gemfiles_modular_rspec_gemfile
     action: write
     dest_sha256: d043f5c9344f6435edb4607c5adaf42c78e7fb6b8b6726007de2bbedefb376c3
-    input_fingerprint: 90a383cf9781045a424046af99ca2fc9af111d9e7bb70ba0087b5c42209024e5
+    input_fingerprint: 9d73ded0ea946f04630c3fffb55997b4459b9ecdcde36612c21c4397e1889d2e
     template_sources:
     - gemfiles/modular/rspec.gemfile.example
   gemfiles/modular/runtime_heads.gemfile:
     recipe: template_source_application_gemfiles_modular_runtime_heads_gemfile
     action: write
     dest_sha256: 6ac7158c4a3088190f2a9082f01439eb27eca2172ab3464b15c9cb045aa885e1
-    input_fingerprint: 0245e4c7eacf12c7df8532c67f30d6c2270b13616fe2eef2c25cd425e64b295a
+    input_fingerprint: fb010d7608f0ac92c3d35f400b2a3e1ec80c398e7d411f2fd8b35beb8fdad466
     template_sources:
     - gemfiles/modular/runtime_heads.gemfile.example
   gemfiles/modular/stringio/r2/v3.0.gemfile:
     recipe: template_source_application_gemfiles_modular_stringio_r2_v3_0_gemfile
     action: write
     dest_sha256: 6a21546445b166b784f5dc0458d9f9acc506f3b6fcc1931daa5c62821da90d6c
-    input_fingerprint: 57a43ef8de29a6cd47633f979a8e0a091b9f251931949ad410ca222f49a31c84
+    input_fingerprint: 4f9802218c938c872ec8780daa74e440a45f56c6e3f42f33c4d2aa88a21c2f4c
     template_sources:
     - gemfiles/modular/stringio/r2/v3.0.gemfile.example
   gemfiles/modular/stringio/r3/v3.0.gemfile:
     recipe: template_source_application_gemfiles_modular_stringio_r3_v3_0_gemfile
     action: write
     dest_sha256: 6a21546445b166b784f5dc0458d9f9acc506f3b6fcc1931daa5c62821da90d6c
-    input_fingerprint: '083ada4242b6bcda79dda8a14f8f68c84fcaa9aad351d4bad7112334e0642324'
+    input_fingerprint: c2f44a0761fa95b2e600521f81be2c9e203c842d6023ffbcbad546ccd6c715ae
     template_sources:
     - gemfiles/modular/stringio/r3/v3.0.gemfile.example
   gemfiles/modular/stringio/r4/v3.0.gemfile:
     recipe: template_source_application_gemfiles_modular_stringio_r4_v3_0_gemfile
     action: write
     dest_sha256: 6a21546445b166b784f5dc0458d9f9acc506f3b6fcc1931daa5c62821da90d6c
-    input_fingerprint: 53a8a626402fc296a3a54494a73c10feb49cf30a9573866e58890411d8d9b1fb
+    input_fingerprint: 2b9e601592379b442250dd8a6901b9033fe433958bdfec9fc7088f0fab911e31
     template_sources:
     - gemfiles/modular/stringio/r4/v3.0.gemfile.example
   gemfiles/modular/stringio/vHEAD.gemfile:
     recipe: template_source_application_gemfiles_modular_stringio_vHEAD_gemfile
     action: write
     dest_sha256: e0497ab6dad9667b22725485b781e9d99349a079250eb29cb125d58f01f4a5be
-    input_fingerprint: 2552f17e432932a972228b2f7018c1cf8eabd166eaad9168e8c9c8256dea2225
+    input_fingerprint: f5e051764ce3514dcf51039c19f6681815956c5332c68a1b4d897d981fcd9505
     template_sources:
     - gemfiles/modular/stringio/vHEAD.gemfile.example
   gemfiles/modular/style.gemfile:
     recipe: template_source_application_gemfiles_modular_style_gemfile
     action: write
-    dest_sha256: cb47e080d76208fef7a24396fbaa98e9084e5affc84ee9b94eb91e36c9b3fb58
-    input_fingerprint: ed5e98ebd878b79ed175b9417d4a746242ddc5bb4143e31422029e9c704552ef
+    dest_sha256: bf9a7c60b545781225c3193666c6aea28d6f883afd1a19feeea42bfa6ace42e7
+    input_fingerprint: e372b564e3eb9e1e870da265c9aba65c39db0be4a5670fd9a0da92aad1ac10b9
     template_sources:
     - gemfiles/modular/style.gemfile.example
   gemfiles/modular/style_local.gemfile:
     recipe: template_source_application_gemfiles_modular_style_local_gemfile
     action: write
-    dest_sha256: 84fef95958459a266416395c1ed737211f45732dc077a22e0493a95130015fb1
-    input_fingerprint: a0ea3cebbdb4ae439e329f6ac51889de80a3414af6394977b3559f521a9e862d
+    dest_sha256: 747ddf91a08d626bed76deae6f6c4645e787948729264de02811b992889d8c45
+    input_fingerprint: 1ce12932fc933513c74268c838985da9a17892ffe0910549527923ac7386f3e3
     template_sources:
     - gemfiles/modular/style_local.gemfile.example
   gemfiles/modular/templating.gemfile:
     recipe: template_source_application_gemfiles_modular_templating_gemfile
     action: write
-    dest_sha256: 53af85ca648e80c9841748349450657ec0c1f6b1aa7f77c87cc359357fce4073
-    input_fingerprint: 381e656d0349b2cb3dd0f40e79eebcbf9e2069de4266da09d88424cebe203cdb
+    dest_sha256: f63e9254dcd76f02406fff515090570d2394dae220faac4f9b3cad6c1a78346a
+    input_fingerprint: 0a28c996c13a157aec759af398001a22719f1d5478fce04c2a5a83a52dfbfeb6
     template_sources:
     - gemfiles/modular/templating.gemfile.example
   gemfiles/modular/templating_local.gemfile:
     recipe: template_source_application_gemfiles_modular_templating_local_gemfile
     action: write
-    dest_sha256: e1214e4ef0fd61b3a5cf1629e73bb6fce01b139675c3e85d7d98f44d55da4086
-    input_fingerprint: 4e931ca3de298170b69efcf67b0f28ee80feedf15ca161227c3502de898bb471
+    dest_sha256: e77ad0561f6180bf1b41e56d47f8f837dbc199df32fb8bef187f35fcfde03ce7
+    input_fingerprint: 9756a70e1dfba1893d59a21df35fad8dfcaf58cd50cafb8bbebc248b53abff34
     template_sources:
     - gemfiles/modular/templating_local.gemfile.example
   gemfiles/modular/webrick/r4/v1.9.gemfile:
     recipe: template_source_application_gemfiles_modular_webrick_r4_v1_9_gemfile
     action: write
     dest_sha256: 1ee940ff54d5ca3ce7fcff0d82ee9553386979656b9e220d5be5404d0991d5ea
-    input_fingerprint: da446b8cc8b56c15ca091e19316a9c1f8096b8d2f152003dedc9c20e3ee7394a
+    input_fingerprint: 298cb98c8f7c44869a06787648e66e2b4fa92fb1753d9f5df8397690f1f55e05
     template_sources:
     - gemfiles/modular/webrick/r4/v1.9.gemfile.example
   gemfiles/modular/webrick/vHEAD.gemfile:
     recipe: template_source_application_gemfiles_modular_webrick_vHEAD_gemfile
     action: write
     dest_sha256: da545f591af987648ffbaba181707480a38dfb375db7d289617986ec2c2ca23b
-    input_fingerprint: 17661438df3d706bb69bf32a48926dd7234a908b2f45792d5f8c421987d69c20
+    input_fingerprint: c181f4e9406b0feb7dc5c2eef1db118e17c1f6eb9e15c75cd0c18966ad3a78e6
     template_sources:
     - gemfiles/modular/webrick/vHEAD.gemfile.example
   gemfiles/modular/x_std_libs.gemfile:
     recipe: template_source_application_gemfiles_modular_x_std_libs_gemfile
     action: write
     dest_sha256: e3917e90717d7f9f4393d847549a78c53de7f6c8de52a7f590b34b515fd6111a
-    input_fingerprint: c79292be0e01ffba7b4e782839fa7dc6faa2273eb87d011ea7c0788fa5d9d21a
+    input_fingerprint: 82f18ca48dbac00d9163e8d1bdf523021c37d64f1662df987cd9bab64020528e
     template_sources:
     - gemfiles/modular/x_std_libs.gemfile.example
   gemfiles/modular/x_std_libs/r2/libs.gemfile:
     recipe: template_source_application_gemfiles_modular_x_std_libs_r2_libs_gemfile
     action: write
     dest_sha256: e80ec8ad06cb1b31ac982bc25cf7696987fca131aa1001eaefd0bf5cd379c273
-    input_fingerprint: eb486043b645451c30e1276da546eaad752730e1c047d21931f2b4069ae8c218
+    input_fingerprint: 6f64687d86d1deb71212d62bcfbced35720dfbea64ed37de63fe17275b9e0641
     template_sources:
     - gemfiles/modular/x_std_libs/r2/libs.gemfile.example
   gemfiles/modular/x_std_libs/r3/libs.gemfile:
     recipe: template_source_application_gemfiles_modular_x_std_libs_r3_libs_gemfile
     action: write
     dest_sha256: 546f8849f4267bb19aa10ff0de40be30957197f229e6887847181ea9127b2650
-    input_fingerprint: 215e7c9985fe088350674c7d58287e565c373842a39031066069e9e20ae6a45f
+    input_fingerprint: 05bc241358b50f9bc376f5d4a3ddd0309209c04aee8b5c7ca111bd4deb8d3532
     template_sources:
     - gemfiles/modular/x_std_libs/r3/libs.gemfile.example
   gemfiles/modular/x_std_libs/r4/libs.gemfile:
     recipe: template_source_application_gemfiles_modular_x_std_libs_r4_libs_gemfile
     action: write
     dest_sha256: 8c2582eaa218d216b98c86c933465295c8b4e43f3251ea388b9eaf6e471f8da6
-    input_fingerprint: e9b7ffdbd9b87137bd2593a95aed283ef104c917213b1657fe85faae3e0f8eab
+    input_fingerprint: a46e95a60113f44430d4c98400443c158d17fe80e6bc82a4083c5d8b19dc1731
     template_sources:
     - gemfiles/modular/x_std_libs/r4/libs.gemfile.example
   gemfiles/modular/x_std_libs/vHEAD.gemfile:
     recipe: template_source_application_gemfiles_modular_x_std_libs_vHEAD_gemfile
     action: write
     dest_sha256: d3133ec4c0638363a7fb025d19be7e95a615fd61c35ddb8d17f2280ee74a7486
-    input_fingerprint: aaca0a507c926cffab446c32ddb713b94b75b47585ebaff3bf8870fe885d2527
+    input_fingerprint: d6d47627502142c2f8ce83c86737af851bb567a2ea8c52b4080129c624917eb2
     template_sources:
     - gemfiles/modular/x_std_libs/vHEAD.gemfile.example
   lib/rubocop/ruby3_2/version.rb:
     recipe: template_source_application_lib_rubocop_ruby3_2_version_rb
     action: write
     dest_sha256: 1096175385abb20329fce1bd3ed20ea4866d21a1f878dbc24eee0062966067b4
-    input_fingerprint: fd6d90f002b47f3250b66ec5295cfad879c47a75e8d6edd97a68bbfc2c495231
+    input_fingerprint: 8796ae2d9898a16138a53b0a429d725eee6fe385f253430d2715ae68215f068e
     template_sources:
     - lib/gem/version.rb.example
   mise.toml:
     recipe: template_source_application_mise_toml
     action: write
     dest_sha256: d7b33a69ad0ca72e9642bbcd23805c7fa4a9fbe8a17c39817514c0db6848377d
-    input_fingerprint: dda24ebf9b89788ba0e63707b174640243d74ba7a4c5ddf8ea05f5050703c94f
+    input_fingerprint: c15a26ebfc627d339712968ed8e6f75785a51092bed370f91dc8414a7adf7078
     template_sources:
     - mise.toml.example
   parsers.toml:
     recipe: template_source_application_parsers_toml
     action: write
     dest_sha256: f0538ae7ad8596be2dc39b3ea663f1164dec21fb0457233c1885097e774aff6f
-    input_fingerprint: 851dcb93382134c27b027fab4865d48a05099b29616e42c2b3d4af205a92e0ba
+    input_fingerprint: 91a9b8bb90bd840dd8d9d5bfa931ae0084189d7ec67adce041d74b592c8232b6
     template_sources:
     - parsers.toml.example
   rubocop-ruby3_2.gemspec:
     recipe: template_source_application_rubocop_ruby3_2_gemspec
     action: write
-    dest_sha256: 80ee08f19df0b99b08bb885d716b6431037e0ce6bab51851e4767cf6343f878a
-    input_fingerprint: 76f2605a513bb306b97b00925bfb4f0162fd1a68e2df5a23a35df27f911b9080
+    dest_sha256: 249e640b6a5b639658a7b94e0a93192271432d893c3994d937b5a0d14a60a051
+    input_fingerprint: b00a7b05ed92cb410e08823909ef9bd3532f2190998d0ce4a5fb8877bdc47d7e
     template_sources:
     - gem.gemspec.example
   sig/rubocop/ruby3_2.rbs:
     recipe: template_source_application_sig_rubocop_ruby3_2_rbs
     action: write
     dest_sha256: ce7116957e2a969755af85bbc6658874f552161cb577e5dc717b158018a9c2ad
-    input_fingerprint: 6aee6fd9e46201a2b38629dfbbc818bda7eb13d74f870abc0d2cddef582be7ae
+    input_fingerprint: b0b7da563557b2b4b71f3629efed154a0df15d8ad9b5ffda9589dca64c339cfe
     template_sources:
     - sig/gem.rbs.example
   spec/README.md:
     recipe: template_source_application_spec_README_md
     action: write
     dest_sha256: d8f0d2288bdee716c18b093755c6eff2158e81620306cbf96fc62226a8f22f1c
-    input_fingerprint: e9107b984f72c9dd4c5b0ec7cb0e2ec0f6fa2140ef51afffaf19e60112e39121
+    input_fingerprint: 25faf517ed1d4fc7d4bcba4bb2bc38fbfffa90cd1ca37859ae8ffba993415e25
     template_sources:
     - spec/README.md.example
   spec/spec_helper.rb:
     recipe: template_source_application_spec_spec_helper_rb
     action: write
-    dest_sha256: 98a0064a7c6a6e6d0ae2d7d939002c51bca2228ccd69a4564cc3494db10f00bd
-    input_fingerprint: 8e2569b46759b2a3abaaf63cfb142fbc5b3c75e589f5b16bc9d8bde900fa739f
+    dest_sha256: f2703952908bdc93f5a35572d099f7ad3c7e01ac6e419871ce938ab5beb07e32
+    input_fingerprint: d60bc50f331a3aee7178b4b77f83329036efee1ff2b1a7b091cf34f8c14f03bf
     template_sources:
     - spec/spec_helper.rb.example
