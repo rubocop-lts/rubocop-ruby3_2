@@ -1,4 +1,7 @@
 {
+  "gemfiles/modular/templating.gemfile:3018447732": [
+    [14, 3, 47, "Bundler/DuplicatedGem: Gem `tree_sitter_language_pack` requirements already given on line 10 of the Gemfile.", 3843603197]
+  ],
   "spec/rubocop/ruby3_2/version_spec.rb:1772792948": [
     [5, 1, 39, "RSpec/SpecFilePathFormat: Spec path should end with `rubocop/ruby32/version*_spec.rb`.", 966159776],
     [8, 3, 452, "RSpec/ExampleLength: Example has too many lines. [6/5]", 3137715645]
