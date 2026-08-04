@@ -18,6 +18,10 @@ SimpleCov.configure do
     track_files "{lib/**/*.rb,lib/**/*.rake,exe/*.rb}"
   end
   cover "lib/**/*.rb", "lib/**/*.rake", "exe/*.rb"
+  # Rails integration and the optional Rake task are exercised only when
+  # those host applications load the gem's integration hooks.
+  skip "lib/rubocop/ruby3_2/railtie.rb"
+  skip "lib/rubocop/ruby3_2/rakelib/rubocop_gradual.rake"
 end
 # To get coverage
 # On Local, default (HTML) output coverage is turned on with Ruby 2.7+:
