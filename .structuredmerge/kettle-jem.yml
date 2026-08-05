@@ -78,7 +78,7 @@
 # Supported actions: remove_modular_gem, remove_x_std_lib_eval, keep_both.
 dependency_conflicts:
   # Set true only after every discovered conflict has an intentional action.
-  reviewed: false
+  reviewed: true
   resolve:
     - gem: kramdown
       direct: rubocop-ruby3_2.gemspec
