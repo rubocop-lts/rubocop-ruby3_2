@@ -21,6 +21,9 @@ I've summarized my thoughts in [this blog post](https://dev.to/galtzo/hostile-ta
 
 ## 🌻 Synopsis <a href="https://discord.gg/3qme4XHNKN"><img alt="Galtzo FLOSS Logo by Aboling0, CC BY-SA 4.0" src="https://logos.galtzo.com/assets/images/galtzo-floss/avatar-128px.svg" width="8%" align="right"/></a> <a href="https://ruby-toolbox.com"><img alt="ruby-lang Logo, Yukihiro Matsumoto, Ruby Visual Identity Team, CC BY-SA 2.5" src="https://logos.galtzo.com/assets/images/ruby-lang/avatar-128px.svg" width="8%" align="right"/></a>
 
+This gem packages RuboCop, Standard, Betterlint, and Gradual configuration
+selected for projects whose compatibility floor is Ruby 3.2.
+
 ## 💡 Info you can shake a stick at
 
 | Tokens to Remember | [![Gem name][⛳️name-img]][⛳️gem-name] [![Gem namespace][⛳️namespace-img]][⛳️gem-namespace] |
@@ -117,6 +120,11 @@ gem install rubocop-ruby3_2
 ```
 
 ## ⚙️ Configuration
+
+Select the packaged config through RuboCop's `inherit_gem` setting. For example,
+use `rubocop-ruby3_2: rubocop.yml` for the base Ruby/RSpec profile, or select
+the Rails, RubyGems, or RSpec entrypoint described below. The gem has no runtime
+application configuration.
 
 ## 🔧 Basic Usage
 
