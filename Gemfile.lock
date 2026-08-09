@@ -6,21 +6,30 @@ PATH
       rubocop-md (~> 2.0, >= 2.0.4)
       rubocop-rake (~> 0.7, >= 0.7.1)
       rubocop-thread_safety (~> 0.7, >= 0.7.3)
-      standard-rubocop-lts (~> 2.0, >= 2.0.9)
+      standard-rubocop-lts (~> 2.0, >= 2.0.11)
       version_gem (~> 1.1, >= 1.1.15)
 
 PATH
-  remote: /var/home/pboling/src/my/rubocop-lts/rubocop-lts
+  remote: /home/pboling/src/my/rubocop-lts/rubocop-lts-ruby
+  specs:
+    rubocop-lts-ruby (0.1.0)
+      lint_roller (~> 1.1)
+      rubocop (>= 1.72.1, < 2.0)
+      version_gem (~> 1.1, >= 1.1.15)
+
+PATH
+  remote: /home/pboling/src/my/rubocop-lts/rubocop-lts
   specs:
     rubocop-lts (24.2.2)
       rubocop-ruby3_2 (~> 3.0, >= 3.0.1)
-      standard-rubocop-lts (~> 2.0, >= 2.0.3)
+      standard-rubocop-lts (~> 2.0, >= 2.0.11)
       version_gem (~> 1.1, >= 1.1.15)
 
 PATH
-  remote: /var/home/pboling/src/my/rubocop-lts/standard-rubocop-lts
+  remote: /home/pboling/src/my/rubocop-lts/standard-rubocop-lts
   specs:
-    standard-rubocop-lts (2.0.10)
+    standard-rubocop-lts (2.0.11)
+      rubocop-lts-ruby (~> 0.1, >= 0.1.0)
       standard (~> 1.54, >= 1.54.0)
       standard-custom (~> 1.0, >= 1.0.2)
       standard-performance (~> 1.9, >= 1.9.0)
@@ -117,8 +126,8 @@ GEM
       prism (>= 1.3.0)
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
-    json (2.20.0)
-    kettle-dev (2.5.18)
+    json (2.21.2)
+    kettle-dev (2.5.26)
       emoji_regex (>= 15.0)
       kettle-gha-pins (~> 0.3, >= 0.3.5)
       kettle-ndjson (~> 0.1, >= 0.1.10)
@@ -126,10 +135,10 @@ GEM
       kettle-test (~> 2.0, >= 2.0.18)
       ruby-progressbar (~> 1.13)
       tty-progressbar (~> 0.18)
-    kettle-family (1.2.29)
+    kettle-family (1.2.43)
       command_kit (~> 0.6)
       command_kit-completion (~> 0.1)
-      kettle-dev (~> 2.3, >= 2.5.18)
+      kettle-dev (~> 2.3, >= 2.5.26)
       kettle-test (~> 2.0, >= 2.0.18)
       tsort (~> 0.2)
       tty-screen (~> 0.8)
@@ -185,7 +194,7 @@ GEM
     parallel (1.28.0)
     parallel_tests (5.7.0)
       parallel
-    parser (3.3.11.1)
+    parser (3.3.12.0)
       ast (~> 2.4.1)
       racc
     pp (0.6.4)
@@ -251,7 +260,7 @@ GEM
       rubocop-ast (>= 1.49.0, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 2.4.0, < 4.0)
-    rubocop-ast (1.49.1)
+    rubocop-ast (1.50.0)
       parser (>= 3.3.7.2)
       prism (~> 1.7)
     rubocop-capybara (2.23.0)
@@ -425,7 +434,7 @@ DEPENDENCIES
   gitmoji-regex (~> 2.0, >= 2.0.11)
   irb (~> 1.17)
   kettle-dev (~> 2.5, >= 2.5.17)
-  kettle-family (~> 1.2, >= 1.2.23)
+  kettle-family (~> 1.2, >= 1.2.43)
   kettle-soup-cover (~> 3.0, >= 3.0.9)
   kettle-test (~> 2.0, >= 2.0.19)
   kramdown (~> 2.5, >= 2.5.2)
@@ -442,6 +451,7 @@ DEPENDENCIES
   rspec_junit_formatter (~> 0.6, >= 0.6.0)
   rubocop-lts!
   rubocop-lts-rspec (= 1.0.3)
+  rubocop-lts-ruby!
   rubocop-minitest (~> 0.40, >= 0.40.0)
   rubocop-on-rbs (~> 2.0, >= 2.0.0)
   rubocop-packaging (~> 0.6, >= 0.6.0)

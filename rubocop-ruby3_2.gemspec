@@ -101,7 +101,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency("rubocop-md", "~> 2.0", ">= 2.0.4") # Ruby >= 2.7.0
   spec.add_dependency("rubocop-rake", "~> 0.7", ">= 0.7.1") # Ruby >= 2.7.0
   spec.add_dependency("rubocop-thread_safety", "~> 0.7", ">= 0.7.3") # Ruby >= 2.7.0
-  spec.add_dependency("standard-rubocop-lts", "~> 2.0", ">= 2.0.9") # Ruby >= 3.2.0
+  spec.add_dependency("standard-rubocop-lts", "~> 2.0", ">= 2.0.11") # Ruby >= 3.2.0
   spec.add_dependency("version_gem", "~> 1.1", ">= 1.1.15")              # ruby >= 2.2.0
 
   # NOTE: It is preferable to list development dependencies in the gemspec due to increased
