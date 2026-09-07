@@ -21,9 +21,9 @@ PATH
   remote: /var/home/pboling/src/my/rubocop-lts/rubocop-lts
   specs:
     rubocop-lts (24.2.3)
-      rubocop-ruby3_2 (~> 3.0, >= 3.0.1)
-      standard-rubocop-lts (~> 2.0, >= 2.0.11)
-      version_gem (~> 1.1, >= 1.1.15)
+      rubocop-ruby3_2 (>= 3.0.0, < 4)
+      standard-rubocop-lts (>= 2.0.2, < 3)
+      version_gem (>= 1.1.2, < 3)
 
 PATH
   remote: /var/home/pboling/src/my/rubocop-lts/standard-rubocop-lts
@@ -199,7 +199,7 @@ GEM
       ruby-progressbar (~> 1.13)
       tty-progressbar (~> 0.18)
       version_gem (~> 1.1, >= 1.1.15)
-    kettle-jem (7.1.21)
+    kettle-jem (7.1.22)
       addressable (>= 2.8, < 3)
       ast-crispr-markdown-markly (~> 7.1, >= 7.1.8)
       ast-crispr-ruby-prism (~> 7.1, >= 7.1.8)
