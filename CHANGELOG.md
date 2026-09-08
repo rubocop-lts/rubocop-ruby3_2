@@ -46,16 +46,16 @@ Please file a bug if you notice a violation of semantic versioning.
 
 - Require standard-rubocop-lts 2.0.11 or newer so this profile loads the shared rubocop-lts-ruby API availability checks.
 
-- [kc] kettle-jem/prepare: updated 31 project files:
+- [kc] kettle-jem/prepare: updated 39 project files:
   - configuration (1)
-  - dependencies (30)
+  - dependencies (38)
 
-- [kc] kettle-jem/template: updated 35 project files:
+- [kc] kettle-jem/template: updated 40 project files:
   - code and tests (3)
   - configuration (1)
-  - dependencies (19)
+  - dependencies (23)
   - documentation (3)
-  - other (8)
+  - other (9)
   - workflows (1)
 
 ### Deprecated
