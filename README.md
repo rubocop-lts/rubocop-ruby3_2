@@ -155,12 +155,6 @@ Upgrades to the latest RuboCop can include all kinds of changes, including remov
 
 But this gem shoehorns RuboCop into SemVer, under the watchful eye of [standard (Standard Ruby)][standardrb]... so `NewCops` is now safe(r)!  If you use a dependency greening tool like GitHub's `dependabot`, or the excellent alternatives [depfu](https://depfu.com/), and [`renovate`](https://www.whitesourcesoftware.com/free-developer-tools/renovate/), then you can see the effect of a minor / major version bump in your CI Build!
 
-## Advanced Usage
-
-For Rails, RubyGems, and non-RSpec projects, select the matching bundled `inherit_gem` entrypoint from this gem's configuration files.
-
-[standardrb]: https://github.com/standardrb/standard
-
 ## 🦷 FLOSS Funding
 
 While rubocop-lts tools are free software and will always be, the project would benefit immensely from some funding.
