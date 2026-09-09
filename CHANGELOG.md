@@ -20,6 +20,25 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Added
 
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security
+
+## [3.0.8] - 2026-09-09
+
+- TAG: [v3.0.8][3.0.8t]
+- COVERAGE: 100.00% -- 16/16 lines in 3 files
+- BRANCH COVERAGE: 0.00% -- 0/0 branches in 3 files
+- 71.43% documented
+
+### Added
+
 - kettle-jem-template-20260720-005 - README Support & Community links now
   include RubyForum.
 - kettle-jem-template-20260726-001 - Projects now include YARD lint
@@ -57,10 +76,6 @@ Please file a bug if you notice a violation of semantic versioning.
   - documentation (3)
   - other (10)
   - workflows (1)
-
-### Deprecated
-
-### Removed
 
 ### Fixed
 
@@ -105,8 +120,6 @@ Please file a bug if you notice a violation of semantic versioning.
 - Exclude optional integration hooks from default coverage scope.
 
 - Repair README Standard Ruby references and advanced-usage navigation.
-
-### Security
 
 ## [3.0.7] - 2026-07-03
 
@@ -304,7 +317,9 @@ Please file a bug if you notice a violation of semantic versioning.
     - standard-rails
   - version_gem
 
-[Unreleased]: https://github.com/rubocop-lts/rubocop-ruby3_2/compare/v3.0.7...HEAD
+[Unreleased]: https://github.com/rubocop-lts/rubocop-ruby3_2/compare/v3.0.8...HEAD
+[3.0.8]: https://github.com/rubocop-lts/rubocop-ruby3_2/compare/v3.0.7...v3.0.8
+[3.0.8t]: https://github.com/rubocop-lts/rubocop-ruby3_2/releases/tag/v3.0.8
 [3.0.7]: https://github.com/rubocop-lts/rubocop-ruby3_2/compare/v3.0.6...v3.0.7
 [3.0.7t]: https://github.com/rubocop-lts/rubocop-ruby3_2/releases/tag/v3.0.7
 [3.0.6]: https://github.com/rubocop-lts/rubocop-ruby3_2/compare/v3.0.5...v3.0.6
