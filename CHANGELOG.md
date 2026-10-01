@@ -31,13 +31,13 @@ Please file a bug if you notice a violation of semantic versioning.
 
 - Make package metadata identify the Ruby 3.2 ruleset target.
 
-- [kc] kettle-jem/prepare: updated 12 project files:
-  - dependencies (12)
+- [kc] kettle-jem/prepare: updated 14 project files:
+  - dependencies (14)
 
-- [kc] kettle-jem/template: updated 23 project files:
+- [kc] kettle-jem/template: updated 25 project files:
   - code and tests (1)
-  - dependencies (3)
-  - other (1)
+  - dependencies (4)
+  - other (2)
   - workflows (18)
 
 ### Deprecated
