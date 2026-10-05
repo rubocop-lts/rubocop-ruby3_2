@@ -1,10 +1,19 @@
 {
+  "- gem: rubocop-packaging\ndirect: rubocop-ruby3_2.gemspec": [
+    {
+      "file": ".structuredmerge/kettle-jem.yml",
+      "lines": [
+        110,
+        115
+      ]
+    }
+  ],
   "direct: rubocop-ruby3_2.gemspec\nmodular: gemfiles/modular/documentation.gemfile": [
     {
       "file": ".structuredmerge/kettle-jem.yml",
       "lines": [
         96,
-        116
+        121
       ]
     }
   ],
@@ -23,15 +32,6 @@
       "lines": [
         43,
         49
-      ]
-    }
-  ],
-  "modular: gemfiles/modular/style.gemfile\naction: remove_modular_gem": [
-    {
-      "file": ".structuredmerge/kettle-jem.yml",
-      "lines": [
-        107,
-        112
       ]
     }
   ]
