@@ -110,8 +110,8 @@ dependency_conflicts:
     - gem: rubocop-packaging
       direct: rubocop-ruby3_2.gemspec
       modular: gemfiles/modular/style.gemfile
-      action: remove_modular_gem
-      reason: "The gemspec already owns the same compatible rubocop-packaging development dependency; the style Gemfile does not narrow or override it."
+      action: keep_both
+      reason: "The gemspec constrains the compatible version; the modular declaration selects the required fork source."
     - gem: yard
       direct: rubocop-ruby3_2.gemspec
       modular: gemfiles/modular/documentation.gemfile
