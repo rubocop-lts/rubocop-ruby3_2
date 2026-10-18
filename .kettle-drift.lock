@@ -8,6 +8,25 @@
       ]
     }
   ],
+  "- ruby: \"ruby\"\nappraisal: \"current\"": [
+    {
+      "file": ".github/workflows/current.yml",
+      "lines": [
+        40,
+        46,
+        52
+      ]
+    }
+  ],
+  "bundler: latest\n- ruby: \"ruby\"": [
+    {
+      "file": ".github/workflows/current.yml",
+      "lines": [
+        45,
+        51
+      ]
+    }
+  ],
   "direct: rubocop-ruby3_2.gemspec\nmodular: gemfiles/modular/documentation.gemfile": [
     {
       "file": ".structuredmerge/kettle-jem.yml",
@@ -32,6 +51,34 @@
       "lines": [
         43,
         49
+      ]
+    }
+  ],
+  "id: bundleAppraisalAttempt2\nif: ${{ !env.ACT && steps.bundleAppraisalAttempt1.outcome == 'failure' }}": [
+    {
+      "file": ".github/workflows/heads.yml",
+      "lines": [
+        136,
+        196
+      ]
+    }
+  ],
+  "if: ${{ !env.ACT && steps.bundleAppraisalAttempt1.outcome == 'failure' }}\nrun: bundle exec appraisal ${{ matrix.appraisal }} install": [
+    {
+      "file": ".github/workflows/heads.yml",
+      "lines": [
+        77,
+        137,
+        197
+      ]
+    }
+  ],
+  "run: bundle exec appraisal ${{ matrix.appraisal }} install\ncontinue-on-error: true": [
+    {
+      "file": ".github/workflows/heads.yml",
+      "lines": [
+        132,
+        192
       ]
     }
   ]
