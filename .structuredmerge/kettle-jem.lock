@@ -1,8 +1,8 @@
 ---
 version: 1
 template_state:
-  version: 7.1.34
-  applied_at: '2026-10-20'
+  version: 7.1.36
+  applied_at: '2026-10-21'
   changelog_replay:
     last_entry_key: kettle-jem-template-20260913-001
     last_entry_date: '2026-09-13'
@@ -38,6 +38,7 @@ template_state:
     - ".github/workflows/truffleruby-25.0.yml"
     - ".github/workflows/truffleruby-33.0.yml"
     - ".github/workflows/unlocked_deps.yml"
+    - ".licenserc.yaml"
     - ".simplecov"
     - CONTRIBUTING.md
     - README.md
@@ -514,8 +515,8 @@ files:
   ".licenserc.yaml":
     recipe: template_source_application_licenserc_yaml
     action: write
-    dest_sha256: 2cfbd147680131a708f654902bd6359a6d31045eb44975d35da67d448d7225ae
-    input_fingerprint: bab2a89e6613307b7999d1917a17767411ad0e03aaa184326e52f5ffdee77e2f
+    dest_sha256: 7074e89d571c0d1a22992db6c552121734bfbc28ac8970e5f064987c525593bd
+    input_fingerprint: 483d7034bf3dd8a01e6714c07d5de9ef007ea64289a6a19b44305cb634a05a87
     template_sources:
     - ".licenserc.yaml.example"
   ".opencollective.yml":
