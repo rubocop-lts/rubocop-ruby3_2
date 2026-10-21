@@ -8,6 +8,15 @@
       ]
     }
   ],
+  "- other (2)\n- workflows (18)": [
+    {
+      "file": "CHANGELOG.md",
+      "lines": [
+        28,
+        71
+      ]
+    }
+  ],
   "- ruby: \"ruby\"\nappraisal: \"current\"": [
     {
       "file": ".github/workflows/current.yml",

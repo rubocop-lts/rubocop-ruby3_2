@@ -2,8 +2,7 @@
   "gemfiles/modular/style_local.gemfile:31214605": [
     [71, 23, 20, "Style/SafeNavigation: Use safe navigation (`&.`) instead of checking if an object exists before calling the method.", 1851388465]
   ],
-  "spec/rubocop/ruby3_2/version_spec.rb:1772792948": [
-    [5, 1, 39, "RSpec/SpecFilePathFormat: Spec path should end with `rubocop/ruby32/version*_spec.rb`.", 966159776],
-    [8, 3, 452, "RSpec/ExampleLength: Example has too many lines. [6/5]", 3137715645]
+  "spec/rubocop/ruby3_2/version_spec.rb:1187105654": [
+    [5, 1, 39, "RSpec/SpecFilePathFormat: Spec path should end with `rubocop/ruby32/version*_spec.rb`.", 966159776]
   ]
 }
