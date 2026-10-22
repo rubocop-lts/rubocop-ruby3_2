@@ -22,6 +22,23 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Changed
 
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security
+
+## [3.0.10] - 2026-10-21
+
+- TAG: [v3.0.10][3.0.10t]
+- COVERAGE: 100.00% -- 16/16 lines in 3 files
+- BRANCH COVERAGE: 0.00% -- 0/0 branches in 3 files
+- 71.43% documented
+
+### Changed
+
 - [kc] kettle-jem/template: updated 31 project files:
   - code and tests (1)
   - dependencies (7)
@@ -33,15 +50,9 @@ Please file a bug if you notice a violation of semantic versioning.
   - configuration (1)
   - dependencies (10)
 
-### Deprecated
-
-### Removed
-
 ### Fixed
 
 - license-eye workflow: make the `standard` gem license override versionless, so dependency bumps no longer break the license check with "standard | Unknown"
-
-### Security
 
 ## [3.0.9] - 2026-10-01
 
@@ -359,7 +370,9 @@ Please file a bug if you notice a violation of semantic versioning.
     - standard-rails
   - version_gem
 
-[Unreleased]: https://github.com/rubocop-lts/rubocop-ruby3_2/compare/v3.0.9...HEAD
+[Unreleased]: https://github.com/rubocop-lts/rubocop-ruby3_2/compare/v3.0.10...HEAD
+[3.0.10]: https://github.com/rubocop-lts/rubocop-ruby3_2/compare/v3.0.9...v3.0.10
+[3.0.10t]: https://github.com/rubocop-lts/rubocop-ruby3_2/releases/tag/v3.0.10
 [3.0.9]: https://github.com/rubocop-lts/rubocop-ruby3_2/compare/v3.0.8...v3.0.9
 [3.0.9t]: https://github.com/rubocop-lts/rubocop-ruby3_2/releases/tag/v3.0.9
 [3.0.8]: https://github.com/rubocop-lts/rubocop-ruby3_2/compare/v3.0.7...v3.0.8
